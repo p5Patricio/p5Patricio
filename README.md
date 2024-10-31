@@ -5,15 +5,6 @@
 </p>
 
 
-<br>
-
-## 🐦 Bio
-- 💻 **Pato coding**
-- 🧠 "Si puedes imaginarlo, puedes programarlo"
-- 🧑‍💻 Coding is fun until `"0" == [ ]` > `false`
-- 🌐 nothing like `127.0.0.1`
-- 🎶 New Jeans
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
@@ -33,7 +24,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" title="Postman" alt="Postman" width="60" height="60"/>&nbsp;
 </p>
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ### 🌱 Technologies I’m currently learning:
 <p align="center">
