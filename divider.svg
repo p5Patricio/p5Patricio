@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 40" width="900" height="40">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fecdd3;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#fecdd3;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#fecdd3;stop-opacity:0.5"/>
+      <stop offset="80%" style="stop-color:#fecdd3;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#fecdd3;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main line -->
+  <line x1="50" y1="20" x2="850" y2="20" stroke="url(#lineGrad)" stroke-width="0.5"/>
+  
+  <!-- Center sakura flower -->
+  <g transform="translate(450, 20)" opacity="0.6">
+    <ellipse cx="0" cy="-5" rx="2.2" ry="3.5" fill="#ffb6c8" transform="rotate(0)"/>
+    <ellipse cx="0" cy="-5" rx="2.2" ry="3.5" fill="#ffb6c8" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-5" rx="2.2" ry="3.5" fill="#ffb6c8" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-5" rx="2.2" ry="3.5" fill="#ffb6c8" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-5" rx="2.2" ry="3.5" fill="#ffb6c8" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="1.5" fill="#ffd5de"/>
+  </g>
+  
+  <!-- Small petals floating -->
+  <ellipse cx="200" cy="15" rx="2" ry="1.2" fill="#ffb6c8" opacity="0.3" transform="rotate(-20 200 15)"/>
+  <ellipse cx="350" cy="25" rx="1.5" ry="1" fill="#ffa0b4" opacity="0.25" transform="rotate(15 350 25)"/>
+  <ellipse cx="550" cy="12" rx="1.8" ry="1.1" fill="#ffc0d0" opacity="0.3" transform="rotate(-35 550 12)"/>
+  <ellipse cx="700" cy="26" rx="1.5" ry="1" fill="#ffb6c8" opacity="0.25" transform="rotate(25 700 26)"/>
+</svg>
