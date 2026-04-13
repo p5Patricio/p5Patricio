@@ -1,44 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="900" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="900" height="180">
   <defs>
-    <linearGradient id="fg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="footerFade" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0f0f1a" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#0f0f1a" stop-opacity=".5"/>
+      <stop offset="28%" stop-color="#0f0f1a" stop-opacity="0.42"/>
       <stop offset="100%" stop-color="#1a1a2e"/>
     </linearGradient>
+    <linearGradient id="waterFoot" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#070710"/>
+      <stop offset="100%" stop-color="#04040a"/>
+    </linearGradient>
     <style>
-      @keyframes fall1{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:.4}100%{transform:translateY(60px) translateX(20px) rotate(90deg);opacity:.1}}
-      @keyframes fall2{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:.35}100%{transform:translateY(55px) translateX(-15px) rotate(-80deg);opacity:.08}}
-      @keyframes fall3{0%{transform:translateY(0) translateX(0) rotate(10deg);opacity:.3}100%{transform:translateY(65px) translateX(10px) rotate(120deg);opacity:.05}}
-      @keyframes shimmer{0%,100%{opacity:.12}50%{opacity:.2}}
-      .f1{animation:fall1 10s ease-in-out infinite}
-      .f2{animation:fall2 12s ease-in-out infinite 2s}
-      .f3{animation:fall3 14s ease-in-out infinite 4s}
-      .f1d{animation:fall1 11s ease-in-out infinite 3s}
-      .f2d{animation:fall2 13s ease-in-out infinite 5s}
-      .f3d{animation:fall3 9s ease-in-out infinite 1s}
-      .sh{animation:shimmer 6s ease-in-out infinite}
+      @keyframes fFall1{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:.42}100%{transform:translateY(78px) translateX(22px) rotate(98deg);opacity:.07}}
+      @keyframes fFall2{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:.36}100%{transform:translateY(70px) translateX(-17px) rotate(-86deg);opacity:.05}}
+      @keyframes fFall3{0%{transform:translateY(0) translateX(0) rotate(12deg);opacity:.30}100%{transform:translateY(66px) translateX(11px) rotate(128deg);opacity:.04}}
+      @keyframes fShimmer{0%,100%{opacity:.09}50%{opacity:.22}}
+      @keyframes fSway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(1.3deg)}}
+      .ff1{animation:fFall1 10.5s ease-in-out infinite}
+      .ff2{animation:fFall2 12.5s ease-in-out infinite 2.2s}
+      .ff3{animation:fFall3 14.5s ease-in-out infinite 4.4s}
+      .ff1b{animation:fFall1 11.5s ease-in-out infinite 3.3s}
+      .ff2b{animation:fFall2 13.5s ease-in-out infinite 5.5s}
+      .ff3b{animation:fFall3 9.5s ease-in-out infinite 1.1s}
+      .fsh{animation:fShimmer 6.3s ease-in-out infinite}
+      .ftl{animation:fSway 9.5s ease-in-out infinite;transform-origin:58px 180px}
+      .ftr{animation:fSway 10.8s ease-in-out infinite 1.3s;transform-origin:842px 180px}
       @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important}}
     </style>
   </defs>
-  <rect width="900" height="140" fill="url(#fg)"/>
-  <path d="M0 95Q100 90 200 97Q300 92 400 96Q500 90 600 95Q700 91 800 97Q850 93 900 96" fill="none" stroke="#fecdd3" stroke-width=".4" opacity=".15"/>
+
+  <!-- Background fade overlay -->
+  <rect width="900" height="180" fill="url(#footerFade)"/>
+
+  <!-- Water area -->
+  <rect x="0" y="108" width="900" height="72" fill="url(#waterFoot)" opacity=".84"/>
+  <path d="M0 117Q105 111 212 118Q318 112 424 118Q530 111 636 117Q742 111 848 118Q872 114 900 117" fill="none" stroke="#fecdd3" stroke-width=".48" class="fsh"/>
+  <path d="M0 130Q128 124 258 131Q388 125 518 130Q648 124 778 130Q842 126 900 129" fill="none" stroke="#fecdd3" stroke-width=".32" opacity=".14"/>
+  <path d="M0 143Q135 139 270 145Q405 139 540 144Q675 138 810 144Q852 140 900 143" fill="none" stroke="#fecdd3" stroke-width=".22" opacity=".07"/>
+
+  <!-- Left tree bottom (waist down, mirroring header left) -->
+  <g class="ftl" opacity=".68">
+    <path d="M58 180Q56 152 53 130Q50 112 56 93" stroke="#2d1f14" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M58 180Q60 152 55 130Q52 112 58 93" stroke="#3d2b1f" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+    <path d="M55 136Q35 120 16 109" stroke="#3d2b1f" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M16 109Q3 100 -4 93" stroke="#3d2b1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M56 116Q74 102 90 91" stroke="#3d2b1f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M90 91Q104 82 112 75" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <circle cx="16" cy="108" r="7" fill="#ffa0b4" opacity=".62"/>
+    <circle cx="8" cy="100" r="6" fill="#ffb6c8" opacity=".57"/>
+    <circle cx="24" cy="102" r="6" fill="#ff8da6" opacity=".57"/>
+    <circle cx="1" cy="95" r="5" fill="#ffc0d0" opacity=".52"/>
+    <circle cx="14" cy="94" r="4" fill="#ffa0b4" opacity=".48"/>
+    <circle cx="90" cy="89" r="6" fill="#ffa0b4" opacity=".57"/>
+    <circle cx="80" cy="82" r="7" fill="#ffb6c8" opacity=".52"/>
+    <circle cx="98" cy="82" r="5" fill="#ff8da6" opacity=".52"/>
+    <circle cx="112" cy="73" r="6" fill="#ffc0d0" opacity=".48"/>
+    <circle cx="103" cy="70" r="5" fill="#ffa0b4" opacity=".46"/>
+  </g>
+
+  <!-- Right tree bottom (mirroring header right) -->
+  <g class="ftr" opacity=".68">
+    <path d="M842 180Q844 152 847 130Q850 112 844 93" stroke="#2d1f14" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M844 180Q846 152 849 130Q852 112 846 93" stroke="#3d2b1f" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+    <path d="M847 136Q867 120 886 109" stroke="#3d2b1f" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M886 109Q899 100 906 93" stroke="#3d2b1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M846 116Q828 102 812 91" stroke="#3d2b1f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M812 91Q798 82 790 75" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <circle cx="886" cy="108" r="7" fill="#ffa0b4" opacity=".62"/>
+    <circle cx="894" cy="100" r="6" fill="#ffb6c8" opacity=".57"/>
+    <circle cx="878" cy="102" r="6" fill="#ff8da6" opacity=".57"/>
+    <circle cx="901" cy="95" r="5" fill="#ffc0d0" opacity=".52"/>
+    <circle cx="888" cy="94" r="4" fill="#ffa0b4" opacity=".48"/>
+    <circle cx="812" cy="89" r="6" fill="#ffa0b4" opacity=".57"/>
+    <circle cx="822" cy="82" r="7" fill="#ffb6c8" opacity=".52"/>
+    <circle cx="804" cy="82" r="5" fill="#ff8da6" opacity=".52"/>
+    <circle cx="790" cy="73" r="6" fill="#ffc0d0" opacity=".48"/>
+    <circle cx="799" cy="70" r="5" fill="#ffa0b4" opacity=".46"/>
+  </g>
+
   <!-- Falling petals -->
-  <ellipse cx="80" cy="15" rx="3" ry="1.8" fill="#ffb6c8" class="f1"/>
-  <ellipse cx="180" cy="25" rx="2.5" ry="1.5" fill="#ffa0b4" class="f2"/>
-  <ellipse cx="320" cy="10" rx="2" ry="1.2" fill="#ffc0d0" class="f3"/>
-  <ellipse cx="450" cy="20" rx="2.8" ry="1.6" fill="#ffb6c8" class="f1d"/>
-  <ellipse cx="580" cy="15" rx="2" ry="1.2" fill="#ffa0b4" class="f2d"/>
-  <ellipse cx="700" cy="30" rx="2.5" ry="1.5" fill="#ffc0d0" class="f3d"/>
-  <ellipse cx="820" cy="12" rx="2" ry="1.2" fill="#ffb6c8" class="f1"/>
-  <ellipse cx="250" cy="35" rx="1.8" ry="1" fill="#ffa0b4" class="f3"/>
-  <ellipse cx="650" cy="8" rx="2.2" ry="1.3" fill="#ffc0d0" class="f2d"/>
-  <ellipse cx="400" cy="40" rx="2" ry="1.1" fill="#ffb6c8" class="f1d"/>
-  <ellipse cx="530" cy="32" rx="1.8" ry="1" fill="#ffa0b4" class="f3d"/>
-  <ellipse cx="150" cy="42" rx="2.2" ry="1.2" fill="#ffc0d0" class="f2"/>
-  <!-- Water shimmer -->
-  <line x1="100" y1="105" x2="800" y2="105" stroke="#fecdd3" stroke-width=".3" class="sh"/>
-  <line x1="150" y1="112" x2="750" y2="112" stroke="#fecdd3" stroke-width=".2" opacity=".08"/>
-  <!-- Text -->
-  <text x="450" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fecdd3" letter-spacing="3" opacity=".35">花見  ·  HANAMI  ·  花見</text>
-  <text x="450" y="130" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="9" fill="#fecdd3" letter-spacing="2" opacity=".2">made with 桜 and code</text>
+  <ellipse cx="82" cy="14" rx="3.2" ry="1.9" fill="#ffb6c8" class="ff1"/>
+  <ellipse cx="188" cy="24" rx="2.7" ry="1.6" fill="#ffa0b4" class="ff2"/>
+  <ellipse cx="298" cy="9" rx="2.4" ry="1.4" fill="#ffc0d0" class="ff3"/>
+  <ellipse cx="422" cy="21" rx="3.0" ry="1.8" fill="#ffb6c8" class="ff1b"/>
+  <ellipse cx="550" cy="13" rx="2.4" ry="1.4" fill="#ffa0b4" class="ff2b"/>
+  <ellipse cx="668" cy="27" rx="2.7" ry="1.6" fill="#ffc0d0" class="ff3b"/>
+  <ellipse cx="785" cy="11" rx="2.4" ry="1.4" fill="#ffb6c8" class="ff1"/>
+  <ellipse cx="252" cy="34" rx="2.2" ry="1.3" fill="#ffa0b4" class="ff3"/>
+  <ellipse cx="516" cy="31" rx="2.2" ry="1.3" fill="#ffb6c8" class="ff2b"/>
+  <ellipse cx="732" cy="7" rx="2.4" ry="1.4" fill="#ffc0d0" class="ff1b"/>
+  <ellipse cx="400" cy="39" rx="2.0" ry="1.2" fill="#ffa0b4" class="ff3b"/>
+  <ellipse cx="864" cy="19" rx="2.2" ry="1.3" fill="#ffb6c8" class="ff2"/>
+
+  <!-- Footer text -->
+  <text x="450" y="155" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fecdd3" letter-spacing="4" opacity=".28">花見  ·  HANAMI  ·  花見</text>
+  <text x="450" y="170" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="9" fill="#fecdd3" letter-spacing="2" opacity=".17">crafted with 桜 and code</text>
 </svg>

@@ -1,21 +1,29 @@
 <p align="center">
-  <img src="header.svg" alt="Patricio García - Systems Engineer & Full Stack Developer" width="100%"/>
+  <img src="header.svg" alt="Patricio García — Systems Engineer & Full Stack Developer" width="100%"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/p5Patricio"><img src="https://img.shields.io/github/followers/p5Patricio?label=Followers&style=flat&color=1a1a2e&labelColor=0f0f1a&logo=github&logoColor=fecdd3" alt="GitHub Followers"/></a>
+  &nbsp;
   <img src="https://komarev.com/ghpvc/?username=p5Patricio&color=fecdd3&style=flat&label=花見+Visitors" alt="Profile Views"/>
+  &nbsp;
   <a href="https://github.com/p5Patricio?tab=repositories"><img src="https://img.shields.io/badge/Repos-探索-1a1a2e?style=flat&labelColor=0f0f1a&logo=files&logoColor=fecdd3" alt="Repos"/></a>
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&duration=4000&pause=1200&color=FECDD3&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Systems+Engineer+%C2%B7+Full+Stack+Developer;Building+tools+that+make+a+difference+%F0%9F%8C%B8;No+limitations+%E2%80%94+only+possibilities" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=17&duration=4000&pause=1200&color=FECDD3&center=true&vCenter=true&multiline=true&repeat=true&width=620&height=80&lines=Systems+Engineer+%C2%B7+Full+Stack+Developer;Building+tools+that+make+a+difference+%F0%9F%8C%B8;No+limitations+%E2%80%94+only+possibilities" alt="Typing SVG"/>
+  </a>
 </p>
+
+<br/>
 
 <p align="center"><img src="divider.svg" width="100%"/></p>
 
-<details open>
-<summary><b>🏯 &nbsp;About Me</b></summary>
+<br/>
+
+<h3 align="center">🏯 &nbsp; About Me</h3>
+
 <br/>
 
 ```yaml
@@ -39,12 +47,14 @@ interests:
   - Gaming: Overwatch 2, Rocket League, Fortnite
 ```
 
-</details>
+<br/>
 
 <p align="center"><img src="divider.svg" width="100%"/></p>
 
-<details open>
-<summary><b>🌿 &nbsp;Tech Ecosystem</b></summary>
+<br/>
+
+<h3 align="center">🌿 &nbsp; Tech Ecosystem</h3>
+
 <br/>
 
 <h4 align="center">Languages</h4>
@@ -67,12 +77,14 @@ interests:
   <img src="https://skillicons.dev/icons?i=docker,git,github,vercel,linux&theme=dark" alt="DevOps"/>
 </p>
 
-</details>
+<br/>
 
 <p align="center"><img src="divider.svg" width="100%"/></p>
 
-<details open>
-<summary><b>🤖 &nbsp;AI & Developer Tooling</b></summary>
+<br/>
+
+<h3 align="center">🤖 &nbsp; AI & Developer Tooling</h3>
+
 <br/>
 
 <p align="center">
@@ -86,17 +98,34 @@ interests:
 | <img src="https://img.shields.io/badge/spaCy-1a1a2e?style=for-the-badge&logo=spacy&logoColor=fecdd3" alt="spaCy"/> | Local NLP processing |
 
 </p>
-</details>
+
+<br/>
 
 <p align="center"><img src="divider.svg" width="100%"/></p>
 
-<details open>
-<summary><b>📊 &nbsp;GitHub Stats</b></summary>
+<br/>
+
+<h3 align="center">🏆 &nbsp; GitHub Trophies</h3>
+
+<br/>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=p5Patricio&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="GitHub Trophies" width="100%"/>
+</p>
+
+<br/>
+
+<p align="center"><img src="divider.svg" width="100%"/></p>
+
+<br/>
+
+<h3 align="center">📊 &nbsp; GitHub Stats</h3>
+
 <br/>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=p5Patricio&show_icons=true&theme=dark&bg_color=0f0f1a&title_color=fecdd3&text_color=ffe4e6&icon_color=ffb6c8&border_color=1a1a2e&hide_border=false&border_radius=12&ring_color=ffb6c8" alt="GitHub Stats" height="180"/>
-  &nbsp;
+  &nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=p5Patricio&layout=compact&theme=dark&bg_color=0f0f1a&title_color=fecdd3&text_color=ffe4e6&border_color=1a1a2e&hide_border=false&border_radius=12&langs_count=8" alt="Top Languages" height="180"/>
 </p>
 
@@ -112,12 +141,14 @@ interests:
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=p5Patricio&bg_color=0f0f1a&color=fecdd3&line=ffb6c8&point=ffe4e6&area_color=fecdd3&area=true&hide_border=true" alt="Activity Graph" width="95%"/>
 </p>
 
-</details>
+<br/>
 
 <p align="center"><img src="divider.svg" width="100%"/></p>
 
-<details>
-<summary><b>🎮 &nbsp;Beyond the Code</b></summary>
+<br/>
+
+<h3 align="center">🎮 &nbsp; Beyond the Code</h3>
+
 <br/>
 
 <p align="center">
@@ -131,31 +162,37 @@ interests:
 
 <p align="center">
   <img src="https://img.shields.io/badge/Steam-1a1a2e?style=for-the-badge&logo=steam&logoColor=fecdd3" alt="Steam"/>
+  &nbsp;
   <img src="https://img.shields.io/badge/Epic_Games-1a1a2e?style=for-the-badge&logo=epicgames&logoColor=fecdd3" alt="Epic"/>
+  &nbsp;
   <img src="https://img.shields.io/badge/Battle.net-1a1a2e?style=for-the-badge&logo=battledotnet&logoColor=fecdd3" alt="Battle.net"/>
 </p>
 
-</details>
+<br/>
 
 <p align="center"><img src="divider.svg" width="100%"/></p>
 
-### 🔗 &nbsp;Connect
+<br/>
+
+<h3 align="center">🔗 &nbsp; Connect</h3>
+
+<br/>
 
 <p align="center">
   <a href="mailto:tu-email@example.com">
     <img src="https://img.shields.io/badge/Email-1a1a2e?style=for-the-badge&logo=gmail&logoColor=fecdd3" alt="Email"/>
   </a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://linkedin.com/in/tu-perfil">
     <img src="https://img.shields.io/badge/LinkedIn-1a1a2e?style=for-the-badge&logo=linkedin&logoColor=fecdd3" alt="LinkedIn"/>
   </a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://github.com/p5Patricio">
     <img src="https://img.shields.io/badge/GitHub-1a1a2e?style=for-the-badge&logo=github&logoColor=fecdd3" alt="GitHub"/>
   </a>
 </p>
 
-<br/>
+<br/><br/>
 
 <p align="center">
   <img src="footer.svg" alt="" width="100%"/>

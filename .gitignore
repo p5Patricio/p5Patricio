@@ -1,0 +1,27 @@
+# Tools & skills downloaded for design work
+tools/
+skills/
+node_modules/
+
+# Design workspace
+*.sketch
+*.fig
+*.xd
+design-workspace/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Temp
+*.tmp
+*.bak
