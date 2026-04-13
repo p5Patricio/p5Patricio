@@ -152,6 +152,54 @@
       .lc{animation:ln1 6.1s ease-in-out infinite .8s}
       @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important}}
     </style>
+
+    <!-- ===== SAKURA FLOWER SYMBOLS ===== -->
+    <!-- Petal path: 5 petals with authentic V-notch at tip -->
+    <!-- Small sakura flower (~14px span) -->
+    <symbol id="skS" overflow="visible">
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="1.5" fill="#fff8f5"/>
+    </symbol>
+    <!-- Medium sakura flower (~20px span) -->
+    <symbol id="skM" overflow="visible">
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="2" fill="#fff8f5"/>
+    </symbol>
+
+    <!-- ===== VINE SYMBOLS ===== -->
+    <!-- Leaf pointing right -->
+    <symbol id="vlR" overflow="visible">
+      <path d="M0,0 Q7,-5 11,0 Q7,5 0,0Z" fill="#2a4835"/>
+      <line x1="1" y1="0" x2="10" y2="0" stroke="#1e3428" stroke-width=".5"/>
+    </symbol>
+    <!-- Leaf pointing left -->
+    <symbol id="vlL" overflow="visible">
+      <path d="M0,0 Q-7,-5 -11,0 Q-7,5 0,0Z" fill="#2a4835"/>
+      <line x1="-1" y1="0" x2="-10" y2="0" stroke="#1e3428" stroke-width=".5"/>
+    </symbol>
+    <!-- Vine tendril cluster -->
+    <symbol id="vlT" overflow="visible">
+      <path d="M0,0 Q4,-8 2,-14" stroke="#2a4835" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <path d="M0,0 Q-3,-7 -1,-13" stroke="#2a4835" stroke-width=".8" fill="none" stroke-linecap="round"/>
+      <path d="M0,0 Q6,-6 5,-11" stroke="#2a4835" stroke-width=".7" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- Small vine flower (5-petal, pink) -->
+    <symbol id="vf" overflow="visible">
+      <path d="M0,0 C1.5,-1.2 2.5,-3.5 1.3,-5.8 Q0.5,-7 0,-6.5 Q-0.5,-7 -1.3,-5.8 C-2.5,-3.5 -1.5,-1.2 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C1.5,-1.2 2.5,-3.5 1.3,-5.8 Q0.5,-7 0,-6.5 Q-0.5,-7 -1.3,-5.8 C-2.5,-3.5 -1.5,-1.2 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C1.5,-1.2 2.5,-3.5 1.3,-5.8 Q0.5,-7 0,-6.5 Q-0.5,-7 -1.3,-5.8 C-2.5,-3.5 -1.5,-1.2 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C1.5,-1.2 2.5,-3.5 1.3,-5.8 Q0.5,-7 0,-6.5 Q-0.5,-7 -1.3,-5.8 C-2.5,-3.5 -1.5,-1.2 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C1.5,-1.2 2.5,-3.5 1.3,-5.8 Q0.5,-7 0,-6.5 Q-0.5,-7 -1.3,-5.8 C-2.5,-3.5 -1.5,-1.2 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="1.1" fill="#ffd0dd"/>
+    </symbol>
   </defs>
 
   <!-- Sky -->
@@ -505,6 +553,148 @@
     <circle cx="793" cy="122" r="3" fill="#ffd5de" opacity=".30"/>
     <circle cx="728" cy="148" r="3" fill="#ffd5de" opacity=".28"/>
     <circle cx="898" cy="226" r="3" fill="#ffd5de" opacity=".28"/>
+  </g>
+
+  <!-- ===== SAKURA FLOWERS — real 5-petal shapes at branch tips ===== -->
+  <!-- Left tree: flowers at most visible branch tips, overlaid on circle clusters -->
+  <g filter="url(#blossomGlow)">
+    <!-- Crown -->
+    <use href="#skM" transform="translate(76,136)" fill="#ffc0d0" opacity=".82"/>
+    <use href="#skM" transform="translate(63,128) rotate(18)" fill="#ffb6c8" opacity=".84"/>
+    <use href="#skM" transform="translate(90,127) rotate(-22)" fill="#ffa0b4" opacity=".78"/>
+    <use href="#skM" transform="translate(82,119) rotate(36)" fill="#ffc0d0" opacity=".80"/>
+    <use href="#skS" transform="translate(68,115) rotate(-10)" fill="#ffb6c8" opacity=".75"/>
+    <use href="#skS" transform="translate(94,114) rotate(14)" fill="#ffa0b4" opacity=".72"/>
+    <!-- Upper-left branch tips -->
+    <use href="#skS" transform="translate(40,143) rotate(8)" fill="#ffb6c8" opacity=".76"/>
+    <use href="#skS" transform="translate(22,128) rotate(-15)" fill="#ffc0d0" opacity=".72"/>
+    <use href="#skS" transform="translate(12,110) rotate(22)" fill="#ffa0b4" opacity=".68"/>
+    <use href="#skS" transform="translate(5,102) rotate(-8)" fill="#ffb6c8" opacity=".65"/>
+    <!-- Upper-right branch tips -->
+    <use href="#skS" transform="translate(105,135) rotate(10)" fill="#ffc0d0" opacity=".74"/>
+    <use href="#skS" transform="translate(114,127) rotate(-18)" fill="#ffb6c8" opacity=".70"/>
+    <!-- Mid-right tips -->
+    <use href="#skS" transform="translate(143,133) rotate(6)" fill="#ffa0b4" opacity=".72"/>
+    <use href="#skS" transform="translate(150,169) rotate(-12)" fill="#ffb6c8" opacity=".70"/>
+    <use href="#skS" transform="translate(166,158) rotate(20)" fill="#ffc0d0" opacity=".66"/>
+    <!-- Low-left cluster tip -->
+    <use href="#skS" transform="translate(15,240) rotate(5)" fill="#ffb6c8" opacity=".72"/>
+    <use href="#skS" transform="translate(24,232) rotate(-18)" fill="#ffa0b4" opacity=".68"/>
+  </g>
+
+  <!-- Right tree: flowers at branch tips (mirrored) -->
+  <g filter="url(#blossomGlow)">
+    <!-- Crown -->
+    <use href="#skM" transform="translate(826,136)" fill="#ffc0d0" opacity=".82"/>
+    <use href="#skM" transform="translate(839,128) rotate(-18)" fill="#ffb6c8" opacity=".84"/>
+    <use href="#skM" transform="translate(813,127) rotate(22)" fill="#ffa0b4" opacity=".78"/>
+    <use href="#skM" transform="translate(831,119) rotate(-36)" fill="#ffc0d0" opacity=".80"/>
+    <use href="#skS" transform="translate(843,115) rotate(10)" fill="#ffb6c8" opacity=".75"/>
+    <use href="#skS" transform="translate(807,114) rotate(-14)" fill="#ffa0b4" opacity=".72"/>
+    <!-- Upper-right tips -->
+    <use href="#skS" transform="translate(862,143) rotate(-8)" fill="#ffb6c8" opacity=".76"/>
+    <use href="#skS" transform="translate(879,128) rotate(15)" fill="#ffc0d0" opacity=".72"/>
+    <use href="#skS" transform="translate(889,110) rotate(-22)" fill="#ffa0b4" opacity=".68"/>
+    <use href="#skS" transform="translate(896,102) rotate(8)" fill="#ffb6c8" opacity=".65"/>
+    <!-- Upper-left tips -->
+    <use href="#skS" transform="translate(796,135) rotate(-10)" fill="#ffc0d0" opacity=".74"/>
+    <use href="#skS" transform="translate(786,127) rotate(18)" fill="#ffb6c8" opacity=".70"/>
+    <!-- Mid-left tips -->
+    <use href="#skS" transform="translate(758,133) rotate(-6)" fill="#ffa0b4" opacity=".72"/>
+    <use href="#skS" transform="translate(751,169) rotate(12)" fill="#ffb6c8" opacity=".70"/>
+    <use href="#skS" transform="translate(735,158) rotate(-20)" fill="#ffc0d0" opacity=".66"/>
+    <!-- Low-right cluster tip -->
+    <use href="#skS" transform="translate(886,240) rotate(-5)" fill="#ffb6c8" opacity=".72"/>
+    <use href="#skS" transform="translate(876,232) rotate(18)" fill="#ffa0b4" opacity=".68"/>
+  </g>
+
+  <!-- Middle tree: flowers at prominent tips -->
+  <g filter="url(#blossomGlow)">
+    <use href="#skS" transform="translate(165,178) rotate(12)" fill="#ffc0d0" opacity=".74"/>
+    <use href="#skS" transform="translate(155,170) rotate(-8)" fill="#ffb6c8" opacity=".76"/>
+    <use href="#skS" transform="translate(176,169) rotate(20)" fill="#ffa0b4" opacity=".72"/>
+    <use href="#skS" transform="translate(165,163) rotate(-15)" fill="#ffc0d0" opacity=".70"/>
+    <use href="#skS" transform="translate(109,158) rotate(10)" fill="#ffb6c8" opacity=".68"/>
+    <use href="#skS" transform="translate(197,170) rotate(-6)" fill="#ffa0b4" opacity=".68"/>
+    <use href="#skS" transform="translate(83,243) rotate(8)" fill="#ffb6c8" opacity=".65"/>
+    <use href="#skS" transform="translate(231,222) rotate(-14)" fill="#ffc0d0" opacity=".65"/>
+  </g>
+
+  <!-- ===== VINES — climbing both sides of the scene ===== -->
+  <!-- Left vine (climbing the left foreground tree from ground up) -->
+  <g opacity=".75">
+    <path d="M64,445 C52,422 68,404 57,382 C46,360 69,341 57,320 C45,298 68,280 55,260 C45,243 61,228 52,213" stroke="#2a4835" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Tendrils -->
+    <use href="#vlT" transform="translate(60,430)" opacity=".7"/>
+    <use href="#vlT" transform="translate(55,395) rotate(15)" opacity=".65"/>
+    <use href="#vlT" transform="translate(61,360) rotate(-10)" opacity=".65"/>
+    <use href="#vlT" transform="translate(54,325) rotate(20)" opacity=".60"/>
+    <!-- Leaves alternating -->
+    <use href="#vlR" transform="translate(60,438)" opacity=".82"/>
+    <use href="#vlL" transform="translate(60,438) rotate(20)" opacity=".75"/>
+    <use href="#vlR" transform="translate(56,415) rotate(-12)" opacity=".80"/>
+    <use href="#vlL" transform="translate(56,415)" opacity=".75"/>
+    <use href="#vlR" transform="translate(61,390) rotate(8)" opacity=".78"/>
+    <use href="#vlL" transform="translate(61,390) rotate(-15)" opacity=".72"/>
+    <use href="#vlR" transform="translate(55,366) rotate(-5)" opacity=".75"/>
+    <use href="#vlL" transform="translate(55,366) rotate(10)" opacity=".70"/>
+    <use href="#vlR" transform="translate(60,342) rotate(12)" opacity=".72"/>
+    <use href="#vlL" transform="translate(60,342) rotate(-8)" opacity=".68"/>
+    <use href="#vlR" transform="translate(54,318)" opacity=".70"/>
+    <use href="#vlL" transform="translate(54,318) rotate(15)" opacity=".65"/>
+    <use href="#vlR" transform="translate(58,294) rotate(-10)" opacity=".66"/>
+    <use href="#vlL" transform="translate(58,294) rotate(5)" opacity=".62"/>
+    <use href="#vlR" transform="translate(52,270) rotate(8)" opacity=".62"/>
+    <use href="#vlL" transform="translate(52,270) rotate(-12)" opacity=".58"/>
+    <!-- Flowers -->
+    <use href="#vf" transform="translate(59,432)" fill="#ffa0b4" opacity=".85"/>
+    <use href="#vf" transform="translate(62,432) rotate(36)" fill="#ffb6c8" opacity=".80"/>
+    <use href="#vf" transform="translate(57,384)" fill="#ff8da6" opacity=".80"/>
+    <use href="#vf" transform="translate(60,384) rotate(36)" fill="#ffa0b4" opacity=".75"/>
+    <use href="#vf" transform="translate(58,334)" fill="#ffb6c8" opacity=".75"/>
+    <use href="#vf" transform="translate(55,334) rotate(36)" fill="#ffc0d0" opacity=".70"/>
+    <use href="#vf" transform="translate(53,284)" fill="#ff8da6" opacity=".70"/>
+    <use href="#vf" transform="translate(56,284) rotate(36)" fill="#ffa0b4" opacity=".65"/>
+    <use href="#vf" transform="translate(50,237)" fill="#ffb6c8" opacity=".65"/>
+    <use href="#vf" transform="translate(53,237) rotate(36)" fill="#ffc0d0" opacity=".60"/>
+  </g>
+
+  <!-- Right vine (climbing the right foreground tree) -->
+  <g opacity=".75">
+    <path d="M836,445 C848,422 832,404 843,382 C854,360 831,341 843,320 C855,298 832,280 845,260 C855,243 839,228 848,213" stroke="#2a4835" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Tendrils -->
+    <use href="#vlT" transform="translate(840,430) scale(-1,1)" opacity=".7"/>
+    <use href="#vlT" transform="translate(845,395) rotate(-15) scale(-1,1)" opacity=".65"/>
+    <use href="#vlT" transform="translate(839,360) rotate(10) scale(-1,1)" opacity=".65"/>
+    <use href="#vlT" transform="translate(846,325) rotate(-20) scale(-1,1)" opacity=".60"/>
+    <!-- Leaves alternating (mirrored) -->
+    <use href="#vlL" transform="translate(840,438)" opacity=".82"/>
+    <use href="#vlR" transform="translate(840,438) rotate(-20)" opacity=".75"/>
+    <use href="#vlL" transform="translate(844,415) rotate(12)" opacity=".80"/>
+    <use href="#vlR" transform="translate(844,415)" opacity=".75"/>
+    <use href="#vlL" transform="translate(839,390) rotate(-8)" opacity=".78"/>
+    <use href="#vlR" transform="translate(839,390) rotate(15)" opacity=".72"/>
+    <use href="#vlL" transform="translate(845,366) rotate(5)" opacity=".75"/>
+    <use href="#vlR" transform="translate(845,366) rotate(-10)" opacity=".70"/>
+    <use href="#vlL" transform="translate(840,342) rotate(-12)" opacity=".72"/>
+    <use href="#vlR" transform="translate(840,342) rotate(8)" opacity=".68"/>
+    <use href="#vlL" transform="translate(846,318)" opacity=".70"/>
+    <use href="#vlR" transform="translate(846,318) rotate(-15)" opacity=".65"/>
+    <use href="#vlL" transform="translate(842,294) rotate(10)" opacity=".66"/>
+    <use href="#vlR" transform="translate(842,294) rotate(-5)" opacity=".62"/>
+    <use href="#vlL" transform="translate(848,270) rotate(-8)" opacity=".62"/>
+    <use href="#vlR" transform="translate(848,270) rotate(12)" opacity=".58"/>
+    <!-- Flowers -->
+    <use href="#vf" transform="translate(841,432)" fill="#ffa0b4" opacity=".85"/>
+    <use href="#vf" transform="translate(838,432) rotate(36)" fill="#ffb6c8" opacity=".80"/>
+    <use href="#vf" transform="translate(843,384)" fill="#ff8da6" opacity=".80"/>
+    <use href="#vf" transform="translate(840,384) rotate(36)" fill="#ffa0b4" opacity=".75"/>
+    <use href="#vf" transform="translate(842,334)" fill="#ffb6c8" opacity=".75"/>
+    <use href="#vf" transform="translate(845,334) rotate(36)" fill="#ffc0d0" opacity=".70"/>
+    <use href="#vf" transform="translate(847,284)" fill="#ff8da6" opacity=".70"/>
+    <use href="#vf" transform="translate(844,284) rotate(36)" fill="#ffa0b4" opacity=".65"/>
+    <use href="#vf" transform="translate(850,237)" fill="#ffb6c8" opacity=".65"/>
+    <use href="#vf" transform="translate(847,237) rotate(36)" fill="#ffc0d0" opacity=".60"/>
   </g>
 
   <!-- Torii gate -->
