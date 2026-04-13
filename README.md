@@ -3,152 +3,141 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tu-usuario"><img src="https://img.shields.io/github/followers/tu-usuario?label=Followers&style=flat&color=1a1a2e&labelColor=0f0f1a&logo=github&logoColor=fecdd3" alt="GitHub Followers"/></a>
-  <img src="https://komarev.com/ghpvc/?username=tu-usuario&color=fecdd3&style=flat&label=Visitors" alt="Profile Views"/>
+  <a href="https://github.com/p5Patricio"><img src="https://img.shields.io/github/followers/p5Patricio?label=Followers&style=flat&color=1a1a2e&labelColor=0f0f1a&logo=github&logoColor=fecdd3" alt="GitHub Followers"/></a>
+  <img src="https://komarev.com/ghpvc/?username=p5Patricio&color=fecdd3&style=flat&label=花見+Visitors" alt="Profile Views"/>
+  <a href="https://github.com/p5Patricio?tab=repositories"><img src="https://img.shields.io/badge/Repos-探索-1a1a2e?style=flat&labelColor=0f0f1a&logo=files&logoColor=fecdd3" alt="Repos"/></a>
 </p>
-
-<br/>
-
-```
-🌸 Systems Engineer · Full Stack Developer · No Stack Limitations
-```
 
 <p align="center">
-  <img src="divider.svg" width="100%"/>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&duration=4000&pause=1200&color=FECDD3&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Systems+Engineer+%C2%B7+Full+Stack+Developer;Building+tools+that+make+a+difference+%F0%9F%8C%B8;No+limitations+%E2%80%94+only+possibilities" alt="Typing SVG" /></a>
 </p>
 
-### 🏯 &nbsp;About Me
+<p align="center"><img src="divider.svg" width="100%"/></p>
+
+<details open>
+<summary><b>🏯 &nbsp;About Me</b></summary>
+<br/>
 
 ```yaml
 name: Patricio García
 role: Systems Engineer & Full Stack Developer
-location: Guanajuato, México
-philosophy: "No limitations — only possibilities"
+location: Guanajuato, México 🇲🇽
+philosophy: "花は桜木、人は武士"
+
 currently_building:
-  - DEMOX: Political news intelligence platform
-  - VoiceAgenda: Voice-controlled Android agenda app
+  - name: DEMOX
+    desc: Political news intelligence platform
+    stack: [FastAPI, Next.js, Supabase, Celery, spaCy, Gemini AI]
+  - name: VoiceAgenda
+    desc: Voice-controlled Android agenda app
+    stack: [React Native, Expo, Node.js]
+
 interests:
   - AI agent frameworks & developer tooling
   - Linux exploration (dual-boot enthusiast)
-  - Gaming on Steam, Epic & Battle.net
+  - Polished technical documentation
+  - Gaming: Overwatch 2, Rocket League, Fortnite
 ```
 
+</details>
+
+<p align="center"><img src="divider.svg" width="100%"/></p>
+
+<details open>
+<summary><b>🌿 &nbsp;Tech Ecosystem</b></summary>
+<br/>
+
+<h4 align="center">Languages</h4>
 <p align="center">
-  <img src="divider.svg" width="100%"/>
+  <img src="https://skillicons.dev/icons?i=python,javascript,typescript,html,css,cpp&theme=dark" alt="Languages"/>
 </p>
 
-### 🌿 &nbsp;Tech Ecosystem
-
-<table align="center">
-<tr>
-<td align="center" width="450">
-
-**Languages**
-
-<br/>
-
-![Python](https://img.shields.io/badge/Python-1a1a2e?style=for-the-badge&logo=python&logoColor=fecdd3)
-![JavaScript](https://img.shields.io/badge/JavaScript-1a1a2e?style=for-the-badge&logo=javascript&logoColor=fecdd3)
-![TypeScript](https://img.shields.io/badge/TypeScript-1a1a2e?style=for-the-badge&logo=typescript&logoColor=fecdd3)
-![HTML5](https://img.shields.io/badge/HTML5-1a1a2e?style=for-the-badge&logo=html5&logoColor=fecdd3)
-![CSS3](https://img.shields.io/badge/CSS3-1a1a2e?style=for-the-badge&logo=css3&logoColor=fecdd3)
-
-</td>
-<td align="center" width="450">
-
-**Frameworks & Libraries**
-
-<br/>
-
-![React](https://img.shields.io/badge/React-1a1a2e?style=for-the-badge&logo=react&logoColor=fecdd3)
-![Next.js](https://img.shields.io/badge/Next.js-1a1a2e?style=for-the-badge&logo=next.js&logoColor=fecdd3)
-![React Native](https://img.shields.io/badge/React_Native-1a1a2e?style=for-the-badge&logo=react&logoColor=fecdd3)
-![FastAPI](https://img.shields.io/badge/FastAPI-1a1a2e?style=for-the-badge&logo=fastapi&logoColor=fecdd3)
-![Node.js](https://img.shields.io/badge/Node.js-1a1a2e?style=for-the-badge&logo=node.js&logoColor=fecdd3)
-![Expo](https://img.shields.io/badge/Expo-1a1a2e?style=for-the-badge&logo=expo&logoColor=fecdd3)
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-**Data & Infrastructure**
-
-<br/>
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1a1a2e?style=for-the-badge&logo=postgresql&logoColor=fecdd3)
-![Supabase](https://img.shields.io/badge/Supabase-1a1a2e?style=for-the-badge&logo=supabase&logoColor=fecdd3)
-![MongoDB](https://img.shields.io/badge/MongoDB-1a1a2e?style=for-the-badge&logo=mongodb&logoColor=fecdd3)
-![Redis](https://img.shields.io/badge/Redis-1a1a2e?style=for-the-badge&logo=redis&logoColor=fecdd3)
-![Celery](https://img.shields.io/badge/Celery-1a1a2e?style=for-the-badge&logo=celery&logoColor=fecdd3)
-
-</td>
-<td align="center">
-
-**DevOps & Tooling**
-
-<br/>
-
-![Git](https://img.shields.io/badge/Git-1a1a2e?style=for-the-badge&logo=git&logoColor=fecdd3)
-![Docker](https://img.shields.io/badge/Docker-1a1a2e?style=for-the-badge&logo=docker&logoColor=fecdd3)
-![Vercel](https://img.shields.io/badge/Vercel-1a1a2e?style=for-the-badge&logo=vercel&logoColor=fecdd3)
-![Railway](https://img.shields.io/badge/Railway-1a1a2e?style=for-the-badge&logo=railway&logoColor=fecdd3)
-![Linux](https://img.shields.io/badge/Linux-1a1a2e?style=for-the-badge&logo=linux&logoColor=fecdd3)
-
-</td>
-</tr>
-</table>
-
-<br/>
-
+<h4 align="center">Frameworks & Libraries</h4>
 <p align="center">
-  <img src="divider.svg" width="100%"/>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,nodejs,express&theme=dark" alt="Frameworks"/>
 </p>
 
-### 🤖 &nbsp;AI & Developer Tools
-
+<h4 align="center">Data & Infrastructure</h4>
 <p align="center">
-
-![Claude](https://img.shields.io/badge/Claude_Code-1a1a2e?style=for-the-badge&logo=anthropic&logoColor=fecdd3)
-![Cursor](https://img.shields.io/badge/Cursor_IDE-1a1a2e?style=for-the-badge&logo=cursor&logoColor=fecdd3)
-![Ollama](https://img.shields.io/badge/Ollama-1a1a2e?style=for-the-badge&logo=ollama&logoColor=fecdd3)
-![Gemini](https://img.shields.io/badge/Gemini_API-1a1a2e?style=for-the-badge&logo=google&logoColor=fecdd3)
-![spaCy](https://img.shields.io/badge/spaCy-1a1a2e?style=for-the-badge&logo=spacy&logoColor=fecdd3)
-
+  <img src="https://skillicons.dev/icons?i=postgresql,supabase,mongodb,redis&theme=dark" alt="Data"/>
 </p>
 
+<h4 align="center">DevOps & Deployment</h4>
 <p align="center">
-  <img src="divider.svg" width="100%"/>
+  <img src="https://skillicons.dev/icons?i=docker,git,github,vercel,linux&theme=dark" alt="DevOps"/>
 </p>
 
-### 📊 &nbsp;GitHub Stats
+</details>
+
+<p align="center"><img src="divider.svg" width="100%"/></p>
+
+<details open>
+<summary><b>🤖 &nbsp;AI & Developer Tooling</b></summary>
+<br/>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=dark&bg_color=0f0f1a&title_color=fecdd3&text_color=ffe4e6&icon_color=ffb6c8&border_color=1a1a2e&hide_border=false&border_radius=8" alt="GitHub Stats" height="170"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tu-usuario&layout=compact&theme=dark&bg_color=0f0f1a&title_color=fecdd3&text_color=ffe4e6&border_color=1a1a2e&hide_border=false&border_radius=8" alt="Top Languages" height="170"/>
+
+| Tool | Use Case |
+|:---:|:---|
+| <img src="https://img.shields.io/badge/Claude_Code-1a1a2e?style=for-the-badge&logo=anthropic&logoColor=fecdd3" alt="Claude Code"/> | Primary AI coding assistant & agent |
+| <img src="https://img.shields.io/badge/Cursor_IDE-1a1a2e?style=for-the-badge&logo=cursor&logoColor=fecdd3" alt="Cursor"/> | AI-enhanced code editor |
+| <img src="https://img.shields.io/badge/Ollama-1a1a2e?style=for-the-badge&logo=ollama&logoColor=fecdd3" alt="Ollama"/> | Local LLM runtime (qwen3:8b) |
+| <img src="https://img.shields.io/badge/Gemini_API-1a1a2e?style=for-the-badge&logo=google&logoColor=fecdd3" alt="Gemini"/> | Cloud AI analysis (2.5 Flash) |
+| <img src="https://img.shields.io/badge/spaCy-1a1a2e?style=for-the-badge&logo=spacy&logoColor=fecdd3" alt="spaCy"/> | Local NLP processing |
+
+</p>
+</details>
+
+<p align="center"><img src="divider.svg" width="100%"/></p>
+
+<details open>
+<summary><b>📊 &nbsp;GitHub Stats</b></summary>
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=p5Patricio&show_icons=true&theme=dark&bg_color=0f0f1a&title_color=fecdd3&text_color=ffe4e6&icon_color=ffb6c8&border_color=1a1a2e&hide_border=false&border_radius=12&ring_color=ffb6c8" alt="GitHub Stats" height="180"/>
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=p5Patricio&layout=compact&theme=dark&bg_color=0f0f1a&title_color=fecdd3&text_color=ffe4e6&border_color=1a1a2e&hide_border=false&border_radius=12&langs_count=8" alt="Top Languages" height="180"/>
 </p>
 
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=tu-usuario&theme=dark&background=0f0f1a&ring=fecdd3&fire=ffb6c8&currStreakLabel=fecdd3&sideLabels=ffe4e6&currStreakNum=ffe4e6&sideNums=ffe4e6&dates=fecdd380&border=1a1a2e" alt="GitHub Streak" width="520"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=p5Patricio&theme=dark&background=0f0f1a&ring=fecdd3&fire=ffb6c8&currStreakLabel=fecdd3&sideLabels=ffe4e6&currStreakNum=ffe4e6&sideNums=ffe4e6&dates=fecdd380&border=1a1a2e&border_radius=12" alt="GitHub Streak" width="520"/>
 </p>
+
+<br/>
 
 <p align="center">
-  <img src="divider.svg" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=p5Patricio&bg_color=0f0f1a&color=fecdd3&line=ffb6c8&point=ffe4e6&area_color=fecdd3&area=true&hide_border=true" alt="Activity Graph" width="95%"/>
 </p>
 
-### 🎮 &nbsp;When I'm Not Coding
+</details>
+
+<p align="center"><img src="divider.svg" width="100%"/></p>
+
+<details>
+<summary><b>🎮 &nbsp;Beyond the Code</b></summary>
+<br/>
+
+<p align="center">
 
 ```
-🎯 Overwatch 2  ·  ⚽ Rocket League  ·  🏗️ Fortnite
-🐧 Exploring Linux distros  ·  🔧 Building with AI agents
+  🎯 Overwatch 2     ⚽ Rocket League     🏗️ Fortnite
+  🐧 Linux distros   🔧 AI agents         🎨 Dev tooling
 ```
 
-<p align="center">
-  <img src="divider.svg" width="100%"/>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Steam-1a1a2e?style=for-the-badge&logo=steam&logoColor=fecdd3" alt="Steam"/>
+  <img src="https://img.shields.io/badge/Epic_Games-1a1a2e?style=for-the-badge&logo=epicgames&logoColor=fecdd3" alt="Epic"/>
+  <img src="https://img.shields.io/badge/Battle.net-1a1a2e?style=for-the-badge&logo=battledotnet&logoColor=fecdd3" alt="Battle.net"/>
+</p>
+
+</details>
+
+<p align="center"><img src="divider.svg" width="100%"/></p>
 
 ### 🔗 &nbsp;Connect
 
@@ -159,6 +148,10 @@ interests:
   &nbsp;
   <a href="https://linkedin.com/in/tu-perfil">
     <img src="https://img.shields.io/badge/LinkedIn-1a1a2e?style=for-the-badge&logo=linkedin&logoColor=fecdd3" alt="LinkedIn"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/p5Patricio">
+    <img src="https://img.shields.io/badge/GitHub-1a1a2e?style=for-the-badge&logo=github&logoColor=fecdd3" alt="GitHub"/>
   </a>
 </p>
 
