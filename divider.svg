@@ -1,11 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 88" width="900" height="88">
   <defs>
+    <!-- Small sakura flower (~14px span) -->
+    <symbol id="dskS" overflow="visible">
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="1.5" fill="#fff8f5"/>
+    </symbol>
+    <!-- Medium sakura flower (~20px span) -->
+    <symbol id="dskM" overflow="visible">
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="2" fill="#fff8f5"/>
+    </symbol>
     <style>
       @keyframes brSway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(.7deg)}}
       @keyframes pd1{0%{transform:translate(0,0) rotate(0deg);opacity:.44}100%{transform:translate(16px,28px) rotate(95deg);opacity:.07}}
       @keyframes pd2{0%{transform:translate(0,0) rotate(0deg);opacity:.38}100%{transform:translate(-11px,22px) rotate(-80deg);opacity:.06}}
       @keyframes pd3{0%{transform:translate(0,0) rotate(12deg);opacity:.34}100%{transform:translate(9px,25px) rotate(115deg);opacity:.05}}
-      @keyframes bloom{0%,100%{opacity:.36}50%{opacity:.62}}
+      @keyframes bloom{0%,100%{opacity:.44}50%{opacity:.72}}
       .br{animation:brSway 11s ease-in-out infinite;transform-origin:0 44px}
       .d1{animation:pd1 14s ease-in-out infinite}
       .d2{animation:pd2 16s ease-in-out infinite 2.2s}
@@ -46,45 +64,45 @@
     <path d="M784 48Q778 35 768 23Q762 15 754 8" stroke="#3d2b1f" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".48"/>
     <path d="M768 23Q778 18 786 16" stroke="#3d2b1f" stroke-width="1.1" fill="none" stroke-linecap="round" opacity=".42"/>
 
-    <!-- Blossoms: sub-branch 1 -->
-    <circle cx="110" cy="5" r="5.5" fill="#ffb6c8" opacity=".56" class="bl"/>
-    <circle cx="98" cy="28" r="4.5" fill="#ffa0b4" opacity=".52"/>
-    <circle cx="122" cy="14" r="6.5" fill="#ffc0d0" opacity=".52"/>
-    <circle cx="102" cy="14" r="4" fill="#ffb6c8" opacity=".46"/>
-    <circle cx="124" cy="4" r="3.5" fill="#ffa0b4" opacity=".44"/>
+    <!-- Sakura flowers: sub-branch 1 (upper-left) -->
+    <use href="#dskM" transform="translate(110,5)" fill="#ffc0d0" opacity=".60" class="bl"/>
+    <use href="#dskS" transform="translate(98,28)" fill="#ffa0b4" opacity=".56"/>
+    <use href="#dskM" transform="translate(122,14) rotate(20)" fill="#ffb6c8" opacity=".56"/>
+    <use href="#dskS" transform="translate(102,14) rotate(-15)" fill="#ffc0d0" opacity=".50"/>
+    <use href="#dskS" transform="translate(124,4) rotate(8)" fill="#ffa0b4" opacity=".48"/>
 
-    <!-- Blossoms: sub-branch 2 -->
-    <circle cx="256" cy="83" r="5.5" fill="#ffb6c8" opacity=".52" class="bl"/>
-    <circle cx="290" cy="78" r="4.5" fill="#ffa0b4" opacity=".46"/>
-    <circle cx="246" cy="79" r="4" fill="#ffc0d0" opacity=".46"/>
-    <circle cx="265" cy="74" r="4" fill="#ffb6c8" opacity=".42"/>
+    <!-- Sakura flowers: sub-branch 2 (lower-left) -->
+    <use href="#dskM" transform="translate(256,83)" fill="#ffb6c8" opacity=".56" class="bl"/>
+    <use href="#dskS" transform="translate(290,78)" fill="#ffa0b4" opacity=".50"/>
+    <use href="#dskS" transform="translate(246,79) rotate(-10)" fill="#ffc0d0" opacity=".50"/>
+    <use href="#dskS" transform="translate(265,74) rotate(14)" fill="#ffb6c8" opacity=".46"/>
 
-    <!-- Blossoms: sub-branch 3 -->
-    <circle cx="424" cy="4" r="5.5" fill="#ffb6c8" opacity=".52" class="bl"/>
-    <circle cx="458" cy="5" r="4.5" fill="#ffa0b4" opacity=".52"/>
-    <circle cx="413" cy="7" r="4" fill="#ffc0d0" opacity=".46"/>
-    <circle cx="440" cy="4" r="3.5" fill="#ffb6c8" opacity=".44"/>
+    <!-- Sakura flowers: sub-branch 3 (upper-center) -->
+    <use href="#dskM" transform="translate(424,4)" fill="#ffb6c8" opacity=".56" class="bl"/>
+    <use href="#dskS" transform="translate(458,5) rotate(18)" fill="#ffa0b4" opacity=".56"/>
+    <use href="#dskS" transform="translate(413,7) rotate(-12)" fill="#ffc0d0" opacity=".50"/>
+    <use href="#dskS" transform="translate(440,4) rotate(6)" fill="#ffb6c8" opacity=".48"/>
 
-    <!-- Blossoms: sub-branch 4 -->
-    <circle cx="647" cy="85" r="5.5" fill="#ffb6c8" opacity=".52" class="bl"/>
-    <circle cx="620" cy="81" r="4.5" fill="#ffa0b4" opacity=".46"/>
-    <circle cx="638" cy="80" r="4" fill="#ffc0d0" opacity=".44"/>
+    <!-- Sakura flowers: sub-branch 4 (lower-right) -->
+    <use href="#dskM" transform="translate(647,85)" fill="#ffb6c8" opacity=".56" class="bl"/>
+    <use href="#dskS" transform="translate(620,81) rotate(-14)" fill="#ffa0b4" opacity=".50"/>
+    <use href="#dskS" transform="translate(638,80) rotate(10)" fill="#ffc0d0" opacity=".48"/>
 
-    <!-- Blossoms: sub-branch 5 -->
-    <circle cx="754" cy="8" r="5" fill="#ffb6c8" opacity=".50"/>
-    <circle cx="768" cy="20" r="4" fill="#ffa0b4" opacity=".46"/>
-    <circle cx="786" cy="16" r="4" fill="#ffc0d0" opacity=".42"/>
-    <circle cx="746" cy="16" r="3.5" fill="#ffb6c8" opacity=".40"/>
+    <!-- Sakura flowers: sub-branch 5 (upper-right) -->
+    <use href="#dskM" transform="translate(754,8)" fill="#ffb6c8" opacity=".54"/>
+    <use href="#dskS" transform="translate(768,20) rotate(-16)" fill="#ffa0b4" opacity=".50"/>
+    <use href="#dskS" transform="translate(786,16) rotate(12)" fill="#ffc0d0" opacity=".46"/>
+    <use href="#dskS" transform="translate(746,16) rotate(-8)" fill="#ffb6c8" opacity=".44"/>
 
-    <!-- Scattered blossoms along main branch -->
-    <circle cx="84" cy="52" r="4.2" fill="#ffb6c8" opacity=".40"/>
-    <circle cx="200" cy="44" r="3.8" fill="#ffa0b4" opacity=".38"/>
-    <circle cx="345" cy="36" r="4.2" fill="#ffc0d0" opacity=".36"/>
-    <circle cx="498" cy="34" r="3.8" fill="#ffb6c8" opacity=".34"/>
-    <circle cx="600" cy="40" r="4.0" fill="#ffa0b4" opacity=".36"/>
-    <circle cx="702" cy="46" r="3.8" fill="#ffb6c8" opacity=".34"/>
-    <circle cx="824" cy="54" r="3.5" fill="#ffa0b4" opacity=".30"/>
-    <circle cx="892" cy="59" r="3.2" fill="#ffc0d0" opacity=".26"/>
+    <!-- Scattered small blossoms along main branch -->
+    <use href="#dskS" transform="translate(84,52) rotate(5)" fill="#ffb6c8" opacity=".38"/>
+    <use href="#dskS" transform="translate(200,44) rotate(-10)" fill="#ffa0b4" opacity=".36"/>
+    <use href="#dskS" transform="translate(345,36) rotate(14)" fill="#ffc0d0" opacity=".34"/>
+    <use href="#dskS" transform="translate(498,34) rotate(-6)" fill="#ffb6c8" opacity=".32"/>
+    <use href="#dskS" transform="translate(600,40) rotate(8)" fill="#ffa0b4" opacity=".34"/>
+    <use href="#dskS" transform="translate(702,46) rotate(-12)" fill="#ffb6c8" opacity=".32"/>
+    <use href="#dskS" transform="translate(824,54) rotate(4)" fill="#ffa0b4" opacity=".28"/>
+    <use href="#dskS" transform="translate(892,59) rotate(-8)" fill="#ffc0d0" opacity=".24"/>
 
     <!-- Floating petals near branch -->
     <ellipse cx="172" cy="28" rx="2.6" ry="1.5" fill="#ffb6c8" opacity=".42" class="d1"/>
