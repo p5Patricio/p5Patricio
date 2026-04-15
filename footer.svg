@@ -9,27 +9,65 @@
       <stop offset="0%" stop-color="#070710"/>
       <stop offset="100%" stop-color="#04040a"/>
     </linearGradient>
+
+    <!-- Small sakura symbol -->
+    <symbol id="fskS" overflow="visible">
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(0)" fill="inherit"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(72)" fill="inherit"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(144)" fill="inherit"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(216)" fill="inherit"/>
+      <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(288)" fill="inherit"/>
+      <circle cx="0" cy="0" r="1.3" fill="#fff8f5"/>
+    </symbol>
+
+    <!-- Medium sakura symbol -->
+    <symbol id="fskM" overflow="visible">
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(0)" fill="inherit"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(72)" fill="inherit"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(144)" fill="inherit"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(216)" fill="inherit"/>
+      <path d="M0,0 C3.5,-3 5.8,-8.5 3.3,-13.5 Q1.5,-16 0,-15.3 Q-1.5,-16 -3.3,-13.5 C-5.8,-8.5 -3.5,-3 0,0Z" transform="rotate(288)" fill="inherit"/>
+      <circle cx="0" cy="0" r="1.8" fill="#fff8f5"/>
+    </symbol>
+
     <style>
       @keyframes fFall1{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:.42}100%{transform:translateY(78px) translateX(22px) rotate(98deg);opacity:.07}}
       @keyframes fFall2{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:.36}100%{transform:translateY(70px) translateX(-17px) rotate(-86deg);opacity:.05}}
       @keyframes fFall3{0%{transform:translateY(0) translateX(0) rotate(12deg);opacity:.30}100%{transform:translateY(66px) translateX(11px) rotate(128deg);opacity:.04}}
+      @keyframes fFall4{0%{transform:translateY(0) translateX(0) rotate(-8deg);opacity:.38}100%{transform:translateY(74px) translateX(-24px) rotate(-112deg);opacity:.06}}
       @keyframes fShimmer{0%,100%{opacity:.09}50%{opacity:.22}}
       @keyframes fSway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(1.3deg)}}
+      @keyframes fToriiShimmer{0%,100%{opacity:.14}50%{opacity:.24}}
       .ff1{animation:fFall1 10.5s ease-in-out infinite}
       .ff2{animation:fFall2 12.5s ease-in-out infinite 2.2s}
       .ff3{animation:fFall3 14.5s ease-in-out infinite 4.4s}
+      .ff4{animation:fFall4 11.8s ease-in-out infinite 1.6s}
       .ff1b{animation:fFall1 11.5s ease-in-out infinite 3.3s}
       .ff2b{animation:fFall2 13.5s ease-in-out infinite 5.5s}
       .ff3b{animation:fFall3 9.5s ease-in-out infinite 1.1s}
+      .ff4b{animation:fFall4 15.2s ease-in-out infinite 6.8s}
       .fsh{animation:fShimmer 6.3s ease-in-out infinite}
       .ftl{animation:fSway 9.5s ease-in-out infinite;transform-origin:58px 180px}
       .ftr{animation:fSway 10.8s ease-in-out infinite 1.3s;transform-origin:842px 180px}
+      .ftrii{animation:fToriiShimmer 8.4s ease-in-out infinite}
       @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important}}
     </style>
   </defs>
 
   <!-- Background fade overlay -->
   <rect width="900" height="180" fill="url(#footerFade)"/>
+
+  <!-- Torii gate — partial, submerged silhouette, center background -->
+  <g class="ftrii">
+    <!-- Kasagi beam (top horizontal, slightly arced) -->
+    <path d="M378,60 Q450,56 522,60" fill="none" stroke="#1a0505" stroke-width="8" stroke-linecap="round" opacity=".20"/>
+    <!-- Nuki beam (lower horizontal, straight) -->
+    <rect x="392" y="74" width="116" height="5" rx="1" fill="#1a0505" opacity=".14"/>
+    <!-- Left pillar -->
+    <rect x="397" y="62" width="6" height="46" rx="1" fill="#1a0505" opacity=".18"/>
+    <!-- Right pillar -->
+    <rect x="497" y="62" width="6" height="46" rx="1" fill="#1a0505" opacity=".18"/>
+  </g>
 
   <!-- Water area -->
   <rect x="0" y="108" width="900" height="72" fill="url(#waterFoot)" opacity=".84"/>
@@ -45,16 +83,17 @@
     <path d="M16 109Q3 100 -4 93" stroke="#3d2b1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
     <path d="M56 116Q74 102 90 91" stroke="#3d2b1f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
     <path d="M90 91Q104 82 112 75" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-    <circle cx="16" cy="108" r="7" fill="#ffa0b4" opacity=".62"/>
-    <circle cx="8" cy="100" r="6" fill="#ffb6c8" opacity=".57"/>
-    <circle cx="24" cy="102" r="6" fill="#ff8da6" opacity=".57"/>
-    <circle cx="1" cy="95" r="5" fill="#ffc0d0" opacity=".52"/>
-    <circle cx="14" cy="94" r="4" fill="#ffa0b4" opacity=".48"/>
-    <circle cx="90" cy="89" r="6" fill="#ffa0b4" opacity=".57"/>
-    <circle cx="80" cy="82" r="7" fill="#ffb6c8" opacity=".52"/>
-    <circle cx="98" cy="82" r="5" fill="#ff8da6" opacity=".52"/>
-    <circle cx="112" cy="73" r="6" fill="#ffc0d0" opacity=".48"/>
-    <circle cx="103" cy="70" r="5" fill="#ffa0b4" opacity=".46"/>
+    <!-- Left branch tip flowers — 5-petal sakura replacing circles -->
+    <use href="#fskM" x="16" y="108" fill="#ffa0b4" opacity=".62"/>
+    <use href="#fskS" x="8" y="100" fill="#ffb6c8" opacity=".57"/>
+    <use href="#fskS" x="24" y="102" fill="#ffa0b4" opacity=".57"/>
+    <use href="#fskS" x="1" y="95" fill="#ffc0d0" opacity=".52"/>
+    <use href="#fskS" x="14" y="94" fill="#ffa0b4" opacity=".48"/>
+    <use href="#fskM" x="90" y="89" fill="#ffa0b4" opacity=".57"/>
+    <use href="#fskM" x="80" y="82" fill="#ffb6c8" opacity=".52"/>
+    <use href="#fskS" x="98" y="82" fill="#ffa0b4" opacity=".52"/>
+    <use href="#fskS" x="112" y="73" fill="#ffc0d0" opacity=".48"/>
+    <use href="#fskS" x="103" y="70" fill="#ffa0b4" opacity=".46"/>
   </g>
 
   <!-- Right tree bottom (mirroring header right) -->
@@ -65,19 +104,20 @@
     <path d="M886 109Q899 100 906 93" stroke="#3d2b1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
     <path d="M846 116Q828 102 812 91" stroke="#3d2b1f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
     <path d="M812 91Q798 82 790 75" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-    <circle cx="886" cy="108" r="7" fill="#ffa0b4" opacity=".62"/>
-    <circle cx="894" cy="100" r="6" fill="#ffb6c8" opacity=".57"/>
-    <circle cx="878" cy="102" r="6" fill="#ff8da6" opacity=".57"/>
-    <circle cx="901" cy="95" r="5" fill="#ffc0d0" opacity=".52"/>
-    <circle cx="888" cy="94" r="4" fill="#ffa0b4" opacity=".48"/>
-    <circle cx="812" cy="89" r="6" fill="#ffa0b4" opacity=".57"/>
-    <circle cx="822" cy="82" r="7" fill="#ffb6c8" opacity=".52"/>
-    <circle cx="804" cy="82" r="5" fill="#ff8da6" opacity=".52"/>
-    <circle cx="790" cy="73" r="6" fill="#ffc0d0" opacity=".48"/>
-    <circle cx="799" cy="70" r="5" fill="#ffa0b4" opacity=".46"/>
+    <!-- Right branch tip flowers — 5-petal sakura replacing circles -->
+    <use href="#fskM" x="886" y="108" fill="#ffa0b4" opacity=".62"/>
+    <use href="#fskS" x="894" y="100" fill="#ffb6c8" opacity=".57"/>
+    <use href="#fskS" x="878" y="102" fill="#ffa0b4" opacity=".57"/>
+    <use href="#fskS" x="901" y="95" fill="#ffc0d0" opacity=".52"/>
+    <use href="#fskS" x="888" y="94" fill="#ffa0b4" opacity=".48"/>
+    <use href="#fskM" x="812" y="89" fill="#ffa0b4" opacity=".57"/>
+    <use href="#fskM" x="822" y="82" fill="#ffb6c8" opacity=".52"/>
+    <use href="#fskS" x="804" y="82" fill="#ffa0b4" opacity=".52"/>
+    <use href="#fskS" x="790" y="73" fill="#ffc0d0" opacity=".48"/>
+    <use href="#fskS" x="799" y="70" fill="#ffa0b4" opacity=".46"/>
   </g>
 
-  <!-- Falling petals -->
+  <!-- Falling petals — original 12 + 4 new -->
   <ellipse cx="82" cy="14" rx="3.2" ry="1.9" fill="#ffb6c8" class="ff1"/>
   <ellipse cx="188" cy="24" rx="2.7" ry="1.6" fill="#ffa0b4" class="ff2"/>
   <ellipse cx="298" cy="9" rx="2.4" ry="1.4" fill="#ffc0d0" class="ff3"/>
@@ -90,8 +130,13 @@
   <ellipse cx="732" cy="7" rx="2.4" ry="1.4" fill="#ffc0d0" class="ff1b"/>
   <ellipse cx="400" cy="39" rx="2.0" ry="1.2" fill="#ffa0b4" class="ff3b"/>
   <ellipse cx="864" cy="19" rx="2.2" ry="1.3" fill="#ffb6c8" class="ff2"/>
+  <!-- 4 additional petals -->
+  <ellipse cx="140" cy="17" rx="2.6" ry="1.5" fill="#ffc0d0" class="ff4"/>
+  <ellipse cx="358" cy="28" rx="2.3" ry="1.4" fill="#ffb6c8" class="ff4b"/>
+  <ellipse cx="610" cy="6"  rx="2.5" ry="1.5" fill="#ffa0b4" class="ff4"/>
+  <ellipse cx="920" cy="22" rx="2.1" ry="1.3" fill="#ffc0d0" class="ff4b"/>
 
-  <!-- Footer text -->
-  <text x="450" y="155" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fecdd3" letter-spacing="4" opacity=".28">花見  ·  HANAMI  ·  花見</text>
-  <text x="450" y="170" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="9" fill="#fecdd3" letter-spacing="2" opacity=".17">crafted with 桜 and code</text>
+  <!-- Footer text — English only -->
+  <text x="450" y="155" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fecdd3" letter-spacing="4" opacity=".28">· HANAMI · YOZAKURA ·</text>
+  <text x="450" y="170" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="9" fill="#fecdd3" letter-spacing="2" opacity=".17">crafted with sakura and code</text>
 </svg>

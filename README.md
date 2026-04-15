@@ -3,11 +3,15 @@
 </p>
 
 <p align="center">
+  <img src="LogoDark.png" alt="p5Patricio Logo" width="110"/>
+</p>
+
+<p align="center">
   <a href="https://github.com/p5Patricio"><img src="https://img.shields.io/github/followers/p5Patricio?label=Followers&style=flat&color=1a1a2e&labelColor=0f0f1a&logo=github&logoColor=fecdd3" alt="GitHub Followers"/></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=p5Patricio&color=fecdd3&style=flat&label=花見+Visitors" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=p5Patricio&color=fecdd3&style=flat&label=Visitors" alt="Profile Views"/>
   &nbsp;
-  <a href="https://github.com/p5Patricio?tab=repositories"><img src="https://img.shields.io/badge/Repos-探索-1a1a2e?style=flat&labelColor=0f0f1a&logo=files&logoColor=fecdd3" alt="Repos"/></a>
+  <a href="https://github.com/p5Patricio?tab=repositories"><img src="https://img.shields.io/badge/Repos-Explore-1a1a2e?style=flat&labelColor=0f0f1a&logo=files&logoColor=fecdd3" alt="Repos"/></a>
 </p>
 
 <p align="center">
@@ -30,7 +34,7 @@
 name: Patricio García
 role: Systems Engineer & Full Stack Developer
 location: Guanajuato, México 🇲🇽
-philosophy: "花は桜木、人は武士"
+philosophy: "Among flowers — the sakura; among people — the code"
 
 currently_building:
   - name: DEMOX

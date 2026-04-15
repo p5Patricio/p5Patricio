@@ -103,6 +103,13 @@
       @keyframes fl4{0%{transform:translate(0,0) rotate(-16deg)}50%{transform:translate(-22px,56px) rotate(28deg)}100%{transform:translate(18px,98px) rotate(-33deg)}}
       @keyframes fl5{0%{transform:translate(0,0) rotate(5deg)}40%{transform:translate(33px,38px) rotate(-43deg)}100%{transform:translate(-12px,82px) rotate(54deg)}}
       @keyframes fl6{0%{transform:translate(0,0) rotate(20deg)}30%{transform:translate(-18px,26px) rotate(-16deg)}70%{transform:translate(8px,56px) rotate(36deg)}100%{transform:translate(-5px,79px) rotate(-26deg)}}
+      @keyframes fl7{0%{transform:translate(0,0) rotate(-8deg)}20%{transform:translate(24px,18px) rotate(32deg)}55%{transform:translate(8px,48px) rotate(-12deg)}80%{transform:translate(38px,62px) rotate(56deg)}100%{transform:translate(16px,84px) rotate(-8deg)}}
+      @keyframes fl8{0%{transform:translate(0,0) rotate(14deg)}35%{transform:translate(-28px,32px) rotate(-44deg)}65%{transform:translate(-8px,58px) rotate(18deg)}100%{transform:translate(-34px,86px) rotate(-30deg)}}
+      @keyframes fl9{0%{transform:translate(0,0) rotate(-22deg)}28%{transform:translate(16px,24px) rotate(38deg)}60%{transform:translate(36px,52px) rotate(-16deg)}100%{transform:translate(54px,76px) rotate(42deg)}}
+      @keyframes fl10{0%{transform:translate(0,0) rotate(6deg)}40%{transform:translate(-14px,36px) rotate(-28deg)}75%{transform:translate(10px,64px) rotate(16deg)}100%{transform:translate(-22px,90px) rotate(-44deg)}}
+      @keyframes fl11{0%{transform:translate(0,0) rotate(18deg)}22%{transform:translate(20px,16px) rotate(-34deg)}58%{transform:translate(44px,44px) rotate(22deg)}100%{transform:translate(28px,80px) rotate(-18deg)}}
+      @keyframes fl12{0%{transform:translate(0,0) rotate(-10deg)}45%{transform:translate(-20px,42px) rotate(26deg)}80%{transform:translate(12px,68px) rotate(-36deg)}100%{transform:translate(-8px,92px) rotate(14deg)}}
+      @keyframes toriiPulse{0%,100%{opacity:.18}50%{opacity:.28}}
       @keyframes sh1{0%,100%{opacity:.06}50%{opacity:.18}}
       @keyframes sh2{0%,100%{opacity:.04}50%{opacity:.13}}
       @keyframes mDrift{0%,50%{transform:translateX(0)}25%{transform:translateX(12px)}75%{transform:translateX(-8px)}}
@@ -142,6 +149,13 @@
       .p1e{animation:fl1 15.5s ease-in-out infinite 5.2s}
       .p2e{animation:fl2 12.5s ease-in-out infinite 6.1s}
       .p3e{animation:fl3 17s ease-in-out infinite 4.5s}
+      .p7{animation:fl7 14s ease-in-out infinite 1.4s}
+      .p8{animation:fl8 17s ease-in-out infinite 3.7s}
+      .p9{animation:fl9 13s ease-in-out infinite 6.5s}
+      .p10{animation:fl10 19s ease-in-out infinite 2.2s}
+      .p11{animation:fl11 15s ease-in-out infinite 4.9s}
+      .p12{animation:fl12 16s ease-in-out infinite 0.8s}
+      .tg{animation:toriiPulse 5.5s ease-in-out infinite}
       .w1{animation:sh1 5.2s ease-in-out infinite}
       .w2{animation:sh2 7.3s ease-in-out infinite 1.1s}
       .md{animation:mDrift 13s ease-in-out infinite}
@@ -163,6 +177,15 @@
       <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(216)"/>
       <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(288)"/>
       <circle cx="0" cy="0" r="1.5" fill="#fff8f5"/>
+    </symbol>
+    <!-- Large sakura flower (~30px span) -->
+    <symbol id="skL" overflow="visible">
+      <path d="M0,0 C5,-4.5 8.5,-12.5 4.8,-20 Q2.2,-23.5 0,-22.5 Q-2.2,-23.5 -4.8,-20 C-8.5,-12.5 -5,-4.5 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C5,-4.5 8.5,-12.5 4.8,-20 Q2.2,-23.5 0,-22.5 Q-2.2,-23.5 -4.8,-20 C-8.5,-12.5 -5,-4.5 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C5,-4.5 8.5,-12.5 4.8,-20 Q2.2,-23.5 0,-22.5 Q-2.2,-23.5 -4.8,-20 C-8.5,-12.5 -5,-4.5 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C5,-4.5 8.5,-12.5 4.8,-20 Q2.2,-23.5 0,-22.5 Q-2.2,-23.5 -4.8,-20 C-8.5,-12.5 -5,-4.5 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C5,-4.5 8.5,-12.5 4.8,-20 Q2.2,-23.5 0,-22.5 Q-2.2,-23.5 -4.8,-20 C-8.5,-12.5 -5,-4.5 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="2.8" fill="#fff8f5"/>
     </symbol>
     <!-- Medium sakura flower (~20px span) -->
     <symbol id="skM" overflow="visible">
@@ -697,13 +720,33 @@
     <use href="#vf" transform="translate(847,237) rotate(36)" fill="#ffc0d0" opacity=".60"/>
   </g>
 
-  <!-- Torii gate -->
-  <g opacity="0.17">
-    <rect x="421" y="295" width="6.5" height="55" rx="1" fill="#fecdd3"/>
-    <rect x="473" y="295" width="6.5" height="55" rx="1" fill="#fecdd3"/>
-    <path d="M413 295Q450 284 487 295" stroke="#fecdd3" stroke-width="5.5" fill="none" stroke-linecap="round"/>
-    <rect x="416" y="305" width="69" height="3.5" rx="1.2" fill="#fecdd3"/>
-    <rect x="423" y="315" width="55" height="2" rx="1" fill="#fecdd3" opacity=".55"/>
+  <!-- Torii gate — mid-ground, between mountains and foreground trees -->
+  <g class="tg">
+    <!-- Left pillar -->
+    <rect x="381" y="228" width="8" height="82" rx="1.5" fill="#6b1515"/>
+    <!-- Right pillar -->
+    <rect x="431" y="228" width="8" height="82" rx="1.5" fill="#6b1515"/>
+    <!-- Kasagi (top curved beam) — extends beyond pillars, curved upward -->
+    <path d="M370 232 Q410 220 420 222 Q430 220 450 232" stroke="#6b1515" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- Shimagi (second beam) — flat, 15px below kasagi -->
+    <rect x="374" y="242" width="72" height="5" rx="1.5" fill="#6b1515"/>
+    <!-- Nuki (crossbeam at pillar midpoint ~y=269) -->
+    <rect x="381" y="266" width="58" height="4" rx="1" fill="#6b1515"/>
+    <!-- Pillar base caps -->
+    <rect x="378" y="306" width="14" height="4" rx="1" fill="#6b1515"/>
+    <rect x="428" y="306" width="14" height="4" rx="1" fill="#6b1515"/>
+  </g>
+
+  <!-- Torii vine — subtle ivy curling on the left pillar -->
+  <g opacity="0.15">
+    <path d="M384,308 C380,292 386,278 382,263 C378,248 384,236 381,225" stroke="#2a4835" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <use href="#vlL" transform="translate(383,300) rotate(10)" opacity="1"/>
+    <use href="#vlR" transform="translate(381,284) rotate(-8)" opacity="1"/>
+    <use href="#vlL" transform="translate(384,268) rotate(12)" opacity="1"/>
+    <use href="#vlR" transform="translate(381,252) rotate(-6)" opacity="1"/>
+    <use href="#vlL" transform="translate(382,238) rotate(8)" opacity="1"/>
+    <use href="#vlT" transform="translate(383,293) rotate(5)" opacity="1"/>
+    <use href="#vlT" transform="translate(381,261) rotate(-10)" opacity="1"/>
   </g>
 
   <!-- Stepping stones -->
@@ -765,6 +808,52 @@
   <ellipse cx="514" cy="156" rx="2.6" ry="1.5" fill="#ffb6c8" opacity=".32" class="p6"/>
   <ellipse cx="410" cy="186" rx="2.1" ry="1.3" fill="#ffa0b4" opacity=".27" class="p4"/>
   <ellipse cx="624" cy="103" rx="2.9" ry="1.7" fill="#ffc0d0" opacity=".37" class="p1d"/>
+
+  <!-- === EXTRA SAKURA — large flowers at crown tips + burst clusters === -->
+  <g filter="url(#blossomGlow)">
+    <!-- Large showcase flower at left tree crown peak -->
+    <use href="#skL" transform="translate(76,118) rotate(8)" fill="#ffc0d0" opacity=".80"/>
+    <!-- Large showcase flower at right tree crown peak -->
+    <use href="#skL" transform="translate(826,118) rotate(-8)" fill="#ffc0d0" opacity=".80"/>
+    <!-- Left tree — burst cluster on upper-left branch tip -->
+    <use href="#skS" transform="translate(6,144) rotate(14)" fill="#ffb6c8" opacity=".72"/>
+    <use href="#skS" transform="translate(-1,136) rotate(-22)" fill="#ffc0d0" opacity=".68"/>
+    <use href="#skS" transform="translate(11,131) rotate(6)" fill="#ffa0b4" opacity=".70"/>
+    <!-- Left tree — burst cluster on upper-right branch -->
+    <use href="#skM" transform="translate(104,136) rotate(-10)" fill="#ffb6c8" opacity=".74"/>
+    <use href="#skS" transform="translate(112,126) rotate(18)" fill="#ffa0b4" opacity=".70"/>
+    <use href="#skS" transform="translate(97,126) rotate(-6)" fill="#ffc0d0" opacity=".68"/>
+    <!-- Left tree — mid branch scattered -->
+    <use href="#skS" transform="translate(48,122) rotate(4)" fill="#ffb6c8" opacity=".65"/>
+    <use href="#skS" transform="translate(35,112) rotate(-16)" fill="#ffa0b4" opacity=".62"/>
+    <!-- Right tree — burst cluster on upper-right branch tip -->
+    <use href="#skS" transform="translate(894,144) rotate(-14)" fill="#ffb6c8" opacity=".72"/>
+    <use href="#skS" transform="translate(901,136) rotate(22)" fill="#ffc0d0" opacity=".68"/>
+    <use href="#skS" transform="translate(889,131) rotate(-6)" fill="#ffa0b4" opacity=".70"/>
+    <!-- Right tree — burst cluster on upper-left branch -->
+    <use href="#skM" transform="translate(796,136) rotate(10)" fill="#ffb6c8" opacity=".74"/>
+    <use href="#skS" transform="translate(788,126) rotate(-18)" fill="#ffa0b4" opacity=".70"/>
+    <use href="#skS" transform="translate(803,126) rotate(6)" fill="#ffc0d0" opacity=".68"/>
+    <!-- Right tree — mid branch scattered -->
+    <use href="#skS" transform="translate(852,122) rotate(-4)" fill="#ffb6c8" opacity=".65"/>
+    <use href="#skS" transform="translate(865,112) rotate(16)" fill="#ffa0b4" opacity=".62"/>
+    <!-- Middle tree — extra burst at crown -->
+    <use href="#skM" transform="translate(165,162) rotate(5)" fill="#ffc0d0" opacity=".72"/>
+    <use href="#skS" transform="translate(147,164) rotate(-18)" fill="#ffb6c8" opacity=".68"/>
+    <use href="#skS" transform="translate(183,162) rotate(12)" fill="#ffa0b4" opacity=".68"/>
+    <use href="#skS" transform="translate(165,154) rotate(-8)" fill="#ffc0d0" opacity=".65"/>
+  </g>
+
+  <!-- === 6 NEW FLOATING PETALS — different trajectories === -->
+  <!-- Drifting left-to-right across the Torii zone -->
+  <ellipse cx="348" cy="248" rx="3.2" ry="1.9" fill="#ffc0d0" opacity=".42" class="p7"/>
+  <ellipse cx="420" cy="218" rx="2.8" ry="1.6" fill="#ffb6c8" opacity=".38" class="p8"/>
+  <!-- Mid-scene vertical drifters -->
+  <ellipse cx="508" cy="195" rx="3.0" ry="1.7" fill="#ffa0b4" opacity=".40" class="p9"/>
+  <ellipse cx="272" cy="162" rx="2.5" ry="1.4" fill="#ffc0d0" opacity=".34" class="p10"/>
+  <!-- High-sky slow drifters -->
+  <ellipse cx="640" cy="148" rx="2.8" ry="1.6" fill="#ffb6c8" opacity=".35" class="p11"/>
+  <ellipse cx="180" cy="208" rx="2.3" ry="1.3" fill="#ffa0b4" opacity=".30" class="p12"/>
 
   <!-- Text -->
   <text x="450" y="178" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#ffe4e6" letter-spacing="8" class="nt">Patricio García</text>
