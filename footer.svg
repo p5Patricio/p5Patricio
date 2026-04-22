@@ -10,6 +10,20 @@
       <stop offset="100%" stop-color="#04040a"/>
     </linearGradient>
 
+    <!-- Blossom glow — same as header -->
+    <filter id="blossomGlow" x="-45%" y="-45%" width="190%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1.0 0   0   0  0.50
+                0   0.2 0   0  0.06
+                0   0   0.3 0  0.12
+                0   0   0   0.48 0" result="pinkGlow"/>
+      <feMerge>
+        <feMergeNode in="pinkGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
     <!-- Small sakura symbol -->
     <symbol id="fskS" overflow="visible">
       <path d="M0,0 C2.3,-2 3.9,-5.7 2.2,-9 Q1,-10.7 0,-10.2 Q-1,-10.7 -2.2,-9 C-3.9,-5.7 -2.3,-2 0,0Z" transform="rotate(0)" fill="inherit"/>
@@ -38,6 +52,7 @@
       @keyframes fShimmer{0%,100%{opacity:.09}50%{opacity:.22}}
       @keyframes fSway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(1.3deg)}}
       @keyframes fToriiShimmer{0%,100%{opacity:.14}50%{opacity:.24}}
+      @keyframes bBloom{0%,100%{opacity:.56}50%{opacity:.82}}
       .ff1{animation:fFall1 10.5s ease-in-out infinite}
       .ff2{animation:fFall2 12.5s ease-in-out infinite 2.2s}
       .ff3{animation:fFall3 14.5s ease-in-out infinite 4.4s}
@@ -50,6 +65,7 @@
       .ftl{animation:fSway 9.5s ease-in-out infinite;transform-origin:58px 180px}
       .ftr{animation:fSway 10.8s ease-in-out infinite 1.3s;transform-origin:842px 180px}
       .ftrii{animation:fToriiShimmer 8.4s ease-in-out infinite}
+      .bl{animation:bBloom 4.8s ease-in-out infinite}
       @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important}}
     </style>
   </defs>
@@ -59,13 +75,9 @@
 
   <!-- Torii gate — partial, submerged silhouette, center background -->
   <g class="ftrii">
-    <!-- Kasagi beam (top horizontal, slightly arced) -->
     <path d="M378,60 Q450,56 522,60" fill="none" stroke="#1a0505" stroke-width="8" stroke-linecap="round" opacity=".20"/>
-    <!-- Nuki beam (lower horizontal, straight) -->
     <rect x="392" y="74" width="116" height="5" rx="1" fill="#1a0505" opacity=".14"/>
-    <!-- Left pillar -->
     <rect x="397" y="62" width="6" height="46" rx="1" fill="#1a0505" opacity=".18"/>
-    <!-- Right pillar -->
     <rect x="497" y="62" width="6" height="46" rx="1" fill="#1a0505" opacity=".18"/>
   </g>
 
@@ -75,49 +87,212 @@
   <path d="M0 130Q128 124 258 131Q388 125 518 130Q648 124 778 130Q842 126 900 129" fill="none" stroke="#fecdd3" stroke-width=".32" opacity=".14"/>
   <path d="M0 143Q135 139 270 145Q405 139 540 144Q675 138 810 144Q852 140 900 143" fill="none" stroke="#fecdd3" stroke-width=".22" opacity=".07"/>
 
-  <!-- Left tree bottom (waist down, mirroring header left) -->
-  <g class="ftl" opacity=".68">
-    <path d="M58 180Q56 152 53 130Q50 112 56 93" stroke="#2d1f14" stroke-width="10" fill="none" stroke-linecap="round"/>
-    <path d="M58 180Q60 152 55 130Q52 112 58 93" stroke="#3d2b1f" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+  <!-- ===== LEFT TREE — detailed, matching header foreground style ===== -->
+  <g class="ftl" filter="url(#blossomGlow)">
+    <!-- Double trunk -->
+    <path d="M58 180Q56 152 53 130Q50 112 56 93Q54 78 58 62" stroke="#2d1f14" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M58 180Q60 152 55 130Q52 112 58 93Q56 78 60 62" stroke="#3d2b1f" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch L1: lower-left — extended with two sub-tips -->
     <path d="M55 136Q35 120 16 109" stroke="#3d2b1f" stroke-width="4" fill="none" stroke-linecap="round"/>
     <path d="M16 109Q3 100 -4 93" stroke="#3d2b1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M16 109Q10 96 4 84" stroke="#3d2b1f" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M4 84Q-2 74 -5 66" stroke="#3d2b1f" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch R1: lower-right — extended -->
     <path d="M56 116Q74 102 90 91" stroke="#3d2b1f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
     <path d="M90 91Q104 82 112 75" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-    <!-- Left branch tip flowers — 5-petal sakura replacing circles -->
-    <use href="#fskM" x="16" y="108" fill="#ffa0b4" opacity=".62"/>
-    <use href="#fskS" x="8" y="100" fill="#ffb6c8" opacity=".57"/>
-    <use href="#fskS" x="24" y="102" fill="#ffa0b4" opacity=".57"/>
-    <use href="#fskS" x="1" y="95" fill="#ffc0d0" opacity=".52"/>
-    <use href="#fskS" x="14" y="94" fill="#ffa0b4" opacity=".48"/>
-    <use href="#fskM" x="90" y="89" fill="#ffa0b4" opacity=".57"/>
-    <use href="#fskM" x="80" y="82" fill="#ffb6c8" opacity=".52"/>
-    <use href="#fskS" x="98" y="82" fill="#ffa0b4" opacity=".52"/>
-    <use href="#fskS" x="112" y="73" fill="#ffc0d0" opacity=".48"/>
-    <use href="#fskS" x="103" y="70" fill="#ffa0b4" opacity=".46"/>
+    <path d="M112 75Q120 67 126 60" stroke="#3d2b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch L2: upper-left -->
+    <path d="M56 108Q36 90 18 76" stroke="#3d2b1f" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M18 76Q6 65 -2 55" stroke="#3d2b1f" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+    <path d="M18 76Q12 62 6 50" stroke="#3d2b1f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch R2: upper-right -->
+    <path d="M58 100Q78 82 96 69" stroke="#3d2b1f" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M96 69Q110 58 120 48" stroke="#3d2b1f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch L3: top-left -->
+    <path d="M58 86Q42 70 28 58" stroke="#3d2b1f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M28 58Q16 48 8 38" stroke="#3d2b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch R3: top-right -->
+    <path d="M60 78Q76 64 88 52" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+    <!-- ===== BLOSSOM CIRCLES — left tree ===== -->
+    <!-- L1 tip cluster (-4,93) area -->
+    <circle cx="-4" cy="93" r="8" fill="#ff8da6" opacity=".60"/>
+    <circle cx="-12" cy="86" r="7" fill="#ffa0b4" opacity=".65"/>
+    <circle cx="4" cy="85" r="8" fill="#ffb6c8" opacity=".58"/>
+    <circle cx="-6" cy="80" r="6" fill="#ffc0d0" opacity=".60"/>
+    <circle cx="4" cy="84" r="5" fill="#ffa0b4" opacity=".55"/>
+    <!-- L1 sub-tip (4,84)/(~-5,66) -->
+    <circle cx="4" cy="84" r="7" fill="#ff8da6" opacity=".55"/>
+    <circle cx="-3" cy="76" r="6" fill="#ffa0b4" opacity=".60"/>
+    <circle cx="-5" cy="66" r="7" fill="#ffb6c8" opacity=".58"/>
+    <circle cx="-12" cy="60" r="6" fill="#ffc0d0" opacity=".52"/>
+    <circle cx="2" cy="58" r="5" fill="#ffa0b4" opacity=".50"/>
+
+    <!-- R1 tip cluster (112,75) area -->
+    <circle cx="112" cy="75" r="8" fill="#ff8da6" opacity=".60"/>
+    <circle cx="120" cy="68" r="7" fill="#ffa0b4" opacity=".65"/>
+    <circle cx="104" cy="68" r="8" fill="#ffb6c8" opacity=".58"/>
+    <circle cx="114" cy="62" r="6" fill="#ffc0d0" opacity=".60"/>
+    <circle cx="126" cy="60" r="7" fill="#ff8da6" opacity=".56"/>
+    <circle cx="118" cy="54" r="5" fill="#ffa0b4" opacity=".52"/>
+
+    <!-- R1 along branch (90,91) -->
+    <circle cx="90" cy="91" r="7" fill="#ffb6c8" opacity=".55"/>
+    <circle cx="82" cy="84" r="6" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="96" cy="83" r="7" fill="#ff8da6" opacity=".52"/>
+
+    <!-- L2 tip cluster (18,76)/(~-2,55) -->
+    <circle cx="18" cy="76" r="8" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="10" cy="68" r="7" fill="#ffb6c8" opacity=".60"/>
+    <circle cx="26" cy="68" r="6" fill="#ff8da6" opacity=".56"/>
+    <circle cx="-2" cy="55" r="8" fill="#ffa0b4" opacity=".54"/>
+    <circle cx="-8" cy="48" r="6" fill="#ffb6c8" opacity=".50"/>
+    <circle cx="6" cy="50" r="5" fill="#ffc0d0" opacity=".48"/>
+    <circle cx="6" cy="50" r="7" fill="#ff8da6" opacity=".50"/>
+
+    <!-- R2 tip cluster (120,48) -->
+    <circle cx="120" cy="48" r="7" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="112" cy="42" r="6" fill="#ffb6c8" opacity=".60"/>
+    <circle cx="128" cy="42" r="7" fill="#ff8da6" opacity=".54"/>
+    <circle cx="110" cy="58" r="6" fill="#ffc0d0" opacity=".52"/>
+
+    <!-- L3 tip cluster (8,38) -->
+    <circle cx="8" cy="38" r="7" fill="#ff8da6" opacity=".56"/>
+    <circle cx="-1" cy="32" r="6" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="16" cy="32" r="7" fill="#ffb6c8" opacity=".52"/>
+    <circle cx="28" cy="58" r="6" fill="#ffc0d0" opacity=".54"/>
+
+    <!-- R3 tip cluster (88,52) -->
+    <circle cx="88" cy="52" r="7" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="80" cy="46" r="6" fill="#ffb6c8" opacity=".55"/>
+    <circle cx="94" cy="44" r="6" fill="#ff8da6" opacity=".52"/>
+
+    <!-- Scatter (depth / ambient) -->
+    <circle cx="40" cy="100" r="4" fill="#ffd5de" opacity=".34"/>
+    <circle cx="70" cy="86" r="3.5" fill="#ffd5de" opacity=".30"/>
+    <circle cx="30" cy="68" r="3" fill="#ffd5de" opacity=".28"/>
+    <circle cx="100" cy="62" r="3.5" fill="#ffd5de" opacity=".28"/>
+
+    <!-- Sakura symbols overlaid on key clusters -->
+    <use href="#fskM" x="-4" y="92" fill="#ffc0d0" opacity=".82" class="bl"/>
+    <use href="#fskS" x="-12" y="84" fill="#ffb6c8" opacity=".78"/>
+    <use href="#fskM" x="112" y="74" fill="#ffa0b4" opacity=".80" class="bl"/>
+    <use href="#fskS" x="120" y="67" fill="#ffb6c8" opacity=".76"/>
+    <use href="#fskM" x="18" y="75" fill="#ffc0d0" opacity=".78" class="bl"/>
+    <use href="#fskS" x="-2" y="54" fill="#ffa0b4" opacity=".74"/>
+    <use href="#fskS" x="8" y="37" fill="#ffb6c8" opacity=".72"/>
+    <use href="#fskS" x="88" y="51" fill="#ffa0b4" opacity=".72"/>
   </g>
 
-  <!-- Right tree bottom (mirroring header right) -->
-  <g class="ftr" opacity=".68">
-    <path d="M842 180Q844 152 847 130Q850 112 844 93" stroke="#2d1f14" stroke-width="10" fill="none" stroke-linecap="round"/>
-    <path d="M844 180Q846 152 849 130Q852 112 846 93" stroke="#3d2b1f" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+  <!-- ===== RIGHT TREE — mirrored, same detail level ===== -->
+  <g class="ftr" filter="url(#blossomGlow)">
+    <!-- Double trunk -->
+    <path d="M842 180Q844 152 847 130Q850 112 844 93Q846 78 842 62" stroke="#2d1f14" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M844 180Q846 152 849 130Q852 112 846 93Q848 78 844 62" stroke="#3d2b1f" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch R1: lower-right — extended -->
     <path d="M847 136Q867 120 886 109" stroke="#3d2b1f" stroke-width="4" fill="none" stroke-linecap="round"/>
     <path d="M886 109Q899 100 906 93" stroke="#3d2b1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M886 109Q892 96 898 84" stroke="#3d2b1f" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M898 84Q904 74 907 66" stroke="#3d2b1f" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch L1: lower-left — extended -->
     <path d="M846 116Q828 102 812 91" stroke="#3d2b1f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
     <path d="M812 91Q798 82 790 75" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-    <!-- Right branch tip flowers — 5-petal sakura replacing circles -->
-    <use href="#fskM" x="886" y="108" fill="#ffa0b4" opacity=".62"/>
-    <use href="#fskS" x="894" y="100" fill="#ffb6c8" opacity=".57"/>
-    <use href="#fskS" x="878" y="102" fill="#ffa0b4" opacity=".57"/>
-    <use href="#fskS" x="901" y="95" fill="#ffc0d0" opacity=".52"/>
-    <use href="#fskS" x="888" y="94" fill="#ffa0b4" opacity=".48"/>
-    <use href="#fskM" x="812" y="89" fill="#ffa0b4" opacity=".57"/>
-    <use href="#fskM" x="822" y="82" fill="#ffb6c8" opacity=".52"/>
-    <use href="#fskS" x="804" y="82" fill="#ffa0b4" opacity=".52"/>
-    <use href="#fskS" x="790" y="73" fill="#ffc0d0" opacity=".48"/>
-    <use href="#fskS" x="799" y="70" fill="#ffa0b4" opacity=".46"/>
+    <path d="M790 75Q782 67 776 60" stroke="#3d2b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch R2: upper-right -->
+    <path d="M846 108Q866 90 884 76" stroke="#3d2b1f" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M884 76Q896 65 904 55" stroke="#3d2b1f" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+    <path d="M884 76Q890 62 896 50" stroke="#3d2b1f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch L2: upper-left -->
+    <path d="M844 100Q824 82 806 69" stroke="#3d2b1f" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M806 69Q792 58 782 48" stroke="#3d2b1f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch R3: top-right -->
+    <path d="M844 86Q860 70 874 58" stroke="#3d2b1f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M874 58Q886 48 894 38" stroke="#3d2b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- Branch L3: top-left -->
+    <path d="M842 78Q826 64 814 52" stroke="#3d2b1f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+    <!-- ===== BLOSSOM CIRCLES — right tree (mirrored x from 900) ===== -->
+    <!-- R1 tip cluster (906,93) -->
+    <circle cx="906" cy="93" r="8" fill="#ff8da6" opacity=".60"/>
+    <circle cx="914" cy="86" r="7" fill="#ffa0b4" opacity=".65"/>
+    <circle cx="898" cy="85" r="8" fill="#ffb6c8" opacity=".58"/>
+    <circle cx="908" cy="80" r="6" fill="#ffc0d0" opacity=".60"/>
+    <!-- R1 sub-tip (898,84)/(907,66) -->
+    <circle cx="898" cy="84" r="7" fill="#ff8da6" opacity=".55"/>
+    <circle cx="904" cy="76" r="6" fill="#ffa0b4" opacity=".60"/>
+    <circle cx="907" cy="66" r="7" fill="#ffb6c8" opacity=".58"/>
+    <circle cx="914" cy="60" r="6" fill="#ffc0d0" opacity=".52"/>
+    <circle cx="900" cy="58" r="5" fill="#ffa0b4" opacity=".50"/>
+
+    <!-- L1 tip cluster (790,75) -->
+    <circle cx="790" cy="75" r="8" fill="#ff8da6" opacity=".60"/>
+    <circle cx="782" cy="68" r="7" fill="#ffa0b4" opacity=".65"/>
+    <circle cx="798" cy="68" r="8" fill="#ffb6c8" opacity=".58"/>
+    <circle cx="788" cy="62" r="6" fill="#ffc0d0" opacity=".60"/>
+    <circle cx="776" cy="60" r="7" fill="#ff8da6" opacity=".56"/>
+    <circle cx="784" cy="54" r="5" fill="#ffa0b4" opacity=".52"/>
+
+    <!-- L1 along branch (812,91) -->
+    <circle cx="812" cy="91" r="7" fill="#ffb6c8" opacity=".55"/>
+    <circle cx="820" cy="84" r="6" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="806" cy="83" r="7" fill="#ff8da6" opacity=".52"/>
+
+    <!-- R2 tip cluster (884,76)/(904,55) -->
+    <circle cx="884" cy="76" r="8" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="892" cy="68" r="7" fill="#ffb6c8" opacity=".60"/>
+    <circle cx="876" cy="68" r="6" fill="#ff8da6" opacity=".56"/>
+    <circle cx="904" cy="55" r="8" fill="#ffa0b4" opacity=".54"/>
+    <circle cx="910" cy="48" r="6" fill="#ffb6c8" opacity=".50"/>
+    <circle cx="896" cy="50" r="5" fill="#ffc0d0" opacity=".48"/>
+    <circle cx="896" cy="50" r="7" fill="#ff8da6" opacity=".50"/>
+
+    <!-- L2 tip cluster (782,48) -->
+    <circle cx="782" cy="48" r="7" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="790" cy="42" r="6" fill="#ffb6c8" opacity=".60"/>
+    <circle cx="774" cy="42" r="7" fill="#ff8da6" opacity=".54"/>
+    <circle cx="792" cy="58" r="6" fill="#ffc0d0" opacity=".52"/>
+
+    <!-- R3 tip cluster (894,38) -->
+    <circle cx="894" cy="38" r="7" fill="#ff8da6" opacity=".56"/>
+    <circle cx="902" cy="32" r="6" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="886" cy="32" r="7" fill="#ffb6c8" opacity=".52"/>
+    <circle cx="874" cy="58" r="6" fill="#ffc0d0" opacity=".54"/>
+
+    <!-- L3 tip cluster (814,52) -->
+    <circle cx="814" cy="52" r="7" fill="#ffa0b4" opacity=".58"/>
+    <circle cx="822" cy="46" r="6" fill="#ffb6c8" opacity=".55"/>
+    <circle cx="808" cy="44" r="6" fill="#ff8da6" opacity=".52"/>
+
+    <!-- Scatter -->
+    <circle cx="862" cy="100" r="4" fill="#ffd5de" opacity=".34"/>
+    <circle cx="832" cy="86" r="3.5" fill="#ffd5de" opacity=".30"/>
+    <circle cx="872" cy="68" r="3" fill="#ffd5de" opacity=".28"/>
+    <circle cx="802" cy="62" r="3.5" fill="#ffd5de" opacity=".28"/>
+
+    <!-- Sakura symbols overlaid on key clusters -->
+    <use href="#fskM" x="906" y="92" fill="#ffc0d0" opacity=".82" class="bl"/>
+    <use href="#fskS" x="914" y="84" fill="#ffb6c8" opacity=".78"/>
+    <use href="#fskM" x="790" y="74" fill="#ffa0b4" opacity=".80" class="bl"/>
+    <use href="#fskS" x="782" y="67" fill="#ffb6c8" opacity=".76"/>
+    <use href="#fskM" x="884" y="75" fill="#ffc0d0" opacity=".78" class="bl"/>
+    <use href="#fskS" x="904" y="54" fill="#ffa0b4" opacity=".74"/>
+    <use href="#fskS" x="894" y="37" fill="#ffb6c8" opacity=".72"/>
+    <use href="#fskS" x="814" y="51" fill="#ffa0b4" opacity=".72"/>
   </g>
 
-  <!-- Falling petals — original 12 + 4 new -->
+  <!-- Falling petals -->
   <ellipse cx="82" cy="14" rx="3.2" ry="1.9" fill="#ffb6c8" class="ff1"/>
   <ellipse cx="188" cy="24" rx="2.7" ry="1.6" fill="#ffa0b4" class="ff2"/>
   <ellipse cx="298" cy="9" rx="2.4" ry="1.4" fill="#ffc0d0" class="ff3"/>
@@ -130,13 +305,11 @@
   <ellipse cx="732" cy="7" rx="2.4" ry="1.4" fill="#ffc0d0" class="ff1b"/>
   <ellipse cx="400" cy="39" rx="2.0" ry="1.2" fill="#ffa0b4" class="ff3b"/>
   <ellipse cx="864" cy="19" rx="2.2" ry="1.3" fill="#ffb6c8" class="ff2"/>
-  <!-- 4 additional petals -->
   <ellipse cx="140" cy="17" rx="2.6" ry="1.5" fill="#ffc0d0" class="ff4"/>
   <ellipse cx="358" cy="28" rx="2.3" ry="1.4" fill="#ffb6c8" class="ff4b"/>
   <ellipse cx="610" cy="6"  rx="2.5" ry="1.5" fill="#ffa0b4" class="ff4"/>
-  <ellipse cx="920" cy="22" rx="2.1" ry="1.3" fill="#ffc0d0" class="ff4b"/>
 
-  <!-- Footer text — English only -->
+  <!-- Footer text -->
   <text x="450" y="155" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fecdd3" letter-spacing="4" opacity=".28">· HANAMI · YOZAKURA ·</text>
   <text x="450" y="170" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="9" fill="#fecdd3" letter-spacing="2" opacity=".17">crafted with sakura and code</text>
 </svg>

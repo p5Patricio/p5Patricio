@@ -26,6 +26,10 @@ npm-debug.log*
 *.tmp
 *.bak
 
+# Personal CV — content is used to populate the profile, but the file is private
+CV_Español.pdf
+CV_*.pdf
+
 # Claude Code internals (worktrees, settings, launch configs)
 # These are local tooling artifacts — never belong in the repo
 .claude/

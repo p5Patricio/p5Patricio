@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 88" width="900" height="88" aria-hidden="true">
+  <defs>
+    <!-- Torii gate: parametric via scale -->
+    <symbol id="torii" overflow="visible">
+      <!-- kasagi (top beam, curved) -->
+      <path d="M-30 0 Q-32 -3 -28 -4 L28 -4 Q32 -3 30 0 Z" fill="currentColor"/>
+      <!-- shimaki (second beam) -->
+      <rect x="-27" y="2" width="54" height="2.6" fill="currentColor"/>
+      <!-- nuki (horizontal crossbeam) -->
+      <rect x="-22" y="16" width="44" height="2.2" fill="currentColor"/>
+      <!-- gaku (center plaque) -->
+      <rect x="-3" y="6" width="6" height="8" fill="currentColor" opacity=".85"/>
+      <!-- hashira (pillars) -->
+      <rect x="-22" y="4" width="3" height="40" fill="currentColor"/>
+      <rect x="19" y="4" width="3" height="40" fill="currentColor"/>
+    </symbol>
+    <radialGradient id="mist" cx="50%" cy="100%" r="60%">
+      <stop offset="0" stop-color="#1a1a2e" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#0f0f1a" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      @keyframes driftM{0%{transform:translateX(0)}50%{transform:translateX(14px)}100%{transform:translateX(0)}}
+      @keyframes flick{0%,100%{opacity:.72}50%{opacity:1}}
+      @keyframes fall{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(-18px,30px) rotate(-110deg)}}
+      .m{animation:driftM 14s ease-in-out infinite}
+      .m2{animation:driftM 18s ease-in-out infinite reverse}
+      .f1{animation:flick 3.4s ease-in-out infinite}
+      .f2{animation:flick 4.2s ease-in-out infinite .6s}
+      .p1{animation:fall 12s ease-in-out infinite;opacity:.5}
+      .p2{animation:fall 15s ease-in-out infinite 2s;opacity:.4}
+      .p3{animation:fall 18s ease-in-out infinite 4s;opacity:.35}
+      @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+  </defs>
+
+  <!-- Distant stars -->
+  <g fill="#fecdd3">
+    <circle cx="120" cy="10" r=".8" class="f1"/>
+    <circle cx="280" cy="6" r="1" class="f2"/>
+    <circle cx="440" cy="12" r=".7" class="f1"/>
+    <circle cx="600" cy="8" r=".9" class="f2"/>
+    <circle cx="780" cy="10" r="1" class="f1"/>
+  </g>
+
+  <!-- Three receding torii gates (perspective: farthest = smallest, pink tinted; nearest = largest, solid) -->
+  <!-- Far torii (back, tiny, desaturated) -->
+  <g color="#3d2b4f" opacity=".5" transform="translate(200,28) scale(.5)"><use href="#torii"/></g>
+  <g color="#3d2b4f" opacity=".55" transform="translate(700,28) scale(.5)"><use href="#torii"/></g>
+
+  <!-- Mid torii -->
+  <g color="#5a3d2b" opacity=".72" transform="translate(330,22) scale(.7)"><use href="#torii"/></g>
+  <g color="#5a3d2b" opacity=".72" transform="translate(570,22) scale(.7)"><use href="#torii"/></g>
+
+  <!-- Front center torii (biggest, warm brown, dominant) -->
+  <g color="#3d2b1f" transform="translate(450,14)"><use href="#torii"/></g>
+  <!-- Subtle pink rim light on front torii -->
+  <g color="#ffa0b4" opacity=".14" transform="translate(450,14)"><use href="#torii"/></g>
+
+  <!-- Mist at base -->
+  <rect x="0" y="52" width="900" height="36" fill="url(#mist)"/>
+  <g class="m" fill="#1a1a2e" opacity=".35">
+    <ellipse cx="150" cy="66" rx="120" ry="10"/>
+    <ellipse cx="560" cy="70" rx="140" ry="11"/>
+  </g>
+  <g class="m2" fill="#1a1a2e" opacity=".28">
+    <ellipse cx="360" cy="72" rx="130" ry="9"/>
+    <ellipse cx="780" cy="68" rx="110" ry="10"/>
+  </g>
+
+  <!-- Falling petals -->
+  <g fill="#ffb6c8">
+    <ellipse cx="80" cy="22" rx="2.2" ry="1.2" transform="rotate(20 80 22)" class="p1"/>
+    <ellipse cx="260" cy="32" rx="2" ry="1.1" transform="rotate(-15 260 32)" class="p2"/>
+    <ellipse cx="520" cy="18" rx="2.2" ry="1.2" transform="rotate(24 520 18)" class="p3"/>
+    <ellipse cx="820" cy="26" rx="2" ry="1.1" transform="rotate(-18 820 26)" class="p1"/>
+  </g>
+</svg>

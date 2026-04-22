@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 88" width="900" height="88" aria-hidden="true">
+  <defs>
+    <!-- Seigaiha (Japanese wave) arc symbol -->
+    <symbol id="wv" overflow="visible">
+      <path d="M-22,0 A22 22 0 0 1 22,0" fill="none" stroke-width="1.2"/>
+      <path d="M-15,0 A15 15 0 0 1 15,0" fill="none" stroke-width="1"/>
+      <path d="M-8,0 A8 8 0 0 1 8,0" fill="none" stroke-width=".9"/>
+    </symbol>
+    <symbol id="moon" overflow="visible">
+      <circle r="14" fill="#fecdd3" opacity=".14"/>
+      <circle r="10" fill="#ffe4e6" opacity=".22"/>
+      <circle r="6.5" fill="#fff8f5" opacity=".38"/>
+    </symbol>
+    <linearGradient id="wgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f0f1a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a2e" stop-opacity=".55"/>
+    </linearGradient>
+    <style>
+      @keyframes ripple{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.4px)}}
+      @keyframes rip2{0%,100%{transform:translateY(0)}50%{transform:translateY(1.2px)}}
+      @keyframes shimmer{0%,100%{opacity:.34}50%{opacity:.62}}
+      @keyframes moonGlow{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+      @keyframes driftL{0%{transform:translateX(0)}100%{transform:translateX(-44px)}}
+      .w1{animation:ripple 6.3s ease-in-out infinite}
+      .w2{animation:rip2 7.4s ease-in-out infinite}
+      .w3{animation:ripple 8.2s ease-in-out infinite 1.2s}
+      .sh{animation:shimmer 5s ease-in-out infinite}
+      .mn{animation:moonGlow 8s ease-in-out infinite;transform-origin:center}
+      .dr{animation:driftL 22s linear infinite}
+      @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+  </defs>
+
+  <!-- moon, offset right like it's setting -->
+  <g class="mn" transform="translate(752,26)">
+    <use href="#moon"/>
+  </g>
+
+  <!-- moon reflection on water -->
+  <g opacity=".5" class="sh">
+    <ellipse cx="752" cy="66" rx="22" ry="2" fill="#fecdd3" opacity=".5"/>
+    <ellipse cx="752" cy="70" rx="14" ry="1.2" fill="#ffe4e6" opacity=".4"/>
+    <ellipse cx="752" cy="74" rx="8" ry=".8" fill="#ffb6c8" opacity=".3"/>
+  </g>
+
+  <!-- back wave row (smaller, further) -->
+  <g class="w1" stroke="#3d2b4f" opacity=".4">
+    <g class="dr">
+      <use href="#wv" transform="translate(-20,56)"/>
+      <use href="#wv" transform="translate(24,56)"/>
+      <use href="#wv" transform="translate(68,56)"/>
+      <use href="#wv" transform="translate(112,56)"/>
+      <use href="#wv" transform="translate(156,56)"/>
+      <use href="#wv" transform="translate(200,56)"/>
+      <use href="#wv" transform="translate(244,56)"/>
+      <use href="#wv" transform="translate(288,56)"/>
+      <use href="#wv" transform="translate(332,56)"/>
+      <use href="#wv" transform="translate(376,56)"/>
+      <use href="#wv" transform="translate(420,56)"/>
+      <use href="#wv" transform="translate(464,56)"/>
+      <use href="#wv" transform="translate(508,56)"/>
+      <use href="#wv" transform="translate(552,56)"/>
+      <use href="#wv" transform="translate(596,56)"/>
+      <use href="#wv" transform="translate(640,56)"/>
+      <use href="#wv" transform="translate(684,56)"/>
+      <use href="#wv" transform="translate(728,56)"/>
+      <use href="#wv" transform="translate(772,56)"/>
+      <use href="#wv" transform="translate(816,56)"/>
+      <use href="#wv" transform="translate(860,56)"/>
+      <use href="#wv" transform="translate(904,56)"/>
+      <use href="#wv" transform="translate(948,56)"/>
+    </g>
+  </g>
+
+  <!-- front wave row -->
+  <g class="w2" stroke="#ffb6c8" opacity=".55">
+    <use href="#wv" transform="translate(0,72)"/>
+    <use href="#wv" transform="translate(44,72)"/>
+    <use href="#wv" transform="translate(88,72)"/>
+    <use href="#wv" transform="translate(132,72)"/>
+    <use href="#wv" transform="translate(176,72)"/>
+    <use href="#wv" transform="translate(220,72)"/>
+    <use href="#wv" transform="translate(264,72)"/>
+    <use href="#wv" transform="translate(308,72)"/>
+    <use href="#wv" transform="translate(352,72)"/>
+    <use href="#wv" transform="translate(396,72)"/>
+    <use href="#wv" transform="translate(440,72)"/>
+    <use href="#wv" transform="translate(484,72)"/>
+    <use href="#wv" transform="translate(528,72)"/>
+    <use href="#wv" transform="translate(572,72)"/>
+    <use href="#wv" transform="translate(616,72)"/>
+    <use href="#wv" transform="translate(660,72)"/>
+    <use href="#wv" transform="translate(704,72)"/>
+    <use href="#wv" transform="translate(748,72)"/>
+    <use href="#wv" transform="translate(792,72)"/>
+    <use href="#wv" transform="translate(836,72)"/>
+    <use href="#wv" transform="translate(880,72)"/>
+  </g>
+
+  <!-- horizon gradient (below waves) -->
+  <rect x="0" y="72" width="900" height="16" fill="url(#wgrad)"/>
+
+  <!-- stars -->
+  <g fill="#fecdd3">
+    <circle cx="82" cy="18" r="0.8" opacity=".6" class="sh"/>
+    <circle cx="178" cy="12" r="1" opacity=".72" class="sh"/>
+    <circle cx="244" cy="22" r="0.7" opacity=".5" class="sh"/>
+    <circle cx="390" cy="10" r="0.9" opacity=".7" class="sh"/>
+    <circle cx="484" cy="18" r="0.7" opacity=".55" class="sh"/>
+    <circle cx="598" cy="14" r="1" opacity=".68" class="sh"/>
+    <circle cx="666" cy="22" r="0.7" opacity=".5" class="sh"/>
+    <circle cx="858" cy="16" r="0.9" opacity=".62" class="sh"/>
+  </g>
+
+  <!-- distant petals drifting above water -->
+  <g fill="#ffb6c8" opacity=".4">
+    <ellipse cx="140" cy="46" rx="2" ry="1.1" transform="rotate(20 140 46)"/>
+    <ellipse cx="320" cy="42" rx="1.8" ry="1" transform="rotate(-10 320 42)"/>
+    <ellipse cx="560" cy="48" rx="2" ry="1.1" transform="rotate(15 560 48)"/>
+    <ellipse cx="820" cy="44" rx="1.8" ry="1" transform="rotate(-22 820 44)"/>
+  </g>
+</svg>
