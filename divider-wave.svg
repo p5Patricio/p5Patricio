@@ -1,49 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 88" width="900" height="88" aria-hidden="true">
   <defs>
-    <!-- Seigaiha (Japanese wave) arc symbol -->
     <symbol id="wv" overflow="visible">
       <path d="M-22,0 A22 22 0 0 1 22,0" fill="none" stroke-width="1.2"/>
       <path d="M-15,0 A15 15 0 0 1 15,0" fill="none" stroke-width="1"/>
       <path d="M-8,0 A8 8 0 0 1 8,0" fill="none" stroke-width=".9"/>
     </symbol>
-    <symbol id="moon" overflow="visible">
-      <circle r="14" fill="#fecdd3" opacity=".14"/>
-      <circle r="10" fill="#ffe4e6" opacity=".22"/>
-      <circle r="6.5" fill="#fff8f5" opacity=".38"/>
+    <symbol id="skS" overflow="visible">
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="1" fill="#fff8f5"/>
     </symbol>
-    <linearGradient id="wgrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0f0f1a" stop-opacity="0"/>
-      <stop offset="1" stop-color="#1a1a2e" stop-opacity=".55"/>
-    </linearGradient>
+    <symbol id="skM" overflow="visible">
+      <path d="M0,0 C2.8,-2.3 4.6,-6.8 2.6,-10.8 Q1.2,-12.8 0,-12.2 Q-1.2,-12.8 -2.6,-10.8 C-4.6,-6.8 -2.8,-2.3 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C2.8,-2.3 4.6,-6.8 2.6,-10.8 Q1.2,-12.8 0,-12.2 Q-1.2,-12.8 -2.6,-10.8 C-4.6,-6.8 -2.8,-2.3 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C2.8,-2.3 4.6,-6.8 2.6,-10.8 Q1.2,-12.8 0,-12.2 Q-1.2,-12.8 -2.6,-10.8 C-4.6,-6.8 -2.8,-2.3 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C2.8,-2.3 4.6,-6.8 2.6,-10.8 Q1.2,-12.8 0,-12.2 Q-1.2,-12.8 -2.6,-10.8 C-4.6,-6.8 -2.8,-2.3 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C2.8,-2.3 4.6,-6.8 2.6,-10.8 Q1.2,-12.8 0,-12.2 Q-1.2,-12.8 -2.6,-10.8 C-4.6,-6.8 -2.8,-2.3 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="1.4" fill="#fff8f5"/>
+    </symbol>
+    <radialGradient id="moonGW" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff8f5"/>
+      <stop offset=".5" stop-color="#ffe4e6" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#fecdd3" stop-opacity="0"/>
+    </radialGradient>
     <style>
       @keyframes ripple{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.4px)}}
       @keyframes rip2{0%,100%{transform:translateY(0)}50%{transform:translateY(1.2px)}}
       @keyframes shimmer{0%,100%{opacity:.34}50%{opacity:.62}}
       @keyframes moonGlow{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+      @keyframes drift{0%{transform:translate(0,0) rotate(0);opacity:.6}100%{transform:translate(-36px,18px) rotate(-110deg);opacity:0}}
       @keyframes driftL{0%{transform:translateX(0)}100%{transform:translateX(-44px)}}
+      @keyframes bloom{0%,100%{opacity:.55}50%{opacity:.85}}
+      @keyframes tw{0%,100%{opacity:.3}50%{opacity:.9}}
       .w1{animation:ripple 6.3s ease-in-out infinite}
       .w2{animation:rip2 7.4s ease-in-out infinite}
-      .w3{animation:ripple 8.2s ease-in-out infinite 1.2s}
       .sh{animation:shimmer 5s ease-in-out infinite}
       .mn{animation:moonGlow 8s ease-in-out infinite;transform-origin:center}
       .dr{animation:driftL 22s linear infinite}
+      .p1{animation:drift 12s ease-in-out infinite}
+      .p2{animation:drift 15s ease-in-out infinite 2.5s}
+      .p3{animation:drift 10s ease-in-out infinite 5s}
+      .p4{animation:drift 14s ease-in-out infinite 7s}
+      .bl{animation:bloom 4.5s ease-in-out infinite}
+      .tw{animation:tw 3.2s ease-in-out infinite}
       @media(prefers-reduced-motion:reduce){*{animation:none!important}}
     </style>
   </defs>
 
-  <!-- moon, offset right like it's setting -->
+  <!-- Moon with glow -->
+  <circle cx="752" cy="26" r="36" fill="#fecdd3" opacity=".08" class="mn"/>
+  <circle cx="752" cy="26" r="22" fill="#fecdd3" opacity=".16" class="mn"/>
   <g class="mn" transform="translate(752,26)">
-    <use href="#moon"/>
+    <circle r="14" fill="#ffe4e6" opacity=".8"/>
+    <circle r="10" fill="#fff8f5" opacity=".9"/>
+    <!-- Moon surface detail -->
+    <circle cx="-4" cy="-4" r="2" fill="#fecdd3" opacity=".2"/>
+    <circle cx="4" cy="4" r="1.5" fill="#fecdd3" opacity=".15"/>
   </g>
 
-  <!-- moon reflection on water -->
-  <g opacity=".5" class="sh">
-    <ellipse cx="752" cy="66" rx="22" ry="2" fill="#fecdd3" opacity=".5"/>
-    <ellipse cx="752" cy="70" rx="14" ry="1.2" fill="#ffe4e6" opacity=".4"/>
-    <ellipse cx="752" cy="74" rx="8" ry=".8" fill="#ffb6c8" opacity=".3"/>
+  <!-- Moon reflection in water -->
+  <g opacity=".4" class="sh">
+    <ellipse cx="752" cy="68" rx="24" ry="2.2" fill="#fecdd3"/>
+    <ellipse cx="752" cy="72" rx="16" ry="1.4" fill="#ffe4e6"/>
+    <ellipse cx="752" cy="76" rx="9" ry=".8" fill="#ffb6c8"/>
   </g>
 
-  <!-- back wave row (smaller, further) -->
+  <!-- Sakura branch left (floating above water) -->
+  <g opacity=".7">
+    <path d="M30 42 Q80 34 130 38 Q160 36 185 40" stroke="#3d2b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M80 36 Q76 28 70 22" stroke="#3d2b1f" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <path d="M130 38 Q134 28 138 20" stroke="#3d2b1f" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <!-- Branch flowers -->
+    <use href="#skM" transform="translate(70,22)" fill="#ffb6c8" opacity=".75" class="bl"/>
+    <use href="#skS" transform="translate(62,18) rotate(20)" fill="#ffa0b4" opacity=".65"/>
+    <use href="#skS" transform="translate(78,16) rotate(-15)" fill="#ffc0d0" opacity=".65"/>
+    <use href="#skM" transform="translate(138,20)" fill="#ffb6c8" opacity=".7" class="bl"/>
+    <use href="#skS" transform="translate(130,14) rotate(15)" fill="#ffa0b4" opacity=".62"/>
+    <use href="#skS" transform="translate(146,16) rotate(-20)" fill="#ffc0d0" opacity=".60"/>
+    <!-- Scattered along main branch -->
+    <use href="#skS" transform="translate(56,42) rotate(8)" fill="#ffb6c8" opacity=".45"/>
+    <use href="#skS" transform="translate(106,36) rotate(-12)" fill="#ffa0b4" opacity=".42"/>
+    <use href="#skS" transform="translate(168,40) rotate(16)" fill="#ffc0d0" opacity=".40"/>
+  </g>
+
+  <!-- Sakura cluster near moon -->
+  <g transform="translate(720,14)" opacity=".8">
+    <use href="#skS" fill="#ffb6c8" class="bl"/>
+    <use href="#skS" transform="translate(-12,2) rotate(22)" fill="#ffa0b4" opacity=".7"/>
+    <use href="#skS" transform="translate(-6,-10) rotate(-15)" fill="#ffc0d0" opacity=".65"/>
+  </g>
+  <g transform="translate(786,14)" opacity=".75">
+    <use href="#skS" fill="#ffc0d0" class="bl"/>
+    <use href="#skS" transform="translate(10,4) rotate(-20)" fill="#ffb6c8" opacity=".65"/>
+  </g>
+
+  <!-- Back wave row -->
   <g class="w1" stroke="#3d2b4f" opacity=".4">
     <g class="dr">
       <use href="#wv" transform="translate(-20,56)"/>
@@ -72,8 +126,8 @@
     </g>
   </g>
 
-  <!-- front wave row -->
-  <g class="w2" stroke="#ffb6c8" opacity=".55">
+  <!-- Front wave row -->
+  <g class="w2" stroke="#ffb6c8" opacity=".5">
     <use href="#wv" transform="translate(0,72)"/>
     <use href="#wv" transform="translate(44,72)"/>
     <use href="#wv" transform="translate(88,72)"/>
@@ -97,26 +151,40 @@
     <use href="#wv" transform="translate(880,72)"/>
   </g>
 
-  <!-- horizon gradient (below waves) -->
-  <rect x="0" y="72" width="900" height="16" fill="url(#wgrad)"/>
-
-  <!-- stars -->
-  <g fill="#fecdd3">
-    <circle cx="82" cy="18" r="0.8" opacity=".6" class="sh"/>
-    <circle cx="178" cy="12" r="1" opacity=".72" class="sh"/>
-    <circle cx="244" cy="22" r="0.7" opacity=".5" class="sh"/>
-    <circle cx="390" cy="10" r="0.9" opacity=".7" class="sh"/>
-    <circle cx="484" cy="18" r="0.7" opacity=".55" class="sh"/>
-    <circle cx="598" cy="14" r="1" opacity=".68" class="sh"/>
-    <circle cx="666" cy="22" r="0.7" opacity=".5" class="sh"/>
-    <circle cx="858" cy="16" r="0.9" opacity=".62" class="sh"/>
+  <!-- Petal reflections on water surface -->
+  <g fill="#ffb6c8" opacity=".28" class="sh">
+    <use href="#skS" transform="translate(200,66) scale(1,.4)"/>
+    <use href="#skS" transform="translate(380,70) scale(1,.4)"/>
+    <use href="#skS" transform="translate(580,66) scale(1,.4)"/>
   </g>
 
-  <!-- distant petals drifting above water -->
-  <g fill="#ffb6c8" opacity=".4">
-    <ellipse cx="140" cy="46" rx="2" ry="1.1" transform="rotate(20 140 46)"/>
-    <ellipse cx="320" cy="42" rx="1.8" ry="1" transform="rotate(-10 320 42)"/>
-    <ellipse cx="560" cy="48" rx="2" ry="1.1" transform="rotate(15 560 48)"/>
-    <ellipse cx="820" cy="44" rx="1.8" ry="1" transform="rotate(-22 820 44)"/>
+  <!-- Falling sakura petals -->
+  <g fill="#ffb6c8">
+    <use href="#skS" transform="translate(220,18)" class="p1"/>
+    <use href="#skS" transform="translate(340,8)" class="p2"/>
+    <use href="#skS" transform="translate(480,22)" class="p3"/>
+    <use href="#skS" transform="translate(610,12)" class="p4"/>
+    <use href="#skS" transform="translate(90,30)" class="p2"/>
+    <use href="#skS" transform="translate(840,24)" class="p1"/>
+  </g>
+  <g fill="#ffc0d0">
+    <use href="#skS" transform="translate(280,14)" class="p3"/>
+    <use href="#skS" transform="translate(440,6)" class="p1"/>
+    <use href="#skS" transform="translate(660,20)" class="p2"/>
+    <use href="#skS" transform="translate(150,28)" class="p4"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#fecdd3">
+    <circle cx="82"  cy="18" r=".8" class="tw"/>
+    <circle cx="178" cy="12" r="1"  class="tw"/>
+    <circle cx="244" cy="22" r=".7" class="tw"/>
+    <circle cx="390" cy="10" r=".9" class="tw"/>
+    <circle cx="484" cy="18" r=".7" class="tw"/>
+    <circle cx="598" cy="14" r="1"  class="tw"/>
+    <circle cx="666" cy="22" r=".7" class="tw"/>
+    <circle cx="858" cy="16" r=".9" class="tw"/>
+    <circle cx="310" cy="8"  r=".6" class="tw"/>
+    <circle cx="540" cy="10" r=".7" class="tw"/>
   </g>
 </svg>

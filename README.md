@@ -51,9 +51,7 @@ degree:
   gpa: "9.4 / 10.0"
   status: Graduated — Dec 2025
 
-philosophy: >
-  One step at a time. Only one at a time.
-  The hunter does not rush the moon.
+philosophy: "One step at a time. Only one at a time. The hunter does not rush the moon."
 
 currently_building:
   - Nue.ai       # AI-driven style assistant · GPT-4o + Gemini Vision

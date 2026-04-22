@@ -19,6 +19,14 @@
       <!-- inner glow -->
       <ellipse cx="0" cy="-12" rx="5" ry="7" fill="#fff8f5" opacity=".35"/>
     </symbol>
+    <symbol id="skS" overflow="visible">
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(0)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(72)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(144)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(216)"/>
+      <path d="M0,0 C1.8,-1.5 3,-4.4 1.7,-7 Q.8,-8.3 0,-7.9 Q-.8,-8.3 -1.7,-7 C-3,-4.4 -1.8,-1.5 0,0Z" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="1" fill="#fff8f5"/>
+    </symbol>
     <style>
       @keyframes sway1{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2deg)}}
       @keyframes sway2{0%,100%{transform:rotate(1.8deg)}50%{transform:rotate(-2.2deg)}}
@@ -68,11 +76,11 @@
     <circle cx="774" cy="10" r="22" fill="#ffb6c8"/>
   </g>
 
-  <!-- Faint ground petals -->
-  <g fill="#ffb6c8" opacity=".35">
-    <ellipse cx="60" cy="78" rx="2.4" ry="1.3" transform="rotate(18 60 78)"/>
-    <ellipse cx="300" cy="82" rx="2.2" ry="1.2" transform="rotate(-14 300 82)"/>
-    <ellipse cx="580" cy="80" rx="2.4" ry="1.3" transform="rotate(26 580 80)"/>
-    <ellipse cx="850" cy="82" rx="2.2" ry="1.2" transform="rotate(-20 850 82)"/>
+  <!-- Faint ground petals (resting beneath lanterns) -->
+  <g fill="#ffb6c8" opacity=".32">
+    <use href="#skS" transform="translate(60,78) rotate(18) scale(.85)"/>
+    <use href="#skS" transform="translate(300,82) rotate(-14) scale(.8)"/>
+    <use href="#skS" transform="translate(580,80) rotate(26) scale(.85)"/>
+    <use href="#skS" transform="translate(850,82) rotate(-20) scale(.8)"/>
   </g>
 </svg>
