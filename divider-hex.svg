@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%" preserveAspectRatio="none">
+  <rect width="1200" height="60" fill="#0d1117"/>
+  <!-- Hex pattern background -->
+  <text x="50" y="20" font-family="monospace" font-size="9" fill="#21262d">0x7F3A 0x9C2E 0x4B1D 0xE8A0</text>
+  <text x="850" y="52" font-family="monospace" font-size="9" fill="#21262d">0x1F4C 0x6D8B 0x3A7E 0x5C91</text>
+  <!-- Main line -->
+  <rect x="100" y="28" width="1000" height="2" rx="1" fill="#21262d"/>
+  <!-- Highlight segments -->
+  <rect x="200" y="28" width="80" height="2" rx="1" fill="#39d0d8" opacity="0.5"/>
+  <rect x="560" y="28" width="80" height="2" rx="1" fill="#58a6ff" opacity="0.5"/>
+  <rect x="920" y="28" width="80" height="2" rx="1" fill="#a371f7" opacity="0.5"/>
+  <!-- Center code symbol -->
+  <text x="50%" y="36" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e" opacity="0.7">&lt;!-- section divider --&gt;</text>
+</svg>

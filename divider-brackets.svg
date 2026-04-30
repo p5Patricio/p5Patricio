@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bracketGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39d0d8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="60" fill="#0d1117"/>
+  <!-- Left bracket -->
+  <text x="80" y="44" font-family="monospace" font-size="36" fill="url(#bracketGrad)" font-weight="300">{</text>
+  <!-- Right bracket -->
+  <text x="1080" y="44" font-family="monospace" font-size="36" fill="url(#bracketGrad)" font-weight="300">}</text>
+  <!-- Center line -->
+  <rect x="130" y="29" width="940" height="2" rx="1" fill="#21262d"/>
+  <rect x="500" y="29" width="200" height="2" rx="1" fill="#39d0d8" opacity="0.6"/>
+  <!-- Dots -->
+  <circle cx="580" cy="30" r="3" fill="#39d0d8" opacity="0.8"/>
+  <circle cx="600" cy="30" r="3" fill="#58a6ff" opacity="0.8"/>
+  <circle cx="620" cy="30" r="3" fill="#a371f7" opacity="0.8"/>
+</svg>
