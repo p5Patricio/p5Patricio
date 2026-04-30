@@ -1,23 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="codeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Glow filter for center line -->
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Main gradient -->
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#39d0d8" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#39d0d8" stop-opacity="0.8"/>
-      <stop offset="80%" stop-color="#58a6ff" stop-opacity="0.8"/>
+      <stop offset="25%" stop-color="#39d0d8" stop-opacity="0.85"/>
+      <stop offset="75%" stop-color="#58a6ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Secondary fade gradient -->
+    <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39d0d8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#39d0d8" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#58a6ff" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </linearGradient>
   </defs>
+
   <!-- Background -->
-  <rect width="1200" height="60" fill="#0d1117"/>
-  <!-- Comment line -->
-  <text x="50%" y="35" text-anchor="middle" font-family="monospace" font-size="14" fill="#8b949e" font-weight="400">
+  <rect width="1200" height="80" fill="#0d1117"/>
+
+  <!-- Ghost code lines above -->
+  <text x="60" y="18" font-family="monospace" font-size="10" fill="#21262d" font-weight="400">
+    <tspan fill="#ff7b72" opacity="0.15">function</tspan><tspan fill="#c9d1d9" opacity="0.15"> initEngine() { </tspan><tspan fill="#8b949e" opacity="0.15">// bootstrap</tspan>
+  </text>
+  <text x="900" y="18" font-family="monospace" font-size="10" fill="#21262d" font-weight="400">
+    <tspan fill="#79c0ff" opacity="0.12">const</tspan><tspan fill="#c9d1d9" opacity="0.12"> config = </tspan><tspan fill="#a5d6ff" opacity="0.12">new Config()</tspan><tspan fill="#c9d1d9" opacity="0.12">;</tspan>
+  </text>
+
+  <!-- Ghost code lines below -->
+  <text x="80" y="74" font-family="monospace" font-size="10" fill="#21262d" font-weight="400">
+    <tspan fill="#ff7b72" opacity="0.15">return</tspan><tspan fill="#c9d1d9" opacity="0.15"> { status: </tspan><tspan fill="#a5d6ff" opacity="0.15">"ready"</tspan><tspan fill="#c9d1d9" opacity="0.15"> };</tspan>
+  </text>
+  <text x="850" y="74" font-family="monospace" font-size="10" fill="#21262d" font-weight="400">
+    <tspan fill="#8b949e" opacity="0.12">// end of section — rebuild imminent</tspan>
+  </text>
+
+  <!-- Large faded angle brackets -->
+  <text x="30" y="52" font-family="monospace" font-size="32" fill="#39d0d8" opacity="0.08" font-weight="300">&lt;</text>
+  <text x="1140" y="52" font-family="monospace" font-size="32" fill="#58a6ff" opacity="0.08" font-weight="300">&gt;</text>
+
+  <!-- Secondary faded lines -->
+  <rect x="150" y="34" width="900" height="1" rx="0.5" fill="url(#fadeGrad)" opacity="0.6"/>
+  <rect x="150" y="46" width="900" height="1" rx="0.5" fill="url(#fadeGrad)" opacity="0.4"/>
+
+  <!-- Main comment text -->
+  <text x="50%" y="42" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e" font-weight="400" opacity="0.9">
     // ──────────────────────────────────────────────────────────
   </text>
-  <!-- Glowing center line -->
-  <rect x="200" y="28" width="800" height="2" rx="1" fill="url(#codeLine)"/>
-  <!-- Code tokens floating -->
-  <text x="80" y="24" font-family="monospace" font-size="10" fill="#ff7b72" opacity="0.4">&lt;/&gt;</text>
-  <text x="1100" y="48" font-family="monospace" font-size="10" fill="#a371f7" opacity="0.4">{ }</text>
-  <text x="150" y="50" font-family="monospace" font-size="10" fill="#3fb950" opacity="0.3">#</text>
-  <text x="1050" y="22" font-family="monospace" font-size="10" fill="#39d0d8" opacity="0.3">$</text>
+
+  <!-- Center glowing line -->
+  <rect x="200" y="38" width="800" height="2.5" rx="1.25" fill="url(#codeGrad)" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Node circles on the line -->
+  <circle cx="250" cy="39.5" r="3" fill="#39d0d8" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.4s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle cx="600" cy="39.5" r="3" fill="#58a6ff" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle cx="950" cy="39.5" r="3" fill="#a371f7" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.4s" repeatCount="indefinite" begin="1.6s"/>
+  </circle>
+
+  <!-- Floating code tokens -->
+  <text x="100" y="30" font-family="monospace" font-size="11" fill="#ff7b72" opacity="0.35">&lt;/&gt;</text>
+  <text x="1080" y="56" font-family="monospace" font-size="11" fill="#a371f7" opacity="0.35">{ }</text>
+  <text x="180" y="60" font-family="monospace" font-size="10" fill="#3fb950" opacity="0.25">#</text>
+  <text x="1020" y="28" font-family="monospace" font-size="10" fill="#39d0d8" opacity="0.25">$</text>
+  <text x="340" y="24" font-family="monospace" font-size="9" fill="#8b949e" opacity="0.2">//</text>
+  <text x="860" y="64" font-family="monospace" font-size="9" fill="#8b949e" opacity="0.2">/* */</text>
+
+  <!-- Small corner accents -->
+  <path d="M 0 0 L 40 0 L 40 2 L 2 2 L 2 20 L 0 20 Z" fill="#39d0d8" opacity="0.1"/>
+  <path d="M 1200 80 L 1160 80 L 1160 78 L 1198 78 L 1198 60 L 1200 60 Z" fill="#58a6ff" opacity="0.1"/>
 </svg>

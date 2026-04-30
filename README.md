@@ -20,8 +20,14 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=4000&pause=1200&color=39d0d8&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Software+Engineer+%C2%B7+Learning+AI+Development;One+step+at+a+time.+Only+one+at+a+time.;The+end+justifies+the+means." alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=4000&pause=1200&color=39d0d8&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Software+Engineer+%C2%B7+Learning+AI+Development;One+step+at+a+time.+Only+one+at+a+time.;Hay+que+dar+un+paso+a+la+vez.+Solo+uno+a+la+vez." alt="Typing SVG"/>
   </a>
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="now-playing.svg" alt="Now Playing: Inferno - Mrs. Green Apple" width="500"/>
 </p>
 
 <br/>
@@ -51,7 +57,7 @@ degree:
   gpa: "9.4 / 10.0"
   status: Graduated — Dec 2025
 
-philosophy: "One step at a time. Only one at a time."
+philosophy: "Hay que dar un paso a la vez. Solo uno a la vez."
 
 currently_building:
   - WisprLocal      # Sovereign voice AI — local STT + TTS + LLM
@@ -174,85 +180,6 @@ focus:
 
 <br/>
 
-<h3 align="center"><code>~/projects</code> &nbsp; Featured Projects</h3>
-
-<br/>
-
-<table align="center">
-  <tr>
-    <td width="50%" valign="top">
-
-### WisprLocal
-*Sovereign voice AI infrastructure · `2026 — present`*
-
-Local-first voice assistant stack: <code>faster-whisper</code> for STT, Ollama for LLM reasoning, and a local TTS pipeline — all running on RTX 4060 under WSL2. Zero cloud dependency for voice interactions.
-
-`Python` `Whisper` `Ollama` `CUDA` `WSL2`
-
-</td>
-    <td width="50%" valign="top">
-
-### Nue.ai
-*AI-powered personal style assistant · `Feb 2026 — present`*
-
-Digital wardrobe platform with vision-model pipelines (GPT-4o + Gemini) for automated garment classification and contextual outfit recommendations driven by occasion, weather, and user preference.
-
-`Python` `FastAPI` `Next.js` `GPT-4o` `Gemini Vision`
-
-</td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-
-### DEMOX
-*Political intelligence platform · `2025 — 2026`*
-
-Real-time NLP pipeline for political entity extraction and sentiment analysis. Semantic search with <code>pgvector</code> cross-references news against a curated Guanajuato-state actors database. Async processing with Celery/Redis.
-
-`FastAPI` `Next.js` `spaCy` `Gemini 2.5 Flash` `Supabase` `Docker`
-
-</td>
-    <td width="50%" valign="top">
-
-### infinite-tic-tac-toe
-*Recursive strategy game engine · `2026`*
-
-A TypeScript-powered recursive tic-tac-toe game with nested board logic, built as a showcase of algorithmic thinking and clean state management.
-
-`TypeScript` `React` `Algorithms`
-
-</td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-
-### NBA Player Analyzer
-*Unsupervised ML playstyle profiling · `Feb — May 2025`*
-
-K-Means clustering over NBA API data to surface latent player archetypes beyond traditional position labels. Interactive Next.js dashboard for cluster exploration.
-
-`Python` `Scikit-Learn` `Pandas` `Next.js` `TypeScript`
-
-</td>
-    <td width="50%" valign="top">
-
-### Fitodex
-*Agrochemical inventory management · `Aug 2024 — Jan 2025`*
-
-Secure RESTful API deployed on Fly.io for chemical inventory control in agricultural operations. Flutter mobile client with offline-first sync.
-
-`Node.js` `Express` `MongoDB Atlas` `Flutter` `Fly.io`
-
-</td>
-  </tr>
-</table>
-
-<br/>
-
-<p align="center"><img src="divider-brackets.svg" width="100%" alt=""/></p>
-
-<br/>
-
 <h3 align="center"><code>~/experience</code> &nbsp; Experience</h3>
 
 <br/>
@@ -305,7 +232,34 @@ Secure RESTful API deployed on Fly.io for chemical inventory control in agricult
 
 <br/>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/p5Patricio/p5Patricio/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/p5Patricio/p5Patricio/output/github-snake.svg"/>
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/p5Patricio/p5Patricio/output/github-snake.svg"/>
+  </picture>
+</p>
+
+<br/>
+
 <p align="center"><img src="divider-hex.svg" width="100%" alt=""/></p>
+
+<br/>
+
+<p align="center"><img src="divider-brackets.svg" width="100%" alt=""/></p>
+
+<br/>
+
+<h3 align="center"><code>~/sobre-mí</code> &nbsp; Sobre Mí</h3>
+
+<br/>
+
+<p align="center">
+  <i>Ingeniero en Sistemas Computacionales por la Universidad de Guanajuato.</i><br/>
+  <i>Construyo sistemas de IA soberana, asistentes de voz locales y pipelines de NLP.</i><br/>
+  <i>Apasionado por la tecnología que respeta la privacidad del usuario.</i><br/>
+  <i>🇲🇽 Guanajuato, México.</i>
+</p>
 
 <br/>
 
@@ -330,7 +284,7 @@ Secure RESTful API deployed on Fly.io for chemical inventory control in agricult
 <br/>
 
 <p align="center">
-  <sub><i><code>"The end justifies the means."</code></i></sub>
+  <sub><i><code>"Hay que dar un paso a la vez. Solo uno a la vez."</code></i></sub>
 </p>
 
 <br/><br/>

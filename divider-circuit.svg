@@ -1,21 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#39d0d8" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#39d0d8" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#39d0d8" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </linearGradient>
+
+    <!-- Signal pulse animation definition -->
+    <circle id="pulse" r="3" fill="#39d0d8" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
   </defs>
-  <rect width="1200" height="60" fill="#0d1117"/>
-  <!-- Main trace -->
-  <path d="M 0 30 L 120 30 L 140 15 L 300 15 L 320 30 L 540 30 L 560 45 L 640 45 L 660 30 L 880 30 L 900 15 L 1060 15 L 1080 30 L 1200 30" fill="none" stroke="#21262d" stroke-width="2"/>
-  <!-- Glowing trace overlay -->
-  <path d="M 0 30 L 120 30 L 140 15 L 300 15 L 320 30 L 540 30 L 560 45 L 640 45 L 660 30 L 880 30 L 900 15 L 1060 15 L 1080 30 L 1200 30" fill="none" stroke="url(#circuitGrad)" stroke-width="2"/>
-  <!-- Nodes -->
-  <circle cx="140" cy="15" r="3" fill="#39d0d8" opacity="0.8"/>
-  <circle cx="320" cy="30" r="3" fill="#58a6ff" opacity="0.8"/>
-  <circle cx="560" cy="45" r="3" fill="#a371f7" opacity="0.8"/>
-  <circle cx="660" cy="30" r="3" fill="#39d0d8" opacity="0.8"/>
-  <circle cx="900" cy="15" r="3" fill="#58a6ff" opacity="0.8"/>
-  <circle cx="1080" cy="30" r="3" fill="#a371f7" opacity="0.8"/>
+
+  <!-- Background -->
+  <rect width="1200" height="80" fill="#0d1117"/>
+
+  <!-- Subtle background grid -->
+  <g opacity="0.03">
+    <path d="M 0 20 L 1200 20 M 0 40 L 1200 40 M 0 60 L 1200 60" stroke="#39d0d8" stroke-width="0.5"/>
+    <path d="M 150 0 L 150 80 M 350 0 L 350 80 M 550 0 L 550 80 M 750 0 L 750 80 M 950 0 L 950 80" stroke="#39d0d8" stroke-width="0.5"/>
+  </g>
+
+  <!-- Base trace paths (dark) -->
+  <g fill="none" stroke="#21262d" stroke-width="2">
+    <!-- Primary trace -->
+    <path d="M 0 40 L 100 40 L 120 20 L 280 20 L 300 40 L 500 40 L 520 60 L 600 60 L 620 40 L 840 40 L 860 20 L 1020 20 L 1040 40 L 1200 40"/>
+    <!-- Secondary trace -->
+    <path d="M 0 55 L 80 55 L 100 30 L 220 30 L 240 50 L 420 50 L 440 25 L 560 25 L 580 50 L 760 50 L 780 30 L 900 30 L 920 55 L 1200 55"/>
+    <!-- Tertiary trace -->
+    <path d="M 0 25 L 60 25 L 80 50 L 200 50 L 220 35 L 340 35 L 360 55 L 480 55 L 500 30 L 640 30 L 660 50 L 800 50 L 820 25 L 940 25 L 960 45 L 1080 45 L 1100 30 L 1200 30"/>
+  </g>
+
+  <!-- Glowing trace overlays -->
+  <g fill="none" stroke="url(#traceGrad)" stroke-width="2" filter="url(#glow)">
+    <path d="M 0 40 L 100 40 L 120 20 L 280 20 L 300 40 L 500 40 L 520 60 L 600 60 L 620 40 L 840 40 L 860 20 L 1020 20 L 1040 40 L 1200 40"/>
+  </g>
+  <g fill="none" stroke="url(#traceGrad)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+    <path d="M 0 55 L 80 55 L 100 30 L 220 30 L 240 50 L 420 50 L 440 25 L 560 25 L 580 50 L 760 50 L 780 30 L 900 30 L 920 55 L 1200 55"/>
+  </g>
+
+  <!-- Signal pulses traveling along primary trace -->
+  <circle r="2.5" fill="#39d0d8" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" begin="0s"/>
+    <animateMotion dur="2.5s" repeatCount="indefinite" begin="0s" path="M 0 40 L 100 40 L 120 20 L 280 20 L 300 40 L 500 40 L 520 60 L 600 60 L 620 40 L 840 40 L 860 20 L 1020 20 L 1040 40 L 1200 40"/>
+  </circle>
+  <circle r="2" fill="#58a6ff" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" begin="1.2s"/>
+    <animateMotion dur="2.5s" repeatCount="indefinite" begin="1.2s" path="M 0 40 L 100 40 L 120 20 L 280 20 L 300 40 L 500 40 L 520 60 L 600 60 L 620 40 L 840 40 L 860 20 L 1020 20 L 1040 40 L 1200 40"/>
+  </circle>
+
+  <!-- Signal pulse on secondary trace -->
+  <circle r="1.8" fill="#a371f7" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.8;0" dur="3.2s" repeatCount="indefinite" begin="0.5s"/>
+    <animateMotion dur="3.2s" repeatCount="indefinite" begin="0.5s" path="M 0 55 L 80 55 L 100 30 L 220 30 L 240 50 L 420 50 L 440 25 L 560 25 L 580 50 L 760 50 L 780 30 L 900 30 L 920 55 L 1200 55"/>
+  </circle>
+
+  <!-- Via / connection pads at bends -->
+  <g fill="#0d1117" stroke="#39d0d8" stroke-width="1.2">
+    <rect x="116" y="14" width="8" height="8" rx="1.5"/>
+    <rect x="276" y="14" width="8" height="8" rx="1.5"/>
+    <rect x="296" y="34" width="8" height="8" rx="1.5"/>
+    <rect x="516" y="54" width="8" height="8" rx="1.5"/>
+    <rect x="596" y="54" width="8" height="8" rx="1.5"/>
+    <rect x="616" y="34" width="8" height="8" rx="1.5"/>
+    <rect x="856" y="14" width="8" height="8" rx="1.5"/>
+    <rect x="1016" y="14" width="8" height="8" rx="1.5"/>
+    <rect x="1036" y="34" width="8" height="8" rx="1.5"/>
+  </g>
+
+  <!-- Nodes on primary trace -->
+  <circle cx="120" cy="20" r="3.5" fill="#39d0d8" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="300" cy="40" r="3.5" fill="#58a6ff" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="520" cy="60" r="3.5" fill="#a371f7" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="620" cy="40" r="3.5" fill="#39d0d8" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="860" cy="20" r="3.5" fill="#58a6ff" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="1040" cy="40" r="3.5" fill="#a371f7" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- IC chip silhouettes -->
+  <g opacity="0.25">
+    <!-- Chip 1 -->
+    <rect x="360" y="10" width="28" height="20" rx="2" fill="none" stroke="#39d0d8" stroke-width="1"/>
+    <line x1="368" y1="10" x2="368" y2="6" stroke="#39d0d8" stroke-width="1"/>
+    <line x1="374" y1="10" x2="374" y2="6" stroke="#39d0d8" stroke-width="1"/>
+    <line x1="380" y1="10" x2="380" y2="6" stroke="#39d0d8" stroke-width="1"/>
+    <line x1="368" y1="30" x2="368" y2="34" stroke="#39d0d8" stroke-width="1"/>
+    <line x1="374" y1="30" x2="374" y2="34" stroke="#39d0d8" stroke-width="1"/>
+    <line x1="380" y1="30" x2="380" y2="34" stroke="#39d0d8" stroke-width="1"/>
+
+    <!-- Chip 2 -->
+    <rect x="760" y="45" width="28" height="20" rx="2" fill="none" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="768" y1="45" x2="768" y2="41" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="774" y1="45" x2="774" y2="41" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="780" y1="45" x2="780" y2="41" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="768" y1="65" x2="768" y2="69" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="774" y1="65" x2="774" y2="69" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="780" y1="65" x2="780" y2="69" stroke="#58a6ff" stroke-width="1"/>
+  </g>
+
+  <!-- Corner frame accents -->
+  <path d="M 0 0 L 30 0 L 30 2 L 2 2 L 2 15 L 0 15 Z" fill="#39d0d8" opacity="0.08"/>
+  <path d="M 1200 80 L 1170 80 L 1170 78 L 1198 78 L 1198 65 L 1200 65 Z" fill="#58a6ff" opacity="0.08"/>
 </svg>
