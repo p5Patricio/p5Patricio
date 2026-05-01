@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="100%">
-  <rect width="1200" height="40" fill="#0d1117"/>
-  <rect x="100" y="0" width="1000" height="1" fill="#21262d"/>
-  <text x="50%" y="26" text-anchor="middle" font-family="monospace" font-size="11" fill="#21262d">
-    // EOF — Hay que dar un paso a la vez. Solo uno a la vez.
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="100%">
+  <rect width="1200" height="28" rx="12" fill="#161b22"/>
+  <rect x="0" y="16" width="1200" height="12" rx="12" fill="#161b22"/>
+  <text x="16" y="19" font-family="monospace" font-size="10" fill="#8b949e">main</text>
+  <circle cx="54" cy="16" r="3" fill="#3fb950"/>
+  <text x="64" y="19" font-family="monospace" font-size="10" fill="#8b949e">UTF-8</text>
+  <text x="116" y="19" font-family="monospace" font-size="10" fill="#8b949e">TypeScript</text>
+  <text x="1060" y="19" font-family="monospace" font-size="10" fill="#8b949e">Prettier</text>
+  <text x="1140" y="19" font-family="monospace" font-size="10" fill="#8b949e">Ln 1, Col 1</text>
 </svg>
