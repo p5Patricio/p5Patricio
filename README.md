@@ -35,50 +35,35 @@ const stack = {
 }
 ```
 
-```typescript
-// ~/projects.ts
-// ─────────────────────────────────────────────────────────────────────
-
-const projects = [
-  {
-    name: "WisprLocal",
-    desc: "Sovereign voice AI — local STT + TTS + LLM on RTX 4060 / WSL2",
-    tech: ["Python", "Whisper", "Ollama", "CUDA"],
-  },
-  {
-    name: "Nue.ai",
-    desc: "AI-powered style assistant — GPT-4o + Gemini Vision",
-    tech: ["Python", "FastAPI", "Next.js"],
-  },
-  {
-    name: "DEMOX",
-    desc: "Political intelligence platform — NLP + pgvector",
-    tech: ["FastAPI", "Next.js", "spaCy", "Supabase", "Docker"],
-  },
-  {
-    name: "infinite-tic-tac-toe",
-    desc: "Recursive strategy game engine",
-    tech: ["TypeScript", "React"],
-  },
-]
-```
-
-```typescript
-// ~/experience.ts
-// ─────────────────────────────────────────────────────────────────────
-
-const experience = [
-  {
-    company: "Mazda Motor Mexico",
-    role: "Software Engineer (Intern)",
-    period: "Aug 2025 → Feb 2026",
-    highlights: [
-      "Built end-to-end DMS in C# / .NET + SQL Server",
-      "Cut document-search time & eliminated manual errors",
-    ],
-  },
-]
-```
+<p align="center">
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="Go"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"/>
+  &nbsp;&nbsp;
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/>
+  &nbsp;&nbsp;
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"/>
+  &nbsp;&nbsp;
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"/>
+  &nbsp;&nbsp;
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"/>
+  &nbsp;&nbsp;
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
+  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
+</p>
 
 ```typescript
 // ~/contact.ts
