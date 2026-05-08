@@ -1,5 +1,9 @@
 <p align="center"><img src="header.svg" alt="" width="100%"/></p>
 
+<p align="center"><img src="prompt-about.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="card-about.svg" alt="" width="100%"/></p>
+
 ```typescript
 // ~/about.ts
 // ─────────────────────────────────────────────────────────────────────
@@ -18,6 +22,12 @@ const profile = {
 
 export default profile
 ```
+
+<p align="center"><img src="divider-terminal.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="prompt-stack.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="card-stack.svg" alt="" width="100%"/></p>
 
 ```typescript
 // ~/stack.ts
@@ -63,6 +73,12 @@ const stack = {
   <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
 </p>
 
+<p align="center"><img src="divider-terminal.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="prompt-contact.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="card-contact.svg" alt="" width="100%"/></p>
+
 ```typescript
 // ~/contact.ts
 // ─────────────────────────────────────────────────────────────────────
@@ -79,6 +95,10 @@ const contact = {
   <a href="https://www.linkedin.com/in/patricioagpv/">LinkedIn</a> ·
   <a href="https://github.com/p5Patricio">GitHub</a>
 </p>
+
+<p align="center"><img src="divider-terminal.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="prompt-input.svg" alt="" width="100%"/></p>
 
 <p align="center">
   <picture>
