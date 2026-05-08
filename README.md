@@ -1,7 +1,5 @@
 <p align="center"><img src="header.svg" alt="" width="100%"/></p>
 
-<p align="center"><img src="now-playing.svg" alt="Now Playing" width="400"/></p>
-
 ```typescript
 // ~/about.ts
 // ─────────────────────────────────────────────────────────────────────
