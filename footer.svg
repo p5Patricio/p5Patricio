@@ -1,27 +1,5 @@
 <svg width="1200" height="30" viewBox="0 0 1200 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .pixel { shape-rendering: crispEdges; }
-    .neon-magenta { fill: #FF00FF; }
-    .text-8bit { font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; }
-  </style>
-  
-  <rect width="1200" height="30" fill="#0D0D0D" class="pixel" />
-  <rect width="1200" height="1" fill="#1A1A1A" class="pixel" />
-  
-  <!-- "main" branch pixel style -->
-  <g transform="translate(15, 10)">
-    <rect x="0" y="4" width="8" height="2" class="pixel neon-magenta" />
-    <rect x="8" y="2" width="2" height="6" class="pixel neon-magenta" />
-    <text x="15" y="9" class="text-8bit" fill="#FF00FF">BRANCH::MAIN</text>
-  </g>
-  
-  <text x="200" y="19" class="text-8bit" fill="#444">CHARSET: UTF-8</text>
-  <text x="350" y="19" class="text-8bit" fill="#444">LANG: 8-BIT-TS</text>
-  
-  <g transform="translate(1000, 10)">
-    <rect x="0" y="0" width="6" height="6" class="pixel neon-magenta" />
-    <text x="12" y="9" class="text-8bit" fill="#FF00FF">QUALITY_CTRL: PASS</text>
-  </g>
-  
-  <text x="1185" y="19" text-anchor="end" class="text-8bit" fill="#444">SECURED_LINK</text>
+  <rect width="1200" height="30" fill="#000000" />
+  <rect x="0" y="28" width="1200" height="2" fill="#333" />
+  <text x="1185" y="18" text-anchor="end" font-family="monospace" font-size="10" fill="#666">v2.0 // LOGO_IDENT_READY</text>
 </svg>

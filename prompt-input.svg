@@ -1,22 +1,5 @@
 <svg width="1200" height="40" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .pixel { shape-rendering: crispEdges; }
-    .neon-cyan { fill: #00FFCC; }
-    .text-8bit { font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; }
-    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    .cursor { animation: blink 1s infinite; fill: #FF00FF; }
-  </style>
-  
-  <rect width="1200" height="40" fill="#0D0D0D" class="pixel" />
-  
-  <g transform="translate(15, 12)">
-    <rect x="0" y="0" width="4" height="4" class="pixel neon-cyan" />
-    <rect x="4" y="4" width="4" height="4" class="pixel neon-cyan" />
-    <rect x="0" y="8" width="4" height="4" class="pixel neon-cyan" />
-  </g>
-  
-  <text x="35" y="26" class="text-8bit" fill="#00FFCC">sudo snake --run</text>
-  <rect x="185" y="14" width="8" height="16" class="pixel cursor" />
-  
-  <text x="1200" y="26" text-anchor="end" class="text-8bit" fill="#444" transform="translate(-20, 0)">[INITIALIZING GAME...]</text>
+  <rect width="1200" height="40" fill="#000000" />
+  <rect x="15" y="12" width="6" height="16" rx="3" fill="#FFFFFF" />
+  <text x="35" y="26" font-family="monospace" font-size="16" font-weight="bold" fill="#FFFFFF">game --snake</text>
 </svg>
