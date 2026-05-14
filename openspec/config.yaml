@@ -1,0 +1,62 @@
+schema: spec-driven
+
+context: |
+  Tech stack: GitHub Profile Repo (Markdown, SVG, GitHub Actions)
+  Architecture: Static README with SVG visuals, no build system
+  Testing: No test infrastructure detected
+  Style: Manual SVG editing, Markdown formatting
+
+strict_tdd: false
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Identify affected SVGs, README sections, or workflow files
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include visual mockup descriptions for SVG changes
+    - Document animation or interactivity decisions with rationale
+  tasks:
+    - Group tasks by phase (design, SVG creation, README update, workflow)
+    - Use hierarchical numbering (1.1, 1.2, etc.)
+    - Keep tasks small enough to complete in one session
+  apply:
+    - Follow existing SVG patterns (viewBox, gradients, filters)
+    - Maintain README structure and code-block styling
+  verify:
+    - Preview SVGs in browser or image viewer
+    - Validate Markdown rendering on GitHub
+  archive:
+    - Warn before merging destructive deltas (large removals)
+
+testing:
+  strict_tdd_mode: false
+  detected: 2026-05-07
+  test_runner:
+    command: ""
+    framework: "NOT FOUND"
+  test_layers:
+    unit:
+      available: false
+      tool: ""
+    integration:
+      available: false
+      tool: ""
+    e2e:
+      available: false
+      tool: ""
+  coverage:
+    available: false
+    command: ""
+  quality_tools:
+    linter:
+      available: false
+      command: ""
+    type_checker:
+      available: false
+      command: ""
+    formatter:
+      available: false
+      command: ""

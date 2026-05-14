@@ -1,0 +1,37 @@
+<svg width="1000" height="20" viewBox="0 0 1000 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { shape-rendering: crispEdges; }
+    @keyframes glitch {
+      0% { opacity: 1; transform: translateX(0); }
+      10% { opacity: 0.8; transform: translateX(-2px); }
+      20% { opacity: 1; transform: translateX(2px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .neon-cyan { fill: #00FFCC; filter: drop-shadow(0 0 2px #00FFCC); }
+    .neon-magenta { fill: #FF00FF; filter: drop-shadow(0 0 2px #FF00FF); }
+    .glitch-anim { animation: glitch 3s infinite; }
+  </style>
+  
+  <!-- Grid Background (Subtle) -->
+  <rect width="1000" height="2" y="9" fill="#1A1A1A" class="pixel" />
+  
+  <!-- Pixel pattern -->
+  <g class="glitch-anim">
+    <rect x="0" y="8" width="4" height="4" class="pixel neon-cyan" />
+    <rect x="10" y="8" width="4" height="4" class="pixel neon-magenta" />
+    <rect x="20" y="8" width="4" height="4" class="pixel neon-cyan" />
+    <rect x="30" y="8" width="4" height="4" class="pixel neon-magenta" />
+    
+    <!-- Pattern across the line -->
+    <rect x="100" y="8" width="8" height="4" class="pixel neon-cyan" />
+    <rect x="200" y="8" width="8" height="4" class="pixel neon-magenta" />
+    <rect x="300" y="8" width="8" height="4" class="pixel neon-cyan" />
+    <rect x="400" y="8" width="8" height="4" class="pixel neon-magenta" />
+    <rect x="500" y="8" width="12" height="4" class="pixel neon-cyan" />
+    <rect x="600" y="8" width="8" height="4" class="pixel neon-magenta" />
+    <rect x="700" y="8" width="8" height="4" class="pixel neon-cyan" />
+    <rect x="800" y="8" width="8" height="4" class="pixel neon-magenta" />
+    <rect x="900" y="8" width="8" height="4" class="pixel neon-cyan" />
+    <rect x="980" y="8" width="20" height="4" class="pixel neon-magenta" />
+  </g>
+</svg>

@@ -1,102 +1,61 @@
-<p align="center"><img src="header.svg" alt="" width="100%"/></p>
+<p align="center"><img src="header.svg" alt="P5PATRICIO" width="100%"/></p>
 
 <p align="center"><img src="prompt-about.svg" alt="" width="100%"/></p>
 
 <p align="center"><img src="card-about.svg" alt="" width="100%"/></p>
 
 ```typescript
-// ~/about.ts
+// ~/profile/identity.sys
 // ─────────────────────────────────────────────────────────────────────
 
-const profile = {
+const IDENTITY = {
   name: "Patricio Antonio García Pérez Vela",
-  role: "Software Engineer & Learning AI Development",
-  location: "Guanajuato, México 🇲🇽",
-  education: "B.Sc. Computer Systems Engineering — UGTO",
-  gpa: "9.4 / 10.0",
-  status: "Graduated — Dec 2025",
+  role: "Software Engineer & AI Researcher",
+  loc:  "Guanajuato, MX",
+  edu:  "B.Sc. Computer Systems Engineering — UGTO",
+  gpa:  "9.4/10.0",
+  stat: "SYSTEM_GRADUATED [2025.12]",
   focus: ["Sovereign AI", "Full-Stack", "NLP"],
-  building: ["WisprLocal", "Nue.ai", "DEMOX"],
-  philosophy: "Hay que dar un paso a la vez. Solo uno a la vez.",
+  build: ["WisprLocal", "Nue.ai", "DEMOX"],
+  motto: "One step at a time. Only one.",
 }
-
-export default profile
 ```
 
-<p align="center"><img src="divider-terminal.svg" alt="" width="100%"/></p>
+<p align="center"><img src="divider-pixel.svg" alt="" width="100%"/></p>
 
 <p align="center"><img src="prompt-stack.svg" alt="" width="100%"/></p>
 
 <p align="center"><img src="card-stack.svg" alt="" width="100%"/></p>
 
-```typescript
-// ~/stack.ts
-// ─────────────────────────────────────────────────────────────────────
-
-const stack = {
-  languages: ["Python", "TypeScript", "JavaScript", "Go", "C#", "C++"],
-  frontend:  ["React", "Next.js", "Vue", "NuxtJS", "Flutter"],
-  backend:   ["FastAPI", "Node.js", "Express", ".NET"],
-  ai:        ["TensorFlow", "PyTorch", "spaCy", "Whisper", "Ollama"],
-  databases: ["PostgreSQL", "MongoDB", "Redis", "SQL Server"],
-  devops:    ["Docker", "Git", "Linux", "WSL2", "Fly.io", "Render"],
+```json
+{
+  "CORE_LANGS": ["Python", "TypeScript", "JavaScript", "Go", "C#", "C++"],
+  "FRONTEND":   ["React", "Next.js", "Vue", "Flutter"],
+  "BACKEND":    ["FastAPI", "Node.js", "Express", ".NET"],
+  "AI_MODELS":  ["TensorFlow", "PyTorch", "spaCy", "Whisper", "Ollama"],
+  "INFRA":      ["Docker", "Git", "Linux", "PostgreSQL", "MongoDB", "Redis"]
 }
 ```
 
-<p align="center">
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="Go"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"/>
-  &nbsp;&nbsp;
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/>
-  &nbsp;&nbsp;
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"/>
-  &nbsp;&nbsp;
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"/>
-  &nbsp;&nbsp;
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"/>
-  &nbsp;&nbsp;
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
-  <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
-</p>
-
-<p align="center"><img src="divider-terminal.svg" alt="" width="100%"/></p>
+<p align="center"><img src="divider-pixel.svg" alt="" width="100%"/></p>
 
 <p align="center"><img src="prompt-contact.svg" alt="" width="100%"/></p>
 
 <p align="center"><img src="card-contact.svg" alt="" width="100%"/></p>
 
-```typescript
-// ~/contact.ts
-// ─────────────────────────────────────────────────────────────────────
-
-const contact = {
-  email:    "pa.garciaperezvela@ugto.mx",
-  linkedin: "linkedin.com/in/patricioagpv",
-  github:   "github.com/p5Patricio",
-}
-```
-
 <p align="center">
-  <a href="mailto:pa.garciaperezvela@ugto.mx">Email</a> ·
-  <a href="https://www.linkedin.com/in/patricioagpv/">LinkedIn</a> ·
-  <a href="https://github.com/p5Patricio">GitHub</a>
+  <a href="mailto:pa.garciaperezvela@ugto.mx">
+    <img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela@ugto.mx-00FFCC?style=for-the-badge&logoColor=0D0D0D" alt="Email"/>
+  </a>
+  <a href="https://www.linkedin.com/in/patricioagpv/">
+    <img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-FF00FF?style=for-the-badge&logoColor=0D0D0D" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/p5Patricio">
+    <img src="https://img.shields.io/badge/GITHUB-p5Patricio-00FFCC?style=for-the-badge&logoColor=0D0D0D" alt="GitHub"/>
+  </a>
 </p>
 
-<p align="center"><img src="divider-terminal.svg" alt="" width="100%"/></p>
+<p align="center"><img src="divider-pixel.svg" alt="" width="100%"/></p>
 
 <p align="center"><img src="prompt-input.svg" alt="" width="100%"/></p>
 
