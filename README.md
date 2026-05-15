@@ -42,6 +42,17 @@ const IDENTITY = {
   </a>
 </p>
 
+<p align="center"><img src="section-performance.svg" alt="" width="100%"/></p>
+
+<p align="center">
+  <img src="ranks/overwatch.png" width="120" alt="Overwatch Grandmaster" style="margin: 0 20px;"/>
+  <img src="ranks/rocket-league.png" width="120" alt="Rocket League Diamond" style="margin: 0 20px;"/>
+</p>
+
+<p align="center" style="font-family: monospace; color: #555; font-size: 12px; letter-spacing: 0.2em;">
+  OVERWATCH_GRANDMASTER // ROCKET_LEAGUE_DIAMOND
+</p>
+
 <p align="center"><img src="section-activity.svg" alt="" width="100%"/></p>
 
 <p align="center">
