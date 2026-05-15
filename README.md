@@ -45,12 +45,12 @@ const IDENTITY = {
 <p align="center"><img src="section-performance.svg" alt="" width="100%"/></p>
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" style="border: none;">
+  <table style="border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+      <td align="center" style="border: none; padding: 20px;">
         <img src="ranks/overwatch.png" width="130" alt="Overwatch Grandmaster"/>
       </td>
-      <td align="center" style="border: none;">
+      <td align="center" style="border: none; padding: 20px;">
         <img src="ranks/rocket-league.png" width="115" alt="Rocket League Diamond"/>
       </td>
     </tr>
@@ -60,6 +60,23 @@ const IDENTITY = {
 <p align="center" style="font-family: monospace; color: #555; font-size: 11px; letter-spacing: 0.3em; margin-top: -10px;">
   OVERWATCH_GRANDMASTER // ROCKET_LEAGUE_DIAMOND
 </p>
+
+<p align="center"><img src="section-experience.svg" alt="" width="100%"/></p>
+
+<div align="center">
+  <table style="border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+      <td align="center" style="border: none; padding: 10px;">
+        <img src="ranks/mazda-logo.png" width="120" alt="Mazda Logo"/>
+      </td>
+      <td align="left" style="border: none; padding: 20px; color: #f0f0f0; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.6;">
+        <b style="color: #d4af37; letter-spacing: 0.1em;">MAZDA LOGÍSTICA DE MÉXICO</b><br/>
+        <i>Professional Internship // 2024 - 2025</i><br/>
+        Desarrollo de soluciones basadas en datos y optimización de flujos operativos mediante automatización y análisis técnico. Aplicación de ingeniería de software en entornos corporativos de alta demanda.
+      </td>
+    </tr>
+  </table>
+</div>
 
 <p align="center"><img src="section-activity.svg" alt="" width="100%"/></p>
 
