@@ -28,19 +28,22 @@ const IDENTITY = {
 }
 ```
 
-<p align="center"><img src="section-contact.svg" alt="" width="100%"/></p>
+<p align="center"><img src="section-experience.svg" alt="" width="100%"/></p>
 
-<p align="center">
-  <a href="mailto:pa.garciaperezvela@ugto.mx">
-    <img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela@ugto.mx-000000?style=for-the-badge&logoColor=d4af37" alt="Email"/>
-  </a>
-  <a href="https://www.linkedin.com/in/patricioagpv/">
-    <img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-000000?style=for-the-badge&logoColor=d4af37" alt="LinkedIn"/>
-  </a>
-  <a href="https://github.com/p5Patricio">
-    <img src="https://img.shields.io/badge/GITHUB-p5Patricio-000000?style=for-the-badge&logoColor=d4af37" alt="GitHub"/>
-  </a>
-</p>
+<div align="center">
+  <table style="border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+      <td align="center" style="border: none; padding: 10px;">
+        <img src="ranks/mazda-logo.png" width="120" alt="Mazda Logo"/>
+      </td>
+      <td align="left" style="border: none; padding: 20px; color: #f0f0f0; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.6;">
+        <b style="color: #00ccff; letter-spacing: 0.1em;">MAZDA LOGÍSTICA DE MÉXICO</b><br/>
+        <i>Professional Internship // 2024 - 2025</i><br/>
+        Desarrollo de soluciones basadas en datos y optimización de flujos operativos mediante automatización y análisis técnico. Aplicación de ingeniería de software en entornos corporativos de alta demanda.
+      </td>
+    </tr>
+  </table>
+</div>
 
 <p align="center"><img src="section-performance.svg" alt="" width="100%"/></p>
 
@@ -61,22 +64,19 @@ const IDENTITY = {
   OVERWATCH_GRANDMASTER // ROCKET_LEAGUE_DIAMOND
 </p>
 
-<p align="center"><img src="section-experience.svg" alt="" width="100%"/></p>
+<p align="center"><img src="section-contact.svg" alt="" width="100%"/></p>
 
-<div align="center">
-  <table style="border-collapse: collapse; border: none;">
-    <tr style="border: none;">
-      <td align="center" style="border: none; padding: 10px;">
-        <img src="ranks/mazda-logo.png" width="120" alt="Mazda Logo"/>
-      </td>
-      <td align="left" style="border: none; padding: 20px; color: #f0f0f0; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.6;">
-        <b style="color: #d4af37; letter-spacing: 0.1em;">MAZDA LOGÍSTICA DE MÉXICO</b><br/>
-        <i>Professional Internship // 2024 - 2025</i><br/>
-        Desarrollo de soluciones basadas en datos y optimización de flujos operativos mediante automatización y análisis técnico. Aplicación de ingeniería de software en entornos corporativos de alta demanda.
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <a href="mailto:pa.garciaperezvela@ugto.mx">
+    <img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela@ugto.mx-000000?style=for-the-badge&logoColor=00ccff" alt="Email"/>
+  </a>
+  <a href="https://www.linkedin.com/in/patricioagpv/">
+    <img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-000000?style=for-the-badge&logoColor=00ccff" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/p5Patricio">
+    <img src="https://img.shields.io/badge/GITHUB-p5Patricio-000000?style=for-the-badge&logoColor=00ccff" alt="GitHub"/>
+  </a>
+</p>
 
 <p align="center"><img src="section-activity.svg" alt="" width="100%"/></p>
 

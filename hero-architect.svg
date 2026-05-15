@@ -4,10 +4,10 @@
     @keyframes line-draw { 0% { stroke-dashoffset: 1200; } 100% { stroke-dashoffset: 0; } }
     .grid-dot { fill: #333; }
     .arch-line { stroke: #222; stroke-width: 0.5; }
-    .accent-line { stroke: #d4af37; stroke-width: 1; stroke-dasharray: 1200; animation: line-draw 2s ease-out forwards; }
+    .accent-line { stroke: #00ccff; stroke-width: 1; stroke-dasharray: 1200; animation: line-draw 2s ease-out forwards; }
     .text-premium { font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #f0f0f0; letter-spacing: 0.2em; font-weight: 300; }
-    .text-title { font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #d4af37; letter-spacing: 0.4em; font-weight: 200; font-size: 14px; }
-    .intersection { fill: #d4af37; animation: subtle-glow 3s ease-in-out infinite; }
+    .text-title { font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #00ccff; letter-spacing: 0.4em; font-weight: 200; font-size: 14px; }
+    .intersection { fill: #00ccff; animation: subtle-glow 3s ease-in-out infinite; }
   </style>
 
   <rect width="1200" height="400" fill="#0d0d0d" />
@@ -41,5 +41,5 @@
   <text x="815" y="290" font-family="monospace" font-size="8" fill="#555">SYS_STATUS.NOMINAL</text>
 
   <!-- Border Frame -->
-  <rect x="20" y="20" width="1160" height="360" stroke="#d4af37" stroke-width="0.5" stroke-opacity="0.2" fill="none" />
+  <rect x="20" y="20" width="1160" height="360" stroke="#00ccff" stroke-width="0.5" stroke-opacity="0.2" fill="none" />
 </svg>
