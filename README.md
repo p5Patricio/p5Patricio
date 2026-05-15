@@ -44,12 +44,20 @@ const IDENTITY = {
 
 <p align="center"><img src="section-performance.svg" alt="" width="100%"/></p>
 
-<p align="center">
-  <img src="ranks/overwatch.png" width="120" alt="Overwatch Grandmaster" style="margin: 0 20px;"/>
-  <img src="ranks/rocket-league.png" width="120" alt="Rocket League Diamond" style="margin: 0 20px;"/>
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="border: none;">
+        <img src="ranks/overwatch.png" width="130" alt="Overwatch Grandmaster"/>
+      </td>
+      <td align="center" style="border: none;">
+        <img src="ranks/rocket-league.png" width="115" alt="Rocket League Diamond"/>
+      </td>
+    </tr>
+  </table>
+</div>
 
-<p align="center" style="font-family: monospace; color: #555; font-size: 12px; letter-spacing: 0.2em;">
+<p align="center" style="font-family: monospace; color: #555; font-size: 11px; letter-spacing: 0.3em; margin-top: -10px;">
   OVERWATCH_GRANDMASTER // ROCKET_LEAGUE_DIAMOND
 </p>
 
