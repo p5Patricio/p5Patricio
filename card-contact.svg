@@ -1,6 +1,0 @@
-<svg width="1200" height="40" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="40" fill="#000000" />
-  <rect x="0" y="0" width="100" height="2" rx="1" fill="#FF4433" />
-  <text x="20" y="25" font-family="monospace" font-size="14" font-weight="bold" fill="#FF4433">IDENTITY::CONTACT.COM</text>
-  <rect x="1100" y="18" width="40" height="4" rx="2" fill="#FFDD00" opacity="0.5" />
-</svg>
