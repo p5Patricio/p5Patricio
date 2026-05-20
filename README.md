@@ -1,91 +1,40 @@
-<p align="center"><img src="hero-architect.svg" alt="PATRICIO GARCIA // ARCHITECT" width="100%"/></p>
+# 👋 Hola, soy Patricio García
 
-<p align="center"><img src="section-identity.svg" alt="" width="100%"/></p>
+## AI Software Engineer & Full Stack Developer
+**Especializado en el despliegue de Agentes Autónomos y LLMs Locales.**
 
-```typescript
-// ~/identity/profile.sys
-// ─────────────────────────────────────────────────────────────────────
+[![GitHub stars](https://img.shields.io/github/stars/p5Patricio?style=social)](https://github.com/p5Patricio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/patricioagpv)
 
-const IDENTITY = {
-  name:  "Patricio Antonio García Pérez Vela",
-  role:  "Software Engineer & AI Researcher",
-  loc:   "Guanajuato, MX",
-  edu:   "B.Sc. Computer Systems Engineering — UGTO",
-  build: ["WisprLocal", "Nue.ai", "DEMOX"],
-  motto: "One step at a time."
-}
-```
+---
 
-<p align="center"><img src="section-stack.svg" alt="" width="100%"/></p>
+### 🚀 Proyectos Destacados
 
-```json
-{
-  "CORE_LANGS": ["Python", "TypeScript", "Go", "C#", "C++"],
-  "FRONTEND":   ["React", "Next.js", "Vue", "Flutter"],
-  "BACKEND":    ["FastAPI", "Node.js", "Express", ".NET"],
-  "AI_STACK":   ["TensorFlow", "PyTorch", "Whisper", "Ollama"],
-  "INFRA":      ["Docker", "Git", "Linux", "PostgreSQL", "MongoDB"]
-}
-```
+- **[WisprLocal](https://github.com/p5Patricio/WisprLocal)**: Dictado por voz 100% local con Whisper. Optimizado para latencia <500ms.
+- **[Interprete-LSM](https://github.com/p5Patricio/Interprete-LSM)**: Traductor de Lengua de Señas Mexicana en tiempo real con Computer Vision.
+- **Nue.ai**: Arquitectura de IA para clasificación de moda con visión por computadora.
 
-<p align="center"><img src="section-experience.svg" alt="" width="100%"/></p>
+### 🛠️ Tech Stack
 
-<div align="center">
-  <table style="border-collapse: collapse; border: none;">
-    <tr style="border: none;">
-      <td align="center" style="border: none; padding: 10px;">
-        <img src="ranks/mazda-logo.png" width="120" alt="Mazda Logo"/>
-      </td>
-      <td align="left" style="border: none; padding: 20px; color: #f0f0f0; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.6;">
-        <b style="color: #00ccff; letter-spacing: 0.1em;">MAZDA LOGÍSTICA DE MÉXICO</b><br/>
-        <i>Professional Internship // 2024 - 2025</i><br/>
-        Desarrollo de soluciones basadas en datos y optimización de flujos operativos mediante automatización y análisis técnico. Aplicación de ingeniería de software en entornos corporativos de alta demanda.
-      </td>
-    </tr>
-  </table>
-</div>
+- **Lenguajes:** Python (Experto), TypeScript, C#, Go.
+- **IA/ML:** LLM Agents (Claude Code, SDD), Whisper, TensorFlow, MediaPipe, RAG, Semantic Search.
+- **Backend:** FastAPI, Node.js, .NET, PostgreSQL (pgvector), Supabase.
+- **Frontend:** Next.js, React Native, Tailwind CSS.
+- **Infra:** Docker, GitHub Actions, Linux (WSL2), Vercel.
 
-<p align="center"><img src="section-performance.svg" alt="" width="100%"/></p>
+---
 
-<div align="center">
-  <table style="border-collapse: collapse; border: none;">
-    <tr style="border: none;">
-      <td align="center" style="border: none; padding: 20px;">
-        <img src="ranks/overwatch.png" width="130" alt="Overwatch Grandmaster"/>
-      </td>
-      <td align="center" style="border: none; padding: 20px;">
-        <img src="ranks/rocket-league.png" width="115" alt="Rocket League Diamond"/>
-      </td>
-    </tr>
-  </table>
-</div>
+### 📈 Impacto & Resultados
 
-<p align="center" style="font-family: monospace; color: #555; font-size: 11px; letter-spacing: 0.3em; margin-top: -10px;">
-  OVERWATCH_GRANDMASTER // ROCKET_LEAGUE_DIAMOND
-</p>
+- **Mazda México:** Reducción del **85%** en tiempos de gestión de documentos mediante automatización en .NET.
+- **Visión por Computadora:** Implementación de modelos con **92% de precisión** en entornos de producción.
+- **Vibe Coding:** Usuario avanzado de agentes de codificación para acelerar el SDLC.
 
-<p align="center"><img src="section-contact.svg" alt="" width="100%"/></p>
+---
 
-<p align="center">
-  <a href="mailto:pa.garciaperezvela@ugto.mx">
-    <img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela@ugto.mx-000000?style=for-the-badge&logoColor=00ccff" alt="Email"/>
-  </a>
-  <a href="https://www.linkedin.com/in/patricioagpv/">
-    <img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-000000?style=for-the-badge&logoColor=00ccff" alt="LinkedIn"/>
-  </a>
-  <a href="https://github.com/p5Patricio">
-    <img src="https://img.shields.io/badge/GITHUB-p5Patricio-000000?style=for-the-badge&logoColor=00ccff" alt="GitHub"/>
-  </a>
-</p>
+### 📫 Contacto
 
-<p align="center"><img src="section-activity.svg" alt="" width="100%"/></p>
+- 📧 [pa.garciaperezvela@ugto.mx](mailto:pa.garciaperezvela@ugto.mx)
+- 🌐 [portafolio.patodev.com](https://portafolio.patodev.com)
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/p5Patricio/p5Patricio/output/github-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/p5Patricio/p5Patricio/output/github-snake.svg"/>
-    <img alt="github-snake" src="https://raw.githubusercontent.com/p5Patricio/p5Patricio/output/github-snake.svg"/>
-  </picture>
-</p>
-
-<p align="center"><img src="footer.svg" alt="" width="100%"/></p>
+*"Construyendo el futuro de la IA, un paso a la vez."*
