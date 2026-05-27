@@ -1,4 +1,4 @@
-<svg width="1200" height="92" viewBox="0 0 1200 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ACTIVIDAD">
+<svg width="1200" height="92" viewBox="0 0 1200 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PROYECTOS">
   <rect width="1200" height="92" rx="22" fill="#020507"/>
   <defs>
     <linearGradient id="g" x1="0" y1="46" x2="1200" y2="46" gradientUnits="userSpaceOnUse">
@@ -8,6 +8,6 @@
   </defs>
   <path d="M70 48 C260 30 382 30 560 47 C748 65 894 65 1130 43" stroke="url(#g)" stroke-width="2.2" filter="url(#glow)"/>
   <path d="M70 48 C260 30 382 30 560 47 C748 65 894 65 1130 43" stroke="url(#g)" stroke-width="1"/>
-  <text x="72" y="42" fill="#eaf7ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="4">ACTIVIDAD</text>
-  <text x="73" y="67" fill="#8fa7b7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.6">contribuciones y movimiento diario</text>
+  <text x="72" y="42" fill="#eaf7ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="4">PROYECTOS</text>
+  <text x="73" y="67" fill="#8fa7b7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.6">selección curada · públicos y privados marcados</text>
 </svg>

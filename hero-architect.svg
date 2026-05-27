@@ -1,45 +1,64 @@
-<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @keyframes subtle-glow { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
-    @keyframes line-draw { 0% { stroke-dashoffset: 1200; } 100% { stroke-dashoffset: 0; } }
-    .grid-dot { fill: #333; }
-    .arch-line { stroke: #222; stroke-width: 0.5; }
-    .accent-line { stroke: #00ccff; stroke-width: 1; stroke-dasharray: 1200; animation: line-draw 2s ease-out forwards; }
-    .text-premium { font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #f0f0f0; letter-spacing: 0.2em; font-weight: 300; }
-    .text-title { font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #00ccff; letter-spacing: 0.4em; font-weight: 200; font-size: 14px; }
-    .intersection { fill: #00ccff; animation: subtle-glow 3s ease-in-out infinite; }
-  </style>
-
-  <rect width="1200" height="400" fill="#0d0d0d" />
-
-  <!-- Background Grid Dots -->
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <circle cx="2" cy="2" r="0.5" class="grid-dot" />
-  </pattern>
-  <rect width="1200" height="400" fill="url(#grid)" />
-
-  <!-- Architectural Abstract Lines -->
-  <line x1="0" y1="300" x2="1200" y2="300" class="arch-line" />
-  <line x1="400" y1="0" x2="400" y2="400" class="arch-line" />
-  <line x1="800" y1="0" x2="800" y2="400" class="arch-line" />
-  
-  <path d="M 0 350 L 1200 350" class="accent-line" style="opacity: 0.2;" />
-  <path d="M 100 0 L 100 400" class="arch-line" opacity="0.3" />
-
-  <!-- Intersections Points -->
-  <circle cx="400" cy="300" r="2" class="intersection" />
-  <circle cx="800" cy="300" r="2" class="intersection" style="animation-delay: 1.5s;" />
-
-  <!-- Main Identity Text -->
-  <g transform="translate(600, 180)">
-    <text text-anchor="middle" class="text-premium" font-size="36" y="0">PATRICIO GARCÍA</text>
-    <text text-anchor="middle" class="text-title" y="40">SOFTWARE ENGINEER &amp; AI RESEARCHER</text>
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PatoDev — Ingeniero de Software</title>
+  <desc id="desc">Hero oscuro con trazos de luz cian, amarilla y roja inspirado en patodev.com.</desc>
+  <rect width="1200" height="420" fill="#000000"/>
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="44%" r="66%">
+      <stop offset="0" stop-color="#06151a" stop-opacity="0.92"/>
+      <stop offset="0.54" stop-color="#020507" stop-opacity="0.86"/>
+      <stop offset="1" stop-color="#000000"/>
+    </radialGradient>
+    <filter id="lineGlow" x="-20%" y="-35%" width="140%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="tightGlow"/>
+      <feGaussianBlur stdDeviation="18" result="wideGlow"/>
+      <feMerge><feMergeNode in="wideGlow"/><feMergeNode in="tightGlow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="warmGlow" x="-20%" y="-35%" width="140%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3" result="tightGlow"/>
+      <feGaussianBlur stdDeviation="13" result="wideGlow"/>
+      <feMerge><feMergeNode in="wideGlow"/><feMergeNode in="tightGlow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="beamBlur" x="-25%" y="-35%" width="150%" height="180%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="16"/></filter>
+    <linearGradient id="cyanBeam" x1="-90" y1="214" x2="860" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08e7ff" stop-opacity="0.44"/><stop offset="0.18" stop-color="#08e7ff" stop-opacity="0.28"/><stop offset="0.55" stop-color="#00c7ed" stop-opacity="0.12"/><stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cyanCore" x1="-70" y1="216" x2="860" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d8ffff"/><stop offset="0.18" stop-color="#27e9ff"/><stop offset="0.62" stop-color="#00bce2" stop-opacity="0.75"/><stop offset="1" stop-color="#00607f" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="yellowCore" x1="610" y1="342" x2="1210" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity="0"/><stop offset="0.22" stop-color="#ffbd00" stop-opacity="0.18"/><stop offset="0.58" stop-color="#ffe028" stop-opacity="0.76"/><stop offset="1" stop-color="#fff0a8"/>
+    </linearGradient>
+    <linearGradient id="yellowBeam" x1="610" y1="342" x2="1210" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity="0"/><stop offset="0.32" stop-color="#ffb400" stop-opacity="0.06"/><stop offset="0.72" stop-color="#ffc400" stop-opacity="0.22"/><stop offset="1" stop-color="#ffb400" stop-opacity="0.36"/>
+    </linearGradient>
+    <linearGradient id="redCore" x1="432" y1="382" x2="1210" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity="0"/><stop offset="0.3" stop-color="#ff321f" stop-opacity="0.08"/><stop offset="0.62" stop-color="#ff4b2c" stop-opacity="0.36"/><stop offset="1" stop-color="#ff9a82"/>
+    </linearGradient>
+    <linearGradient id="redBeam" x1="432" y1="382" x2="1210" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity="0"/><stop offset="0.36" stop-color="#ff2d1c" stop-opacity="0.04"/><stop offset="0.72" stop-color="#ff3b22" stop-opacity="0.18"/><stop offset="1" stop-color="#ff2b1b" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="titleText" x1="184" y1="118" x2="1018" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8feff"/><stop offset="0.45" stop-color="#08d7f2"/><stop offset="0.74" stop-color="#ffe454"/><stop offset="1" stop-color="#ff7657"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#vignette)"/>
+  <g opacity="0.42">
+    <path d="M100 74H1100M100 346H1100" stroke="#143240" stroke-width="1" stroke-dasharray="2 16"/>
+    <path d="M180 48V372M1020 48V372" stroke="#143240" stroke-width="1" stroke-dasharray="2 16"/>
   </g>
-
-  <!-- Fine Details -->
-  <text x="415" y="290" font-family="monospace" font-size="8" fill="#555">COORD_X.400_Y.300</text>
-  <text x="815" y="290" font-family="monospace" font-size="8" fill="#555">SYS_STATUS.NOMINAL</text>
-
-  <!-- Border Frame -->
-  <rect x="20" y="20" width="1160" height="360" stroke="#00ccff" stroke-width="0.5" stroke-opacity="0.2" fill="none" />
+  <g style="mix-blend-mode:screen">
+    <path d="M -96 214 C 110 258 350 324 548 326 C 676 328 770 292 866 252 L 866 282 C 748 330 642 350 520 342 C 306 328 104 280 -96 236 Z" fill="url(#cyanBeam)" filter="url(#beamBlur)" opacity="0.98"/>
+    <path d="M -72 218 C 146 268 350 326 548 330 C 668 332 764 296 858 254" stroke="url(#cyanCore)" stroke-width="4.2" stroke-linecap="round" filter="url(#lineGlow)"/>
+    <path d="M -66 217 C 148 269 348 326 548 330 C 668 332 764 296 858 254" stroke="#d8ffff" stroke-width="0.9" stroke-linecap="round" opacity="0.72"/>
+    <path d="M 606 344 C 752 320 842 246 958 188 C 1070 132 1158 104 1210 92" stroke="url(#yellowBeam)" stroke-width="34" stroke-linecap="round" filter="url(#beamBlur)" opacity="0.8"/>
+    <path d="M 606 344 C 752 320 842 246 958 188 C 1070 132 1158 104 1210 92" stroke="url(#yellowCore)" stroke-width="5" stroke-linecap="round" filter="url(#warmGlow)"/>
+    <path d="M 432 382 C 622 348 744 318 884 318 C 1016 318 1110 340 1216 346" stroke="url(#redBeam)" stroke-width="44" stroke-linecap="round" filter="url(#beamBlur)" opacity="0.74"/>
+    <path d="M 432 382 C 622 348 744 318 884 318 C 1016 318 1110 340 1216 346" stroke="url(#redCore)" stroke-width="6" stroke-linecap="round" filter="url(#warmGlow)"/>
+  </g>
+  <g text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="600" y="169" fill="url(#titleText)" font-size="72" font-weight="900" letter-spacing="-3">PatoDev</text>
+    <text x="600" y="216" fill="#eaf7ff" font-size="24" font-weight="700" letter-spacing="4">INGENIERO DE SOFTWARE · FULL-STACK JUNIOR</text>
+    <text x="600" y="255" fill="#8fa7b7" font-size="16" font-weight="500" letter-spacing="1.6">Python · TypeScript · React/Next.js · FastAPI · IA aplicada</text>
+    <text x="600" y="306" fill="#ffe454" font-size="15" font-weight="700" letter-spacing="2">“Tengo que dar un paso a la vez, solo uno a la vez.”</text>
+  </g>
 </svg>
