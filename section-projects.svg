@@ -8,6 +8,5 @@
   </defs>
   <path d="M70 48 C260 30 382 30 560 47 C748 65 894 65 1130 43" stroke="url(#g)" stroke-width="2.2" filter="url(#glow)"/>
   <path d="M70 48 C260 30 382 30 560 47 C748 65 894 65 1130 43" stroke="url(#g)" stroke-width="1"/>
-  <text x="72" y="42" fill="#eaf7ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="4">PROYECTOS</text>
-  <text x="73" y="67" fill="#8fa7b7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.6">selección curada · públicos y privados marcados</text>
+  <text x="72" y="56" fill="#eaf7ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="4">PROYECTOS</text>
 </svg>
