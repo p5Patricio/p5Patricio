@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero-architect.svg" alt="PatoDev — Junior full-stack software engineer" width="100%"/>
+  <img src="hero-architect.svg?v=2" alt="PatoDev — Junior full-stack software engineer" width="100%"/>
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
   <a href="mailto:pa.garciaperezvela@ugto.mx"><img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela%40ugto.mx-000000?style=for-the-badge&labelColor=000000&color=ff3c24" alt="Email"/></a>
 </p>
 
-<p align="center"><img src="section-identity.svg" alt="Identity" width="100%"/></p>
+<p align="center"><img src="section-identity.svg?v=2" alt="Identity" width="100%"/></p>
 
 ```ts
 const developer = {
@@ -41,7 +41,7 @@ const developer = {
 
 I am a junior full-stack developer with a strong foundation in **Python** and **TypeScript**. I enjoy building end-to-end products: frontend with visual intent, backend with clear APIs, well-modeled data, and automation that saves real time. I use AI as a technical co-pilot—to accelerate exploration, testing, and refactoring—while continuing to review, execute, and understand what I integrate.
 
-<p align="center"><img src="section-stack.svg" alt="Stack" width="100%"/></p>
+<p align="center"><img src="section-stack.svg?v=2" alt="Stack" width="100%"/></p>
 
 | Area | Tools that appear in my repositories/projects |
 | --- | --- |
@@ -53,7 +53,7 @@ I am a junior full-stack developer with a strong foundation in **Python** and **
 
 > I keep this list conservative: I prefer to remove technologies rather than showcase something not backed by my repositories or recent work.
 
-<p align="center"><img src="section-contact.svg" alt="Contact" width="100%"/></p>
+<p align="center"><img src="section-contact.svg?v=2" alt="Contact" width="100%"/></p>
 
 <p align="center">
   <a href="https://patodev.com"><strong>patodev.com</strong></a>
