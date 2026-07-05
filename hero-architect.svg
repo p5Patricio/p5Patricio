@@ -1,6 +1,6 @@
 <svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">PatoDev — Ingeniero de Software</title>
-  <desc id="desc">Hero oscuro con trazos de luz cian, amarilla y roja inspirado en patodev.com.</desc>
+  <title id="title">PatoDev — Software Engineer</title>
+  <desc id="desc">Dark hero with cyan, yellow, and red light strokes inspired by patodev.com.</desc>
   <rect width="1200" height="420" fill="#000000"/>
   <defs>
     <radialGradient id="vignette" cx="50%" cy="44%" r="66%">
@@ -57,7 +57,7 @@
   </g>
   <g text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">
     <text x="600" y="169" fill="url(#titleText)" font-size="72" font-weight="900" letter-spacing="-3">PatoDev</text>
-    <text x="600" y="216" fill="#eaf7ff" font-size="24" font-weight="700" letter-spacing="4">INGENIERO DE SOFTWARE · FULL-STACK JUNIOR</text>
-    <text x="600" y="270" fill="#ffe454" font-size="15" font-weight="700" letter-spacing="2">Tengo que dar un paso a la vez, solo uno a la vez.</text>
+    <text x="600" y="216" fill="#eaf7ff" font-size="24" font-weight="700" letter-spacing="4">SOFTWARE ENGINEER · JUNIOR FULL-STACK</text>
+    <text x="600" y="270" fill="#ffe454" font-size="15" font-weight="700" letter-spacing="2">One step at a time.</text>
   </g>
 </svg>
