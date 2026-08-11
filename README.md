@@ -1,59 +1,96 @@
 <p align="center">
-  <img src="hero-architect.svg?v=2" alt="PatoDev — Junior full-stack software engineer" width="100%"/>
+  <img src="image.png" alt="PatoDev — Software Engineer" width="100%"/>
 </p>
 
 <p align="center">
-  <a href="https://patodev.com"><img src="https://img.shields.io/badge/PORTFOLIO-patodev.com-000000?style=for-the-badge&labelColor=000000&color=08d7f2" alt="Portfolio: patodev.com"/></a>
-  <a href="https://www.linkedin.com/in/patricioagpv/"><img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-000000?style=for-the-badge&labelColor=000000&color=ffe454" alt="LinkedIn: patricioagpv"/></a>
+  <a href="https://patodev.com"><img src="https://img.shields.io/badge/PORTFOLIO-patodev.com-000000?style=for-the-badge&labelColor=000000&color=08d7f2" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/patricioagpv/"><img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-000000?style=for-the-badge&labelColor=000000&color=ffe454" alt="LinkedIn"/></a>
   <a href="mailto:pa.garciaperezvela@ugto.mx"><img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela%40ugto.mx-000000?style=for-the-badge&labelColor=000000&color=ff3c24" alt="Email"/></a>
 </p>
 
-<p align="center"><img src="section-identity.svg?v=2" alt="Identity" width="100%"/></p>
+<br/>
+
+### ⚡ About Me
 
 ```ts
 const developer = {
   name: "Patricio Antonio García Pérez Vela",
   alias: "PatoDev",
-  role: "Full-Stack Software Engineer (Junior)",
+  role: "Full-Stack Software Engineer",
   location: "Guanajuato, Mexico",
 
-  focus: [
-    "useful software",
-    "automation",
-    "polished UIs",
-    "applied AI"
+  expertise: [
+    "Production Full-Stack Systems",
+    "Local AI & Agentic Workflows",
+    "High-Performance APIs",
+    "Clean Architecture & DX"
   ],
 
-  education: {
-    degree: "Computer Systems Engineering",
-    school: "Universidad de Guanajuato"
+  stack: {
+    frontend: ["TypeScript", "Next.js", "React", "Tailwind CSS v4"],
+    backend: ["Python", "FastAPI", "Node.js", "PostgreSQL", "SQLAlchemy", "SQLite"],
+    ai_ml: ["Whisper", "PyTorch", "MCP", "Gemini", "MediaPipe", "OpenCV"],
+    infra: ["Docker", "Cloudflare R2 / MinIO", "Vercel", "GitHub Actions"]
   },
 
-  workflow: {
-    process: "AI-assisted development",
-    validation: "human verification",
-    learning: "iterative"
-  },
-
-  philosophy: "One step at a time."
+  philosophy: "Build useful software with clarity, precision, and human-in-the-loop verification."
 };
 ```
 
-I am a junior full-stack developer with a strong foundation in **Python** and **TypeScript**. I enjoy building end-to-end products: frontend with visual intent, backend with clear APIs, well-modeled data, and automation that saves real time. I use AI as a technical co-pilot—to accelerate exploration, testing, and refactoring—while continuing to review, execute, and understand what I integrate.
+I am a Full-Stack Software Engineer building end-to-end applications with strong architectural foundations, responsive UIs, and robust backends. I leverage AI as a high-velocity copilot while maintaining strict engineering standards, code review, and domain ownership.
 
-<p align="center"><img src="section-stack.svg?v=2" alt="Stack" width="100%"/></p>
+---
 
-| Area | Tools that appear in my repositories/projects |
-| --- | --- |
-| **Frontend** | TypeScript, React, Next.js, Vue, Vite, Tailwind CSS, HTML/CSS |
-| **Backend & data** | Python, FastAPI, Node.js/JavaScript, SQLAlchemy, PostgreSQL, pgvector |
-| **AI / ML / data** | Gemini, Whisper, Ollama/local LLMs, TensorFlow, MediaPipe, OpenCV, scikit-learn, pandas, NumPy |
-| **Infra & workflow** | Docker, Git/GitHub, GitHub Actions, Linux, Vercel, Cloudflare |
-| **Documentation** | Markdown, LaTeX, technical guides, and installation/configuration logs |
+### 🚀 Featured Projects
 
-> I keep this list conservative: I prefer to remove technologies rather than showcase something not backed by my repositories or recent work.
+#### 📊 [DEMOX](https://github.com/p5Patricio/DEMOX-Backend)
+> **Political Media Intelligence Platform**
+- **Tech:** Python, FastAPI, Next.js, PostgreSQL / Supabase, Pydantic, UV
+- Analyst workspace for tracking political news, party analytics, sentiment signals, and evidence-backed reports in Guanajuato, Mexico. Includes automated news deduplication and UTF-8 JSON report exports.
 
-<p align="center"><img src="section-contact.svg?v=2" alt="Contact" width="100%"/></p>
+#### 🏗️ [Scorpio Control](https://github.com/p5Patricio/Scorpio-Control)
+> **Job Site & Material Inventory System**
+- **Tech:** Next.js App Router, FastAPI, PostgreSQL, MinIO / Cloudflare R2, TanStack Query
+- Web application for Electro-Scorpio managing field supervisor logs, material inventory tracking, crew allocation, and photo evidence uploads optimized for low-footprint VPS deployment.
+
+#### 🎙️ [WhisperKey](https://github.com/p5Patricio/WhisperKey)
+> **Local Offline GPU Voice Dictation**
+- **Tech:** Python, PyTorch, OpenAI Whisper, Win32 / X11 API
+- Zero-cloud, privacy-first bilingual voice dictation tool running directly on local GPU. Press a global hotkey, speak in Spanish or English, and instant transcription streams anywhere you type.
+
+#### 📅 [mcp-agenda](https://github.com/p5Patricio/mcp-agenda)
+> **Calendar Intelligence Server for AI Agents**
+- **Tech:** TypeScript, SQLite, Model Context Protocol (MCP), Spanish NLP
+- Zero-setup Model Context Protocol (MCP) server providing structured calendar intelligence, event parsing, and natural language query capabilities to autonomous AI agents.
+
+#### ♿ [hear-ui](https://github.com/p5Patricio/hear-ui)
+> **Screen Reader Accessibility Regression Testing**
+- **Tech:** TypeScript, Playwright, ARIA Snapshots, Node.js
+- Accessibility testing tool that captures Playwright ARIA snapshots, linearizes screen reader output into human-readable text, and enforces semantic diff matching to prevent accessibility regressions in CI/CD.
+
+#### 🛒 [Rey Asesino](https://github.com/p5Patricio/reyasesino-frontend)
+> **E-Commerce Platform & Admin Suite**
+- **Tech:** Next.js 16, React 19, FastAPI, Tailwind CSS v4, Cloudflare R2
+- High-performance apparel store and management dashboard featuring on-the-fly WebP image optimization, server-rendered dynamic routing, and fast inventory administration.
+
+#### 🎨 [ASCII Vision](https://github.com/p5Patricio/ASCII-Converter)
+> **Vectorized ASCII & Braille Art Engine**
+- **Tech:** Python, Computer Vision, Vectorized SSIM, RLE Exporters
+- Headless image-to-ASCII processing engine utilizing bitmap glyph caching, structural similarity metrics (SSIM), and optimized HTML/SVG/ANSI exporters.
+
+---
+
+### 🛠️ Technical Stack Matrix
+
+| Domain | Technologies |
+| :--- | :--- |
+| **Frontend & UI** | TypeScript, React 19, Next.js 16, Vue, Vite, Tailwind CSS v4, HTML5/CSS3 |
+| **Backend & Databases** | Python 3.12+, FastAPI, Node.js, PostgreSQL, Supabase, SQLite, SQLAlchemy, SQLModel, Alembic |
+| **AI, ML & Vision** | OpenAI Whisper, PyTorch, Model Context Protocol (MCP), Gemini API, OpenCV, MediaPipe, scikit-learn |
+| **Storage & Infra** | Cloudflare R2, MinIO, Docker, Linux, GitHub Actions, Vercel, pnpm / uv |
+| **Testing & Quality** | Playwright, ARIA accessibility testing, Pytest, ESLint, Clean / Hexagonal Architecture |
+
+---
 
 <p align="center">
   <a href="https://patodev.com"><strong>patodev.com</strong></a>
