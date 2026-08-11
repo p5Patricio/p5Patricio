@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image.png" alt="PatoDev — Software Engineer" width="100%"/>
+  <img src="image.png" alt="PatoDev — Software Engineer"/>
 </p>
 
 <p align="center">
@@ -8,6 +8,7 @@
 </p>
 
 <br/>
+I am a Full-Stack Software Engineer building end-to-end applications with strong architectural foundations, responsive UIs, and robust backends. I leverage AI as a high-velocity copilot while maintaining strict engineering standards, code review, and domain ownership.
 
 ### ⚡ About Me
 
@@ -20,7 +21,7 @@ const developer = {
 
   expertise: [
     "Production Full-Stack Systems",
-    "Local AI & Agentic Workflows",
+    "AI & Agentic Workflows",
     "High-Performance APIs",
     "Clean Architecture & DX"
   ],
@@ -32,11 +33,9 @@ const developer = {
     infra: ["Docker", "Cloudflare R2 / MinIO", "Vercel", "GitHub Actions"]
   },
 
-  philosophy: "Build useful software with clarity, precision, and human-in-the-loop verification."
+  philosophy: "One step at a time, just one at a time."
 };
 ```
-
-I am a Full-Stack Software Engineer building end-to-end applications with strong architectural foundations, responsive UIs, and robust backends. I leverage AI as a high-velocity copilot while maintaining strict engineering standards, code review, and domain ownership.
 
 ---
 
