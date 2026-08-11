@@ -5,7 +5,6 @@
 <p align="center">
   <a href="https://patodev.com"><img src="https://img.shields.io/badge/PORTFOLIO-patodev.com-000000?style=for-the-badge&labelColor=000000&color=08d7f2" alt="Portfolio"/></a>
   <a href="https://www.linkedin.com/in/patricioagpv/"><img src="https://img.shields.io/badge/LINKEDIN-patricioagpv-000000?style=for-the-badge&labelColor=000000&color=ffe454" alt="LinkedIn"/></a>
-  <a href="mailto:pa.garciaperezvela@ugto.mx"><img src="https://img.shields.io/badge/EMAIL-pa.garciaperezvela%40ugto.mx-000000?style=for-the-badge&labelColor=000000&color=ff3c24" alt="Email"/></a>
 </p>
 
 <br/>
@@ -48,11 +47,6 @@ I am a Full-Stack Software Engineer building end-to-end applications with strong
 - **Tech:** Python, FastAPI, Next.js, PostgreSQL / Supabase, Pydantic, UV
 - Analyst workspace for tracking political news, party analytics, sentiment signals, and evidence-backed reports in Guanajuato, Mexico. Includes automated news deduplication and UTF-8 JSON report exports.
 
-#### 🏗️ [Scorpio Control](https://github.com/p5Patricio/Scorpio-Control)
-> **Job Site & Material Inventory System**
-- **Tech:** Next.js App Router, FastAPI, PostgreSQL, MinIO / Cloudflare R2, TanStack Query
-- Web application for Electro-Scorpio managing field supervisor logs, material inventory tracking, crew allocation, and photo evidence uploads optimized for low-footprint VPS deployment.
-
 #### 🎙️ [WhisperKey](https://github.com/p5Patricio/WhisperKey)
 > **Local Offline GPU Voice Dictation**
 - **Tech:** Python, PyTorch, OpenAI Whisper, Win32 / X11 API
@@ -62,11 +56,6 @@ I am a Full-Stack Software Engineer building end-to-end applications with strong
 > **Calendar Intelligence Server for AI Agents**
 - **Tech:** TypeScript, SQLite, Model Context Protocol (MCP), Spanish NLP
 - Zero-setup Model Context Protocol (MCP) server providing structured calendar intelligence, event parsing, and natural language query capabilities to autonomous AI agents.
-
-#### ♿ [hear-ui](https://github.com/p5Patricio/hear-ui)
-> **Screen Reader Accessibility Regression Testing**
-- **Tech:** TypeScript, Playwright, ARIA Snapshots, Node.js
-- Accessibility testing tool that captures Playwright ARIA snapshots, linearizes screen reader output into human-readable text, and enforces semantic diff matching to prevent accessibility regressions in CI/CD.
 
 #### 🛒 [Rey Asesino](https://github.com/p5Patricio/reyasesino-frontend)
 > **E-Commerce Platform & Admin Suite**
@@ -88,7 +77,7 @@ I am a Full-Stack Software Engineer building end-to-end applications with strong
 | **Backend & Databases** | Python 3.12+, FastAPI, Node.js, PostgreSQL, Supabase, SQLite, SQLAlchemy, SQLModel, Alembic |
 | **AI, ML & Vision** | OpenAI Whisper, PyTorch, Model Context Protocol (MCP), Gemini API, OpenCV, MediaPipe, scikit-learn |
 | **Storage & Infra** | Cloudflare R2, MinIO, Docker, Linux, GitHub Actions, Vercel, pnpm / uv |
-| **Testing & Quality** | Playwright, ARIA accessibility testing, Pytest, ESLint, Clean / Hexagonal Architecture |
+| **Testing & Quality** | Playwright, Pytest, ESLint, Clean / Hexagonal Architecture |
 
 ---
 
@@ -96,8 +85,6 @@ I am a Full-Stack Software Engineer building end-to-end applications with strong
   <a href="https://patodev.com"><strong>patodev.com</strong></a>
   ·
   <a href="https://www.linkedin.com/in/patricioagpv/">LinkedIn</a>
-  ·
-  <a href="mailto:pa.garciaperezvela@ugto.mx">Email</a>
   ·
   <a href="https://github.com/p5Patricio">GitHub</a>
 </p>
